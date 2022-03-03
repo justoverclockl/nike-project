@@ -1,0 +1,7 @@
+@use '../abstracts/placeholders';
+
+.brand-header, 
+.brands, 
+.user-menu {
+    @extend %flex-between;
+}
