@@ -19,7 +19,7 @@ body {
     padding-left: 31px;
     height: 2em;
 
-    .im-logo {
+    .image-logo {
         width: 38px;
     }
 
@@ -49,7 +49,7 @@ body {
     align-items: center;
     padding-inline: 41px;
 
-    .im-topleft {
+    .image-topleft {
         width: 57px;
     }
 
@@ -90,7 +90,7 @@ body {
 }
 
 
-.im-center {
+.image-center {
     width: 100%;
 }
 
@@ -123,7 +123,7 @@ body {
     display: flex;
     justify-content: center;
 
-    .im-center-two {
+    .image-center-two {
         padding-top: 8em;
         width: 69vw;
     }
@@ -162,7 +162,7 @@ body {
     display: flex;
     justify-content: center;
 
-    .im-center-three {
+    .image-center-three {
         width: 93vw;
         padding-top: 5em;
     }
@@ -230,4 +230,63 @@ body {
     padding-top: 4em;
     padding-left: 13em;
     width: 69vw;
+}
+
+
+.conteiner-carousel {
+    padding-top: 3em;
+
+    .button-carousel {
+        text-align: end;
+        padding-right: 3em;
+
+        .button-for-carousel {
+            border: solid transparent;
+            border-radius: 50%;
+            height: 4em;
+            width: 4em;
+            margin: 3px;
+        }
+    }
+
+    .carousel-list {
+        overflow-x: scroll;
+        display: flex;
+        list-style-type: none;
+
+        .image-carousel {
+            width: 28em;
+            margin-inline: 8px;
+        }
+    }
+}
+
+#image-center-six {
+    display: flex;
+    justify-content: center;
+    padding-top: 7em;
+
+    .image-fitness {
+        width: 89vw;
+    }
+}
+
+#list-for-app {
+    display: flex;
+    flex-direction: column;
+    font-size: $text-h2;
+    padding-top: 4em;
+    padding-left: 13em;
+
+}
+
+#image-center-seven {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+
+    .image-center-five {
+        width: 62vw;
+
+}
 }
