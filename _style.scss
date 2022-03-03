@@ -1,0 +1,229 @@
+$color-back: #E8E3E6;
+$color-a: black;
+$text-h2: 22px;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:futura condensed extra bold;
+}
+
+.nav-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #E8E3E6;
+    align-items: center;
+    padding-left: 31px;
+
+    .IM {
+        width: 38px;
+    }
+
+    .list-one {
+        display: inline-flex;
+        text-decoration: none;
+        list-style-type: none;
+
+        .a-one {
+            text-decoration: none;
+            padding: 9px;
+            font-size: 13px;
+            color: $color-a;
+            &:hover {
+                color: transparent;
+            }
+
+        }
+    }
+
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 41px;
+
+    .im-topleft {
+        width: 57px;
+    }
+
+    .list-two {
+        display: inline-flex;
+        list-style-type: none;
+
+        .a-two {
+            text-decoration: none;
+            padding: 9px;
+            font-size: 18px;
+            color: black;
+            
+        }
+    }
+
+    .conteiner-three {
+        display: flex;
+        align-items: center;
+
+        .conteiner-search {
+            padding-right: 15px;
+        }
+
+        .conteiner-heart-badge {
+            .far {
+                margin: 11px;
+            }
+        }
+    }
+}
+
+.nav-footer {
+    width: 100%;
+    height: 50px;
+    background-color: $color-back;
+    width: 100%;
+}
+
+
+.im-center {
+    width: 100%;
+}
+
+
+.conteiner-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 13em;
+    padding-top: 3em;
+
+    .text {
+        font-size: $text-h2;
+
+    }
+
+    .conteiner-button {
+        padding-top: 10px;
+        
+        .text-button {
+            border: solid black;
+            border-radius: 48px;
+            background: black;
+            color: white;
+            font-size: 21px;
+        }
+    }
+}
+
+.second-image-center {
+    display: flex;
+    justify-content: center;
+
+    .im-center-two {
+        padding-top: 8em;
+        width: 69vw;
+    }
+}
+
+.text-training {
+    display: flex;
+    flex-direction: column;
+    padding-left: 13em;
+    padding-top: 3em;
+    font-size: $text-h2;
+
+
+    .head-text-training {
+       a {
+        color: $color-a;
+        &:hover {
+            color: grey;
+        }
+       }
+        
+        
+    }
+
+    .footer-text-training {
+        a {
+            color: $color-a;
+            &:hover {
+                color: grey;
+            }
+        }
+    }
+}
+
+.training-fit {
+    display: flex;
+    justify-content: center;
+
+    .im-center-three {
+        width: 93vw;
+        padding-top: 5em;
+    }
+}
+
+.training-club {
+    font-size: $text-h2;
+    padding-left: 13em;
+    padding-top: 3em;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+
+    .image-card {
+        height: 77vh;
+        margin: 10px;
+    }
+
+    .title-card {
+        font-size: $text-h2;
+        color: rgb(24, 22, 22)
+    }
+
+    .text-card {
+        font-size: 20px;
+        color: rgb(24, 22, 22)
+    }
+}
+
+.image-fit-center {
+    display: flex;
+    justify-content: center;
+
+    .image-fit {
+        width: 66vw;
+        padding-top: 5em;
+    }
+}
+
+.text-plan {
+    flex-direction: column;
+    padding-top: 4em;
+    padding-left: 13em;
+    width: 69vw;
+    font-size: $text-h2;
+}
+
+.image-fit-second {
+    display: flex;
+    justify-content: center;
+
+    .image-center-four {
+        padding-top: 4em;
+        width: 62vw;
+    }
+}
+
+.text-train {
+    display: flex;
+    flex-direction: column;
+    font-size: $text-h2;
+    padding-top: 4em;
+    padding-left: 13em;
+    width: 69vw;
+}
