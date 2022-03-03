@@ -1,0 +1,91 @@
+.container-popup.open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+  z-index: 99999;
+}
+.container-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+  z-index: 99999;
+}
+
+.popup {
+  width: 400px;
+  height: 500px;
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  .popup-close {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  button.login-popup {
+    background: #000;
+    border: 0;
+    padding: 0.7rem;
+    margin-top: 2rem;
+    font-family: "Futura Black", serif;
+    color: #fff;
+  }
+
+  .logo-nike {
+    display: flex;
+    justify-content: center;
+  }
+
+  .privacy-popup {
+    width: 270px;
+    margin: 0 auto;
+    font-size: .7rem;
+    color: #565656;
+  }
+
+  .popup-text {
+    font-family: "Roboto", serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    width: 60%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .form-popup {
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 270px;
+      margin: 0 auto;
+
+      input {
+        padding: 0.7rem;
+        margin-bottom: 1rem;
+        border: 1px solid #cfcfcf;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
