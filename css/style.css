@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: futura condensed extra bold;
+  font-family: fu;
 }
 
 .nav-head {
@@ -10,6 +10,7 @@ body {
   background-color: #E8E3E6;
   align-items: center;
   padding-left: 31px;
+  height: 2em;
 }
 .nav-head .im-logo {
   width: 38px;
@@ -18,6 +19,7 @@ body {
   display: inline-flex;
   text-decoration: none;
   list-style-type: none;
+  padding-right: 2em;
 }
 .nav-head .list-one .a-one {
   text-decoration: none;
