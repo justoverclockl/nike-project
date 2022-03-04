@@ -1,3 +1,8 @@
 @use './sass/layout/navigation';
 @use './sass/base/reset';
 @use './sass/layout/main';
+
+@font-face {
+  font-family: Nike Futura;
+  src: url('../assets/fonts/Nike-Futura.otf');
+}

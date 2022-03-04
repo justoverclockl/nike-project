@@ -1,31 +1,32 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    color: #111;
-    background-color: #fff;
+  color: #111;
+  background-color: #fff;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    border: none;
-    color: #111;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 500;
+  text-decoration: none;
+  border: none;
+  color: #111;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .separator {
-    margin: 0 4px 0 4px;
+  margin: 0 4px 0 4px;
 }
 
 header,
-.main-stick-nav {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.main-stick-nav,
+main {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
