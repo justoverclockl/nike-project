@@ -142,21 +142,24 @@
   justify-content: space-between;
   margin-inline-start: calc(24px * 2);
   margin-inline-end: calc(24px * 2 + 10px);
-  overflow-x: auto;
+  overflow: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 30px;
 
   &::-webkit-scrollbar {
     width: 14px;
   }
+
   &::-webkit-scrollbar-button {
     width: 0;
     height: 0;
     display: none;
   }
+
   &::-webkit-scrollbar-corner {
     background-color: transparent;
   }
+
   &::-webkit-scrollbar-thumb {
     background-clip: content-box;
     border: 5px solid transparent;
@@ -166,13 +169,13 @@
   }
 }
 
-.carousel-trend:hover > .container-trend:hover {
+.carousel-trend:hover > .container-trend {
   &::-webkit-scrollbar-thumb {
     color: #757575;
   }
 }
 
-.container-trend > a {
+.container-items {
   scroll-snap-align: start;
 }
 

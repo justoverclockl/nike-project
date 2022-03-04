@@ -305,7 +305,7 @@ main {
   justify-content: space-between;
   margin-inline-start: 48px;
   margin-inline-end: 58px;
-  overflow-x: auto;
+  overflow: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 30px;
 }
@@ -328,11 +328,11 @@ main {
   color: transparent;
 }
 
-.carousel-trend:hover > .container-trend:hover::-webkit-scrollbar-thumb {
+.carousel-trend:hover > .container-trend::-webkit-scrollbar-thumb {
   color: #757575;
 }
 
-.container-trend > a {
+.container-items {
   scroll-snap-align: start;
 }
 
