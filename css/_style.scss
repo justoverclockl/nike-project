@@ -294,3 +294,37 @@ body {
 
 }
 }
+
+.text-training-club {
+    display: block;
+    padding-left: 14em;
+    line-height: 23px;
+    padding-top: 3em;
+    font-size: $text-h2;
+}
+
+#image-center-eight {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+
+    .image-smartphone-center {
+        width: 93vw;
+    }
+
+
+}
+
+#text-finish-line {
+    padding-left: 13em;
+    line-height: 24px;
+    font-size: $text-h2;
+    padding-top: 3em;
+}
+
+
+#image-center-nine {
+    display: flex;
+    justify-content: center;
+    padding-top: 4em;
+}
