@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+p {
+  line-height: 34px;
+}
+
 .nav-head {
   display: flex;
   justify-content: space-between;
@@ -111,16 +115,16 @@ body {
   padding-top: 3em;
   font-size: 22px;
 }
-.text-training .head-text-training a {
+.text-training .head-text-training .text-link {
   color: black;
 }
-.text-training .head-text-training a:hover {
+.text-training .head-text-training .text-link:hover {
   color: grey;
 }
-.text-training .footer-text-training a {
+.text-training .footer-text-training .text-link {
   color: black;
 }
-.text-training .footer-text-training a:hover {
+.text-training .footer-text-training .text-link:hover {
   color: grey;
 }
 
@@ -253,7 +257,7 @@ body {
 #image-center-eight {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 3em;
 }
 #image-center-eight .image-smartphone-center {
   width: 93vw;
@@ -270,6 +274,100 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 4em;
+}
+
+.image-nike-work {
+  width: 67vw;
+}
+
+#text-club {
+  display: flex;
+  flex-direction: column;
+  padding-left: 11em;
+  line-height: 21px;
+  padding-top: 4em;
+  font-size: 22px;
+}
+#text-club .button-of-text {
+  width: 5em;
+  border: solid;
+  border-radius: 12px;
+  background: black;
+}
+#text-club .text-of-button {
+  color: white;
+  text-decoration: none;
+}
+
+.text-link-second {
+  color: black;
+}
+.text-link-second:hover {
+  color: grey;
+}
+
+#image-center-ten {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+}
+#image-center-ten .image-nike-work-second {
+  width: 66vw;
+}
+
+#text-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 13em;
+  padding-top: 4em;
+  font-size: 22px;
+}
+
+#image-center-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+#image-center-footer .image-last {
+  width: 58vw;
+}
+
+.text-final-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12em;
+  font-size: 22px;
+  padding-top: 4em;
+}
+.text-final-footer .ft-button {
+  width: 7em;
+  border: solid;
+  border-radius: 12px;
+  background: black;
+}
+.text-final-footer .txt-footer {
+  color: white;
+  text-decoration: none;
+}
+
+#text-section-footer {
+  font-size: 22px;
+  padding-left: 2em;
+  padding-top: 3em;
+}
+
+.cards-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.image-card-footer {
+  width: 30vw;
+  margin: 10px;
+}
+
+footer {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

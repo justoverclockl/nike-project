@@ -15,6 +15,10 @@ body {
     
 }
 
+p {
+    line-height: 34px;
+}
+
 .nav-head {
     display: flex;
     justify-content: space-between;
@@ -142,7 +146,7 @@ body {
 
 
     .head-text-training {
-       a {
+       .text-link {
         color: $color-a;
         &:hover {
             color: grey;
@@ -153,7 +157,7 @@ body {
     }
 
     .footer-text-training {
-        a {
+        .text-link {
             color: $color-a;
             &:hover {
                 color: grey;
@@ -328,3 +332,104 @@ body {
     justify-content: center;
     padding-top: 4em;
 }
+
+.image-nike-work {
+    width: 67vw;
+}
+
+#text-club {
+    display: flex;
+    flex-direction: column;
+    padding-left: 11em;
+    line-height: 21px;
+    padding-top: 4em;
+    font-size: 22px;
+
+    .button-of-text {
+        width: 5em;
+        border: solid;
+        border-radius: 12px;
+        background: $color-a;
+    }
+
+
+    .text-of-button {
+        color: white;
+        text-decoration: none;
+        }
+
+}
+
+
+.text-link-second {
+    color: $color-a;
+    &:hover {
+        color: grey;
+
+    }
+}
+
+#image-center-ten {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+
+    .image-nike-work-second {
+        width: 66vw;
+    }
+}
+
+#text-footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 13em;
+    padding-top: 4em;
+    font-size: $text-h2;
+}
+
+#image-center-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+
+    .image-last {
+        width: 58vw;
+    }
+}
+
+.text-final-footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12em;
+    font-size: $text-h2;
+    padding-top: 4em;
+
+    .ft-button {
+        width: 7em;
+        border: solid;
+        border-radius: 12px;
+        background: black;
+    }
+
+    .txt-footer {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#text-section-footer {
+    font-size: $text-h2;
+    padding-left: 2em;
+    padding-top: 3em;
+}
+
+.cards-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.image-card-footer {
+    width: 30vw;
+    margin: 10px;
+}
+
