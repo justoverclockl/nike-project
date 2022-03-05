@@ -1,0 +1,95 @@
+footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: #111;
+}
+
+footer * {
+  color: white;
+}
+
+.footer-margin {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding: 40px 40px 0 40px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-social-link ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 337px;
+  li {
+    margin-left: 16px;
+  }
+
+  li a svg {
+    fill: #7e7e7e;
+  }
+}
+
+.footer-font {
+  font-family: Nike TG;
+  font-size: 14px;
+
+  li {
+    margin-bottom: 3px;
+  }
+}
+
+.footer-link {
+  ul li {
+    height: 32px;
+  }
+
+  a:not(.footer-font, .footer-font li a) {
+    font-size: 12px;
+    line-height: 2.3;
+    font-weight: 400;
+    color: #7e7e7e;
+  }
+}
+
+.footer-guide {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+
+    li a {
+      font-size: 10px !important; // important required, can't add another selector
+      padding: 8px;
+    }
+  }
+}
+
+.footer-location {
+  display: flex;
+  justify-content: space-between;
+
+  a:not(.margin-ignore) {
+    margin-left: 18px;
+    font-size: 10px !important; // important required, can't add another selector
+    padding: 8px;
+  }
+
+  span {
+    font-size: 10px !important; // important required, can't add another selector
+    padding: 8px;
+  }
+
+  ul {
+    display: flex;
+
+    li a svg {
+      fill: #fff;
+    }
+  }
+}

@@ -160,8 +160,7 @@ a {
 
 header,
 .main-stick-nav,
-main,
-footer {
+main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -188,15 +187,6 @@ footer {
   background-color: #fff;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-.items-img img {
-  width: unset;
-}
-
 .main-container {
   display: flex;
   align-items: center;
@@ -211,10 +201,6 @@ img {
 
 .menu {
   display: inline-flex;
-}
-
-.text-wrap {
-  word-break: keep-all;
 }
 
 .menu li {
@@ -371,7 +357,6 @@ img {
 
 .banner-season {
   display: flex;
-  position: relative;
 }
 
 .banner-img {
@@ -383,18 +368,9 @@ img {
   padding-right: 6px;
 }
 
-.img-test {
-  min-height: 300px;
-  object-position: 50% 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  max-width: 100%;
-}
-
 .banner-inside {
-  height: 33%;
-  width: auto;
+  height: 235px;
+  width: 680px;
   display: flex;
   justify-content: flex-end;
   position: absolute;
@@ -404,11 +380,7 @@ img {
   flex-direction: column;
   box-sizing: border-box;
   left: 48px;
-  top: calc(66% - 48px);
-}
-
-.banner-shipment {
-  top: 35%;
+  top: calc(66.66667% - 48px);
 }
 
 .banner-other {
@@ -442,7 +414,6 @@ img {
 
 .title-margin {
   margin-top: 24px;
-  margin-bottom: 0;
 }
 
 .sect-category {
@@ -466,9 +437,6 @@ img {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.sect-category .inside-category ul li a {
-  color: #757575;
-}
 .sect-category ul:nth-child(4) {
   font-size: 16px;
   margin-right: 0;
@@ -485,102 +453,9 @@ img {
   max-height: 500px;
 }
 
-main {
-  margin-bottom: 56px;
-}
-
-footer {
-  width: 100%;
-  min-height: 200px;
-  background-color: #111;
-}
-
-footer * {
-  color: white;
-}
-
-.footer-margin {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1440px;
-  padding: 40px 40px 0 40px;
-}
-
-.footer-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.footer-social-link ul {
-  display: inline-flex;
-  justify-content: flex-end;
-  width: 337px;
-}
-.footer-social-link ul li {
-  margin-left: 16px;
-}
-.footer-social-link ul li a svg {
-  fill: #7e7e7e;
-}
-
-.footer-font {
-  font-family: Nike TG;
-  font-size: 14px;
-}
-.footer-font li {
-  margin-bottom: 3px;
-}
-
-.footer-link ul li {
-  height: 32px;
-}
-.footer-link a:not(.footer-font, .footer-font li a) {
-  font-size: 12px;
-  line-height: 2.3;
-  font-weight: 400;
-  color: #7e7e7e;
-}
-
-.footer-guide {
-  display: flex;
-  justify-content: flex-end;
-}
-.footer-guide ul {
-  display: flex;
-}
-.footer-guide ul li a {
-  font-size: 10px !important;
-  padding: 8px;
-}
-
-.footer-location {
-  display: flex;
-  justify-content: space-between;
-}
-.footer-location a:not(.margin-ignore) {
-  margin-left: 18px;
-  font-size: 10px !important;
-  padding: 8px;
-}
-.footer-location span {
-  font-size: 10px !important;
-  padding: 8px;
-}
-.footer-location ul {
-  display: flex;
-}
-.footer-location ul li a svg {
-  fill: #fff;
-}
-
 @font-face {
   font-family: Nike Futura;
   src: url("../assets/fonts/Nike-Futura.otf");
 }
-@font-face {
-  font-family: Nike TG;
-  src: url("../assets/fonts/Nike-TG.woff2");
-}
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csssas.map */
