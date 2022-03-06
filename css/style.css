@@ -1,7 +1,6 @@
 .brand-header,
 .brands ul, .nav-header,
 .desktop-menu,
-.nav-menu,
 .header-button {
   display: flex;
   justify-content: space-between;
@@ -43,23 +42,42 @@
 
 .nav-header,
 .desktop-menu,
-.nav-menu,
 .header-button {
   align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .nav-header {
   height: 60px;
 }
 
+.nav-inside-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.desktop-menu {
+  position: relative;
+  overflow: hidden;
+}
 .desktop-menu li a {
   padding: 16px 12px 18px;
 }
 
 .desktop-search {
-  position: absolute;
-  right: 0;
-  width: 17%;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 .search-bar {
@@ -158,6 +176,11 @@ a {
   margin: 0 4px 0 4px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 header,
 .main-stick-nav,
 main,
@@ -188,13 +211,21 @@ footer {
   background-color: #fff;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.items-img {
+  position: relative;
+  min-width: 300px;
+  min-height: 300px;
+  z-index: -1;
+}
+.items-img img {
+  object-fit: contain;
 }
 
-.items-img img {
-  width: unset;
+.items-wrap {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
 }
 
 .main-container {
@@ -319,7 +350,6 @@ img {
   display: flex;
   justify-content: space-between;
   margin-inline-start: 48px;
-  margin-inline-end: 58px;
   overflow: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 30px;
@@ -335,8 +365,8 @@ img {
   display: none;
 }
 .container-trend::-webkit-scrollbar-track {
-  margin-inline-start: 20px;
-  margin-inline-end: 32px;
+  margin-inline-start: 14px;
+  margin-inline-end: 26px;
 }
 .container-trend::-webkit-scrollbar-corner {
   background-color: transparent;
@@ -353,11 +383,9 @@ img {
 }
 
 .container-items {
-  scroll-snap-align: start;
-}
-
-.container-items {
+  flex: 0 0 calc(33% - 18px);
   margin-right: 12px;
+  scroll-snap-align: start;
 }
 
 .sect-season {
@@ -383,13 +411,17 @@ img {
   padding-right: 6px;
 }
 
-.img-test {
+.image-media {
   min-height: 300px;
   object-position: 50% 50%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  max-width: 100%;
+}
+
+.full-picture {
+  width: 100%;
+  height: 100%;
 }
 
 .banner-inside {
@@ -495,10 +527,6 @@ footer {
   background-color: #111;
 }
 
-footer * {
-  color: white;
-}
-
 .footer-margin {
   margin-left: auto;
   margin-right: auto;
@@ -512,10 +540,13 @@ footer * {
   align-items: baseline;
 }
 
-.footer-social-link ul {
+.footer-social-link {
   display: inline-flex;
   justify-content: flex-end;
-  width: 337px;
+  width: 25%;
+}
+.footer-social-link ul {
+  display: flex;
 }
 .footer-social-link ul li {
   margin-left: 16px;
@@ -532,8 +563,14 @@ footer * {
   margin-bottom: 3px;
 }
 
+.footer-link {
+  margin-right: 10px;
+}
 .footer-link ul li {
   height: 32px;
+}
+.footer-link ul li a {
+  color: #fff;
 }
 .footer-link a:not(.footer-font, .footer-font li a) {
   font-size: 12px;
@@ -574,6 +611,11 @@ footer * {
   fill: #fff;
 }
 
+@media screen and (max-width: 788px) {
+  .footer-social-link ul {
+    flex-direction: column;
+  }
+}
 @font-face {
   font-family: Nike Futura;
   src: url("../assets/fonts/Nike-Futura.otf");

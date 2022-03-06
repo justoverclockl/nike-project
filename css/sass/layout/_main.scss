@@ -23,13 +23,22 @@
   background-color: #fff;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.items-img {
+  position: relative;
+  min-width: 300px;
+  min-height: 300px;
+  z-index: -1;
+
+  img {
+    object-fit: contain;
+  }
 }
 
-.items-img img {
-  width: unset;
+.items-wrap {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
 }
 
 .main-container {
@@ -155,7 +164,6 @@ img {
   display: flex;
   justify-content: space-between;
   margin-inline-start: calc(24px * 2);
-  margin-inline-end: calc(24px * 2 + 10px);
   overflow: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 30px;
@@ -173,8 +181,8 @@ img {
   }
 
   &::-webkit-scrollbar-track {
-    margin-inline-start: calc(24px - 4px);
-    margin-inline-end: calc(24px + 8px);
+    margin-inline-start: calc(18px - 4px);
+    margin-inline-end: calc(18px + 8px);
   }
 
   &::-webkit-scrollbar-corner {
@@ -194,11 +202,9 @@ img {
 }
 
 .container-items {
-  scroll-snap-align: start;
-}
-
-.container-items {
+  flex: 0 0 calc(33% - 18px);
   margin-right: 12px;
+  scroll-snap-align: start;
 }
 
 .sect-season {
@@ -224,13 +230,17 @@ img {
   padding-right: 6px;
 }
 
-.img-test {
+.image-media {
   min-height: 300px;
   object-position: 50% 50%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  max-width: 100%;
+}
+
+.full-picture {
+  width: 100%;
+  height: 100%;
 }
 
 .banner-inside {
