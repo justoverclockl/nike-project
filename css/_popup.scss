@@ -1,12 +1,4 @@
-.container-popup.open {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, .8);
-  z-index: 99999;
-}
+
 .container-popup {
   display: none;
   position: fixed;
@@ -16,6 +8,55 @@
   left: 0;
   background: rgba(0, 0, 0, .8);
   z-index: 99999;
+  animation: fadeIn ease .5s;
+  -webkit-animation: fadeIn ease .5s;
+  -moz-animation: fadeIn ease .5s;
+  -o-animation: fadeIn ease .5s;
+  -ms-animation: fadeIn ease .5s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
 .popup {
@@ -28,6 +69,7 @@
   bottom: 0;
   left: 0;
   margin: auto;
+
 
   .popup-close {
     padding: 0.5rem;
