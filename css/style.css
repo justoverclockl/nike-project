@@ -48,7 +48,7 @@
 
 .nav-menu {
   display: flex;
-  width: 100%;
+  width: 62%;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -60,11 +60,9 @@
 }
 
 .nav-inside-menu {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  position: absolute;
 }
 
 .desktop-menu {
@@ -110,13 +108,13 @@ button {
   position: absolute;
 }
 
-.btn svg {
-  width: 80%;
+.btn:nth-child(2) {
+  right: 0;
+  display: none;
 }
 
-.pre-clear-search {
-  display: none;
-  right: 0;
+.btn svg {
+  width: 80%;
 }
 
 .nav-logo {
@@ -149,6 +147,63 @@ button {
   text-decoration: underline;
 }
 
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1130px) {
+  .desktop-menu li:nth-child(6) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .desktop-menu li:nth-child(5) {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .brand-header {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .input-bar {
+    width: 0;
+  }
+
+  .search-bar {
+    position: relative;
+  }
+  .search-bar .btn {
+    position: inherit;
+  }
+
+  .favorite-product {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .desktop-search {
+    margin-left: 0;
+    margin-right: 0;
+    order: 2;
+  }
+
+  .header-button {
+    margin-left: auto;
+    order: 1;
+  }
+
+  .pad-header {
+    padding: 0 14px 0 16px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -194,19 +249,8 @@ footer {
   background-color: #fff;
 }
 
-.back-main-stick {
-  width: 100%;
-  height: 104px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
 .main-stick-nav {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  position: absolute;
   padding: 26px 0 34px;
   background-color: #fff;
 }
@@ -231,16 +275,17 @@ footer {
 .main-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .main-container h1 {
   font-size: 24px;
   font-weight: 500;
-  position: absolute;
-  left: 0;
 }
 
 .menu {
+  width: 64%;
   display: inline-flex;
 }
 
@@ -521,6 +566,37 @@ main {
   margin-bottom: 56px;
 }
 
+@media screen and (max-width: 960px) {
+  .main-stick-nav {
+    padding: 36px 0 24px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: auto;
+    width: 100%;
+  }
+  .main-container h1 {
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .main-container .menu {
+    width: 100%;
+  }
+  .main-container .menu li {
+    box-sizing: border-box;
+  }
+  .main-container .menu :nth-child(1) {
+    padding-left: 0;
+  }
+  .main-container .menu :nth-child(5) {
+    padding-right: 0;
+  }
+}
 footer {
   width: 100%;
   min-height: 200px;

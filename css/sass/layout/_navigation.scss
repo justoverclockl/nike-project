@@ -44,7 +44,7 @@
 
 .nav-menu {
   display: flex;
-  width: 100%;
+  width: 62%;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -56,11 +56,9 @@
 }
 
 .nav-inside-menu {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  position: absolute;
 }
 
 .desktop-menu {
@@ -106,13 +104,13 @@ button {
   position: absolute;
 }
 
-.btn svg {
-  width: 80%;
+.btn:nth-child(2) {
+  right: 0;
+  display: none;
 }
 
-.pre-clear-search {
-  display: none;
-  right: 0;
+.btn svg {
+  width: 80%;
 }
 
 .nav-logo {
@@ -144,5 +142,67 @@ button {
   a {
     font-size: 12px;
     text-decoration: underline;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and(max-width: 1130px) {
+  .desktop-menu {
+    li:nth-child(6) {
+      display: none;
+    }
+  }
+}
+@media screen and(max-width: 1050px) {
+  .desktop-menu {
+    li:nth-child(5) {
+      display: none;
+    }
+  }
+}
+
+@media screen and(max-width: 960px) {
+  .brand-header {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .input-bar {
+    width: 0;
+  }
+
+  .search-bar {
+    .btn {
+      position: inherit;
+    }
+    position: relative;
+  }
+
+  .favorite-product {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .desktop-search {
+    margin-left: 0;
+    margin-right: 0;
+    order: 2;
+  }
+  .header-button {
+    margin-left: auto;
+    order: 1;
+  }
+
+  .pad-header {
+    padding: 0 14px 0 16px;
   }
 }
