@@ -1,6 +1,7 @@
 $color-back: #E8E3E6;
 $color-a: black;
 $text-h2: 22px;
+$color-footer: #7e7e7e;
 
 @font-face {
     font-family: "Futura Condensed" ;
@@ -12,6 +13,7 @@ $text-h2: 22px;
 body {
     margin: 0;
     padding: 0;
+    font-family: "futura condensed";
     
 }
 
@@ -79,12 +81,25 @@ p {
         align-items: center;
 
         .conteiner-search {
-            padding-right: 15px;
+            border: solid;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            height: 28px;
+
+            #search-text {
+                border: none;
+                font-size: 11px;
+                list-style-type: none;
+            }
+
+
         }
 
         .conteiner-heart-badge {
-            .far {
+            .fav {
                 margin: 11px;
+                font-size: 24px;
             }
         }
     }
@@ -198,7 +213,7 @@ p {
     }
 
     .text-card {
-        font-size: 20px;
+        font-size: 17px;
         color: rgb(24, 22, 22)
     }
 }
@@ -261,6 +276,11 @@ p {
         overflow-x: scroll;
         display: flex;
         list-style-type: none;
+        
+        p {
+        font: -webkit-control;
+        font-size: 26px;
+        }
 
         .image-carousel {
             width: 28em;
@@ -346,10 +366,12 @@ p {
     font-size: 22px;
 
     .button-of-text {
-        width: 5em;
+        width: 6em;
+        height: 3em;
         border: solid;
-        border-radius: 12px;
-        background: $color-a;
+        border-radius: 22px;
+        background: black;
+        font-size: 16px;
     }
 
 
@@ -406,8 +428,10 @@ p {
 
     .ft-button {
         width: 7em;
+        height: 3em;
         border: solid;
-        border-radius: 12px;
+        border-radius: 24px;
+        font-size: 14px;
         background: black;
     }
 
@@ -415,6 +439,10 @@ p {
         color: white;
         text-decoration: none;
     }
+}
+
+#conteiner-footer {
+    padding-bottom: 3em;
 }
 
 #text-section-footer {
@@ -432,4 +460,69 @@ p {
     width: 30vw;
     margin: 10px;
 }
+.caption-card {
+    font-size: 22px;
+    margin: auto;
+    padding-left: 10px;
 
+    .title-card {
+        display: flex;
+        align-items: center;
+    }
+}
+
+footer {
+    background-color: $color-a;
+}
+
+.conteiner-footer-list {
+    display: flex;
+
+    .footer-list {
+        color: white;
+        list-style-type: none;
+        inline-size: 17em;
+        font-size: 11px;
+        padding-top: 12px;
+        margin-left: 3em;
+            li {
+                padding: 10px;
+            }
+
+        .text-mod-footer {
+            color: $color-footer;
+            &:hover {
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .footer-icon-list {
+        display: inline-flex;
+        text-align: center;
+        list-style-type: none;
+        padding-left: 12em;
+
+        .circle-svg {
+            &:hover {
+                color: transparent;
+                transition: 2ms;
+                cursor: pointer;
+            }
+
+        }
+
+
+        
+        
+        .fab {
+            margin: 9px;
+            background: $color-footer;
+            border-radius: 41%;
+            inline-size: 27px;
+            font-size: 25px;
+            
+        }
+    }
+}
