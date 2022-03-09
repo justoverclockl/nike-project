@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-  text-decoration: underline 5px #111111;
+  text-decoration: underline 5px;
 }
 
 p {
@@ -105,15 +105,6 @@ h3 {
 
 /* all sections */
 
-.card {
-  margin-right: 3rem;
-}
-
-.card > a {
-  font-weight: bold;
-  font-size: 16px;
-}
-
 section {
   display: flex;
   margin: 5rem 3rem;
@@ -123,6 +114,15 @@ section {
 
 section img {
   max-width: 100%;
+}
+
+.card {
+  margin-right: 3rem;
+}
+
+.card > a {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /* footer */
@@ -143,7 +143,7 @@ ul span {
 }
 
 ul li {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   padding: 13px;
 }
@@ -178,7 +178,8 @@ ul li {
   p,
   a,
   li {
-    font-size: 14px;
+    font-size: 17px;
+    line-height: 1.3;
   }
 
   header {
@@ -206,12 +207,14 @@ ul li {
   section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
 
   .card {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .copyright {
