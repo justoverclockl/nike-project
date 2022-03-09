@@ -239,13 +239,12 @@
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  text-align: left;
   word-wrap: break-word;
-  display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  left: 48px;
-  top: calc(66% - 48px);
+  margin-right: 10px;
+  left: 4%;
+  top: 59%;
 }
 
 .banner-shipment {
@@ -288,8 +287,10 @@
 
 .sect-category {
   display: flex;
-  justify-content: center;
   overflow: hidden;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
 
   .inside-category {
     max-width: 184px;
@@ -341,13 +342,14 @@ main {
     padding: 36px 0 24px;
   }
 
+  .sect-category .inside-category {
+    width: 15%;
+  }
+
   .main-container {
     flex-direction: column;
     flex-wrap: wrap;
     box-sizing: border-box;
-    white-space: nowrap;
-    overflow: auto;
-    width: 100%;
 
     h1 {
       margin-right: auto;
@@ -357,6 +359,13 @@ main {
 
     .menu {
       width: 100%;
+      white-space: nowrap;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
       li {
         box-sizing: border-box;
       }
@@ -367,5 +376,60 @@ main {
         padding-right: 0;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-container {
+    margin: 0 24px;
+  }
+
+  .banner-season {
+    display: block;
+    .banner-img:nth-child(1) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .mid-container {
+    margin: 0;
+  }
+
+  .center-text {
+    text-align: unset;
+  }
+
+  .text-container {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .trend-header {
+    padding-left: 24px;
+  }
+
+  .container-trend,
+  .center-text,
+  .sect-season {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .banner-inside:not(.season-caption) {
+    right: 4%;
+    height: 92%;
+  }
+
+  .title-margin,
+  .banner-shipment {
+    margin: 0;
+    top: 0;
+  }
+
+  .title-inside {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 24px 0 24px 0;
   }
 }
