@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "futura condensed";
+  background-color: white;
 }
 
 p {
@@ -404,13 +405,16 @@ p {
 }
 
 footer {
+  background-color: white;
+  margin-bottom: 2em;
+}
+footer #footer-conteiner {
   background-color: #111;
 }
-
-.conteiner-footer-list {
+footer #footer-conteiner .conteiner-footer-list {
   display: flex;
 }
-.conteiner-footer-list .footer-list {
+footer #footer-conteiner .conteiner-footer-list .footer-list {
   color: white;
   list-style-type: none;
   inline-size: 17em;
@@ -418,33 +422,86 @@ footer {
   padding-top: 12px;
   margin-left: 3em;
 }
-.conteiner-footer-list .footer-list li {
+footer #footer-conteiner .conteiner-footer-list .footer-list li {
   padding: 10px;
 }
-.conteiner-footer-list .footer-list .text-mod-footer {
+footer #footer-conteiner .conteiner-footer-list .footer-list .text-mod-footer {
   color: #7e7e7e;
 }
-.conteiner-footer-list .footer-list .text-mod-footer:hover {
+footer #footer-conteiner .conteiner-footer-list .footer-list .text-mod-footer:hover {
   color: white;
   cursor: pointer;
 }
-.conteiner-footer-list .footer-icon-list {
+footer #footer-conteiner .conteiner-footer-list .footer-icon-list {
   display: inline-flex;
   text-align: center;
   list-style-type: none;
   padding-left: 12em;
 }
-.conteiner-footer-list .footer-icon-list .circle-svg:hover {
+footer #footer-conteiner .conteiner-footer-list .footer-icon-list .circle-svg:hover {
   color: transparent;
   transition: 2ms;
   cursor: pointer;
 }
-.conteiner-footer-list .footer-icon-list .fab {
+footer #footer-conteiner .conteiner-footer-list .footer-icon-list .fab {
   margin: 9px;
   background: #7e7e7e;
   border-radius: 41%;
   inline-size: 27px;
   font-size: 25px;
+}
+footer #footer-conteiner .l-sub-footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer #footer-conteiner .l-sub-footer .sub-logo-footer {
+  padding-left: 6em;
+  font-size: 11px;
+}
+footer #footer-conteiner .l-sub-footer .sub-logo-footer .pointer-footer {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+}
+footer #footer-conteiner .l-sub-footer .sub-logo-footer .pointer-footer .pointer-logo {
+  font-size: 17px;
+  margin: 12px;
+}
+footer #footer-conteiner .l-sub-footer .sub-logo-footer .pointer-footer .text-it {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+}
+footer #footer-conteiner .l-sub-footer .sub-logo-footer .text-nike-inc {
+  color: #7e7e7e;
+  padding: 19px;
+  font-size: 10px;
+}
+footer #footer-conteiner .l-sub-footer .footer-text-list {
+  display: inline-flex;
+  text-align-last: end;
+  color: #7e7e7e;
+  flex-flow: wrap;
+  place-items: flex-end;
+  list-style-type: none;
+  font-size: 11px;
+  padding-left: 77em;
+}
+footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li {
+  padding: 15px;
+}
+footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li:hover {
+  cursor: pointer;
+  color: white;
+}
+footer #footer-conteiner .l-sub-footer .footer-text-list .first:first-child {
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li:last-child {
+  flex-basis: 100%;
+  height: 0;
+  padding-right: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
