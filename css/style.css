@@ -40,6 +40,10 @@ header {
   margin: 15px 5px 15px 5px;
 }
 
+.title-nike {
+  margin-left: 6rem;
+}
+
 .first-link {
   display: flex;
   flex-direction: row;
@@ -84,7 +88,6 @@ header {
   width: 50px;
 }
 
-/*prova nuovo metodo*/
 .list-link {
   width: 100%;
   display: flex;
@@ -117,6 +120,7 @@ header {
   flex-direction: column;
   top: 100px;
   border-bottom: none;
+  visibility: hidden;
 }
 .sub-menu li {
   width: 200px;
@@ -127,12 +131,6 @@ header {
 }
 .sub-menu li a:hover {
   background-color: #f35f5f;
-}
-
-.menu .has-children:hover .sub-menu {
-  transition: 0.5s;
-  visibility: visible;
-  opacity: 1;
 }
 
 .end-board {
@@ -169,7 +167,6 @@ header {
 }
 
 h2 {
-  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   margin-left: 90px;
@@ -198,6 +195,7 @@ button {
   width: 155px;
   height: 35px;
   margin: 1rem;
+  margin-left: 14rem;
 }
 button a {
   text-decoration: none;
@@ -210,12 +208,12 @@ button:hover {
 
 .download-app {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-p {
-  text-align: center;
-  font-size: 20px;
+.download-app .button {
+  display: flex;
+  justify-content: center;
 }
 
 .image1 {
@@ -223,28 +221,344 @@ p {
   justify-content: center;
 }
 
-.image2 {
+.we-run {
+  height: 90%;
+  width: 100%;
+}
+
+#container-img2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.we-run {
-  height: 80%;
-  width: 80%;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  padding-left: 13rem;
-}
-
-.title {
+.fig-werun {
   text-align: left;
+  line-height: 40px;
 }
 
 .first-par {
   text-align: left;
+  margin-left: 14rem;
+}
+
+.image3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image3 .run-blu {
+  width: 100%;
+}
+
+.image4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image4 .naples {
+  width: 100%;
+}
+
+#container-img5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15rem;
+}
+#container-img5 .gallery {
+  width: 1200px;
+  height: 900px;
+}
+
+.title {
+  text-align: left;
+  margin-left: 14rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+}
+.arrow .arrow-direction {
+  background-color: lightgray;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-left: 50px;
+}
+
+.carousel {
+  margin: 5px 0;
+}
+.carousel ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.carousel ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+h3.car-title {
+  text-align: left;
+  margin-left: 40px;
+}
+
+p.car-par {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.carousel-info {
+  margin-left: 40px;
+}
+
+.image-trhee {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 0px;
+  padding: 0;
+}
+
+.image-central {
+  display: flex;
+  justify-content: center;
+}
+
+.streccing {
+  width: 1000px;
+}
+
+.first-article p {
+  text-align: left;
+  margin-left: 20rem;
+}
+
+.title-art {
+  text-align: left;
+  margin-left: 20rem;
+}
+
+p {
+  text-align: left;
+  font-size: 23px;
+  margin-left: 14rem;
+}
+
+.title-os {
+  text-align: left;
+  margin-left: 14rem;
+}
+
+.second-article {
+  text-align: left;
+  margin-left: 5rem;
+}
+
+.list-article {
+  margin-left: 14rem;
+}
+.list-article li {
+  font-size: 23px;
+}
+
+.image-pink {
+  display: flex;
+  justify-content: center;
+}
+
+.run-pink {
+  width: 100%;
+}
+
+.third-article {
+  text-align: left;
+}
+.third-article h2.title-artic3 {
+  margin-left: 17rem;
+}
+.third-article h2.title-artic3 p {
+  margin-left: 14rem;
+}
+
+.image-girl {
+  display: flex;
+  justify-content: center;
+}
+
+.girl-run {
+  width: 100%;
+}
+
+.last-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.last-three img {
+  width: 450px;
+  margin-left: 40px;
+}
+
+.title-series {
+  margin-left: 5rem;
+}
+
+.para-series {
+  margin-left: 5rem;
+}
+
+.series-info {
+  margin-left: 5rem;
+}
+
+.total-footer {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list-footer1 {
+  margin-top: 50px;
+}
+.list-footer1 ul {
+  list-style-type: none;
+}
+.list-footer1 ul li {
+  margin: 1rem;
+}
+.list-footer1 ul li a {
+  color: white;
+  font-weight: 10px;
+}
+
+.list-footer2 {
+  margin-top: 50px;
+}
+.list-footer2 ul {
+  list-style-type: none;
+}
+.list-footer2 ul li {
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.list-footer2 ul li a {
+  color: lightgray;
+  font-weight: 10px;
+}
+.list-footer2 ul li a:hover {
+  color: white;
+}
+
+.list-footer3 {
+  margin-top: 50px;
+}
+.list-footer3 ul {
+  list-style-type: none;
+}
+.list-footer3 ul li {
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.list-footer3 ul li a {
+  color: lightgray;
+  font-weight: 10px;
+}
+.list-footer3 ul li a:hover {
+  color: white;
+}
+
+.list-footer4 {
+  margin-top: 50px;
+}
+.list-footer4 ul {
+  list-style-type: none;
+}
+.list-footer4 ul li {
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.list-footer4 ul li a {
+  color: lightgray;
+  font-weight: 10px;
+}
+.list-footer4 ul li a:hover {
+  color: white;
+}
+
+.icon-footer {
+  display: flex;
+  flex-direction: row;
+}
+.icon-footer div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin: 5px;
+}
+.icon-footer i {
+  margin: 5px;
+  background-color: lightgrey;
+  margin: 13px;
+}
+.icon-footer i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.down-list ul {
+  list-style-type: none;
+}
+.down-list ul li {
+  display: inline;
+  margin: 0;
+}
+.down-list ul li a {
+  color: white;
+  font-size: 8px;
+  margin: 5px;
+}
+
+.down-footer {
+  display: inline-flex;
+  margin-left: 300px;
+}
+.down-footer span {
+  color: white;
+  font-size: 10px;
+}
+.down-footer span a {
+  color: white;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
