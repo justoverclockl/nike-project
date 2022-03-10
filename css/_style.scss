@@ -1,4 +1,4 @@
-$color-back: #E8E3E6;
+$color-back: #f5f5f5;;
 $color-a: black;
 $text-h2: 22px;
 $color-footer: #7e7e7e;
@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "futura condensed";
+    background-color: white;
     
 }
 
@@ -24,7 +25,7 @@ p {
 .nav-head {
     display: flex;
     justify-content: space-between;
-    background-color: #E8E3E6;
+    background-color: $color-back;
     align-items: center;
     padding-left: 31px;
     height: 2em;
@@ -81,16 +82,22 @@ p {
         align-items: center;
 
         .conteiner-search {
-            border: solid;
             border-radius: 12px;
             display: flex;
             align-items: center;
             height: 28px;
+            background: $color-back;
+
+            input:focus{
+                outline: none;
+                
+            }
 
             #search-text {
                 border: none;
                 font-size: 11px;
                 list-style-type: none;
+                background: $color-back;
             }
 
 
@@ -472,7 +479,7 @@ p {
 }
 
 footer {
-    background-color: $color-a;
+    background-color: #111;
 }
 
 .conteiner-footer-list {
