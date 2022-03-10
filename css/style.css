@@ -85,17 +85,32 @@
 }
 
 .input-bar {
+  outline: none;
   border: none;
+  text-indent: 25%;
   border-radius: 25px;
   width: 100%;
   height: 40px;
   background-color: #f5f5f5;
 }
-
+.input-bar:hover {
+  background-color: #e5e5e5;
+}
+.input-bar:hover::placeholder {
+  color: #7e7e7e;
+}
+.input-bar:not(:placeholder-shown) + .btn:nth-child(2) {
+  display: block;
+}
 .input-bar::placeholder {
   color: #d8cfcc;
   font-size: 16px;
-  padding: 8px 48px;
+  padding: 8px 0;
+}
+.input-bar::-webkit-search-cancel-button {
+  opacity: 0;
+  padding: 10px;
+  z-index: 2;
 }
 
 button {
@@ -107,22 +122,24 @@ button {
   padding: 5px;
   position: absolute;
 }
-
+.btn svg {
+  width: 80%;
+}
 .btn:nth-child(2) {
   right: 0;
   display: none;
-}
-
-.btn svg {
-  width: 80%;
 }
 
 .nav-logo {
   padding: 0 12px;
 }
 
-.pad-product {
+.pad-product svg {
   padding: 6px;
+  border-radius: 25px;
+}
+.pad-product svg:hover {
+  background-color: #e5e5e5;
 }
 
 .favorite-product {
@@ -130,7 +147,6 @@ button {
 }
 
 .banner-text {
-  height: auto;
   min-height: 58px;
   max-height: 63px;
   box-shadow: inset 0 -1px 0 0 #e5e5e5;
@@ -225,6 +241,9 @@ a {
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
+}
+a:hover {
+  color: #757575;
 }
 
 .separator {
@@ -337,6 +356,10 @@ footer {
   font-size: 16px;
   line-height: 24px;
   border-radius: 30px;
+}
+.buy-btn:hover {
+  color: #fff;
+  background-color: #757575;
 }
 
 .sect-trend {
@@ -530,7 +553,7 @@ footer {
 }
 .sect-category .inside-category {
   max-width: 184px;
-  max-height: 192px;
+  max-height: 177px;
   padding: 0 36px 0 36px;
   transition: max-height 0.5s ease-in-out;
 }
@@ -655,6 +678,23 @@ main {
     line-height: 24px;
     margin: 24px 0 24px 0;
   }
+
+  .sect-category {
+    flex-direction: column;
+    overflow: unset;
+  }
+  .sect-category .inside-category {
+    width: unset;
+    max-height: 0px;
+    max-width: unset;
+    padding: 24px 20px;
+  }
+  .sect-category .inside-category ul {
+    max-height: 0px;
+  }
+  .sect-category .inside-category li:not(:nth-child(1)) {
+    max-height: 0px;
+  }
 }
 footer {
   width: 100%;
@@ -692,6 +732,10 @@ footer {
 .footer-social-link ul li a svg {
   fill: #7e7e7e;
 }
+.footer-social-link ul li a svg:hover {
+  transition: 0.3s ease;
+  fill: #fff;
+}
 
 .footer-font {
   font-family: Nike TG;
@@ -716,6 +760,9 @@ footer {
   line-height: 2.3;
   font-weight: 400;
   color: #7e7e7e;
+}
+.footer-link a:not(.footer-font, .footer-font li a):hover {
+  color: #fff;
 }
 
 .footer-guide {

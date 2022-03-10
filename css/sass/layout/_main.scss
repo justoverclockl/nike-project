@@ -95,6 +95,11 @@
   font-size: 16px;
   line-height: 24px;
   border-radius: 30px;
+
+  &:hover {
+    color: #fff;
+    background-color: #757575;
+  }
 }
 
 .sect-trend {
@@ -294,7 +299,7 @@
 
   .inside-category {
     max-width: 184px;
-    max-height: 192px;
+    max-height: 177px;
     padding: 0 36px 0 36px;
     transition: max-height 0.5s ease-in-out;
   }
@@ -431,5 +436,25 @@ main {
     font-size: 16px;
     line-height: 24px;
     margin: 24px 0 24px 0;
+  }
+
+  .sect-category {
+    flex-direction: column;
+    overflow: unset;
+
+    .inside-category {
+      width: unset;
+      max-height: 0px;
+      max-width: unset;
+      padding: 24px 20px;
+
+      ul {
+        max-height: 0px;
+      }
+
+      li:not(:nth-child(1)) {
+        max-height: 0px;
+      }
+    }
   }
 }

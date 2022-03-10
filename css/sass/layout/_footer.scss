@@ -34,6 +34,10 @@ footer {
 
   ul li a svg {
     fill: #7e7e7e;
+    &:hover {
+      transition: 0.3s ease;
+      fill: #fff;
+    }
   }
 }
 
@@ -62,6 +66,10 @@ footer {
     line-height: 2.3;
     font-weight: 400;
     color: #7e7e7e;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -200,8 +208,6 @@ hr {
     }
 
     &:focus {
-      &::after {
-      }
       ~ li {
         opacity: 1;
         animation: linearHeight 0.3s forwards;
