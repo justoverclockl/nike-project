@@ -40,9 +40,9 @@
                 <img class="nike-logo-popup" src="assets/nike-icon.svg" alt="nike logo" width="60">
             </picture>
         </div>
-        <div class="popup-text">IL TUO ACCOUNT PER ACCEDERE AL MONDO NIKE</div>
-        <div class="form-popup">
-            <form autocomplete="off" onsubmit="submitRegistration();">
+        <div class="popup-text" id="popup-text">IL TUO ACCOUNT PER ACCEDERE AL MONDO NIKE</div>
+        <div class="form-popup" id="form-popup">
+            <form id="loginform" method="post" onclick="new Login();" autocomplete="off">
                 <input type="email" name="email" id="email" placeholder="Indirizzo E-Mail" required>
                 <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 <div class="privacy-popup">Effettuando l'accesso, accetti la Politica sulla privacy e i Termini di utilizzo di
@@ -82,12 +82,12 @@
             </div>
             <div class="sub-navbar-links">
                 <ul>
-                    <li>Novità</li>
-                    <li>Uomo</li>
-                    <li>Donna</li>
-                    <li>Bambino</li>
-                    <li>Outlet</li>
-                    <li>Collezioni</li>
+                    <li id="novita">Novità</li>
+                    <li id="uomo">Uomo</li>
+                    <li id="donna">Donna</li>
+                    <li id="bambino">Bambino</li>
+                    <li id="outlet">Outlet</li>
+                    <li id="collezioni">Collezioni</li>
                 </ul>
             </div>
 

@@ -27,7 +27,7 @@ prev.addEventListener('click', () => {
     });
 });
 
-// popup per registrazione e array per gli input
+// popup per registrazione
 
 const login = document.getElementById('accedi');
 login.addEventListener('click', () => {
@@ -38,16 +38,42 @@ closePopup.addEventListener('click', () => {
     const popupEl = document.getElementById('popup').style.display = "none";
 })
 
-function submitRegistration() {
-    const loginEmail = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    let savedData = [];
-    if (loginEmail !== '' && password !== '') {
-        savedData.push(loginEmail, password);
-        console.log(savedData)
-    }
-    return savedData;
+// classe per il modulo login
+let newUser = [];
 
+class Login {
+    constructor(email, password) {
+        this.email = email
+        this.password = password
+    }
+
+    toJson() {
+        return JSON.stringify(this)
+    }
+
+    displayLoginMessage() {
+        return `Grazie per esserti registrato. La tua email è ${this.email}`
+    }
+
+    static fromJson(json) {
+        return JSON.parse(json)
+    }
 }
 
 
+function addUser(e) {
+    e.preventDefault()
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const popup = document.getElementById('popup-text');
+    const loginForm = document.getElementById('loginform')
+    const userNew = new Login(email, password)
+    newUser.push(userNew)
+    console.log(newUser)
+    loginForm.setAttribute('style', 'display:none !important');
+    popup.innerHTML = userNew.displayLoginMessage()
+}
+
+
+const submitButton = document.getElementById('login');
+submitButton.addEventListener('click', addUser)

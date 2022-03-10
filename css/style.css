@@ -50,6 +50,7 @@
 }
 .sub-nabvar-container .sub-navbar-links > ul li {
   margin-inline: 0.8rem;
+  cursor: pointer;
 }
 
 .sub-navbar-right {
