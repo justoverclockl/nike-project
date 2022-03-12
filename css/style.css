@@ -162,6 +162,7 @@ p {
 .conteiner {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding-top: 5em;
 }
 .conteiner .image-card {
@@ -414,6 +415,9 @@ footer #footer-conteiner {
 footer #footer-conteiner .conteiner-footer-list {
   display: flex;
 }
+footer #footer-conteiner .conteiner-footer-list .conteiner-list-footer-text {
+  display: flex;
+}
 footer #footer-conteiner .conteiner-footer-list .footer-list {
   color: white;
   list-style-type: none;
@@ -436,7 +440,6 @@ footer #footer-conteiner .conteiner-footer-list .footer-icon-list {
   display: inline-flex;
   text-align: center;
   list-style-type: none;
-  padding-left: 12em;
 }
 footer #footer-conteiner .conteiner-footer-list .footer-icon-list .circle-svg:hover {
   color: transparent;
@@ -452,7 +455,11 @@ footer #footer-conteiner .conteiner-footer-list .footer-icon-list .fab {
 }
 footer #footer-conteiner .l-sub-footer {
   display: flex;
-  flex-direction: column-reverse;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+footer #footer-conteiner .l-sub-footer .sub-footer-a {
+  min-inline-size: fit-content;
 }
 footer #footer-conteiner .l-sub-footer .sub-logo-footer {
   padding-left: 6em;
@@ -485,7 +492,6 @@ footer #footer-conteiner .l-sub-footer .footer-text-list {
   place-items: flex-end;
   list-style-type: none;
   font-size: 11px;
-  padding-left: 77em;
 }
 footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li {
   padding: 15px;
@@ -502,6 +508,72 @@ footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li:last-child {
   flex-basis: 100%;
   height: 0;
   padding-right: 35px;
+}
+
+@media screen and (max-width: 954px) {
+  .nav-head {
+    display: none;
+  }
+
+  .conteiner-two {
+    display: none;
+  }
+
+  .conteiner-three {
+    flex-direction: row-reverse;
+  }
+
+  i.fav.far.fa-heart {
+    display: none;
+  }
+
+  .conteiner-text {
+    padding-left: 0;
+  }
+
+  .text-training {
+    padding-left: 0em;
+  }
+
+  .training-club {
+    padding-left: 0em;
+  }
+
+  .text-plan {
+    padding-left: 0em;
+  }
+
+  .text-train {
+    padding-left: 0em;
+  }
+
+  #list-for-app {
+    padding-left: 0em;
+  }
+
+  .text-training-club {
+    padding-left: 0em;
+  }
+
+  #text-finish-line {
+    padding-left: 0em;
+  }
+
+  #text-finish-line {
+    padding-left: 0em;
+  }
+
+  #text-footer {
+    padding-left: 0em;
+  }
+
+  .text-final-footer {
+    padding-left: 0em;
+  }
+
+  #text-club {
+    padding-left: 0em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

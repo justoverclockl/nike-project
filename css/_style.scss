@@ -207,6 +207,7 @@ p {
 .conteiner {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 5em;
 
     .image-card {
@@ -488,55 +489,64 @@ footer {
         .conteiner-footer-list {
             display: flex;
             
-            .footer-list {
-                color: white;
-                list-style-type: none;
-                inline-size: 17em;
-                font-size: 11px;
-                padding-top: 12px;
-                margin-left: 3em;
-                li {
-                    padding: 10px;
-                }
-                
-                .text-mod-footer {
-                    color: $color-footer;
-                    &:hover {
-                        color: white;
-                        cursor: pointer;
-                    }
-                }
+            .conteiner-list-footer-text {
+                display: flex;
             }
-            
-            .footer-icon-list {
-                display: inline-flex;
-                text-align: center;
-                list-style-type: none;
-                padding-left: 12em;
                 
-                .circle-svg {
-                    &:hover {
-                        color: transparent;
-                        transition: 2ms;
-                        cursor: pointer;
+                .footer-list {
+                    color: white;
+                    list-style-type: none;
+                    inline-size: 17em;
+                    font-size: 11px;
+                    padding-top: 12px;
+                    margin-left: 3em;
+                    li {
+                        padding: 10px;
                     }
                     
+                    .text-mod-footer {
+                        color: $color-footer;
+                        &:hover {
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
                 }
                 
-                .fab {
-                    margin: 9px;
-                    background: $color-footer;
-                    border-radius: 41%;
-                    inline-size: 27px;
-                    font-size: 25px;
+                .footer-icon-list {
+                    display: inline-flex;
+                    text-align: center;
+                    list-style-type: none;
                     
+                    
+                    .circle-svg {
+                        &:hover {
+                            color: transparent;
+                            transition: 2ms;
+                            cursor: pointer;
+                        }
+                        
+                    }
+                    
+                    .fab {
+                        margin: 9px;
+                        background: $color-footer;
+                        border-radius: 41%;
+                        inline-size: 27px;
+                        font-size: 25px;
+                        
+                    }
                 }
-            }
         }
         
         .l-sub-footer {
             display: flex;
-            flex-direction: column-reverse;
+            align-items: baseline;
+            flex-wrap: wrap;
+
+            .sub-footer-a {
+                min-inline-size: fit-content;
+            }
             
             .sub-logo-footer {
                 padding-left: 6em;
@@ -577,7 +587,7 @@ footer {
                 place-items: flex-end;
                 list-style-type: none;
                 font-size: 11px;
-                padding-left: 77em;
+                
                 
                 
                 .ft-li {
@@ -602,5 +612,75 @@ footer {
                 
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 954px) {
+
+    .nav-head {
+        display: none;
+    }
+
+    .conteiner-two {
+        display: none;
+    }
+
+    .conteiner-three {
+        flex-direction: row-reverse;
+    }
+
+    i.fav.far.fa-heart {
+        display: none;
+    }
+
+    .conteiner-text {
+        padding-left: 0;
+    }
+
+    .text-training {
+        padding-left: 0em;
+        
+    }
+
+    .training-club {
+        padding-left: 0em;
+    }
+
+    .text-plan {
+        padding-left: 0em;
+    }
+
+    .text-train {
+        padding-left: 0em;
+    }
+
+    #list-for-app {
+        padding-left: 0em;
+
+    }
+
+    .text-training-club {
+        padding-left: 0em;
+    }
+
+    #text-finish-line {
+        padding-left: 0em;
+    }
+
+    #text-finish-line {
+        padding-left: 0em;
+    }
+
+    #text-footer {
+        padding-left: 0em;
+    }
+
+    .text-final-footer {
+        padding-left: 0em;
+    }
+
+    #text-club {
+        padding-left: 0em;
     }
 }
