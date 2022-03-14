@@ -98,11 +98,11 @@ p {
 .conteiner-text {
   display: flex;
   flex-direction: column;
-  padding-left: 13em;
+  padding-left: 10em;
   padding-top: 3em;
 }
 .conteiner-text .text {
-  font-size: 22px;
+  font-size: 17px;
 }
 .conteiner-text .conteiner-button {
   padding-top: 10px;
@@ -127,9 +127,9 @@ p {
 .text-training {
   display: flex;
   flex-direction: column;
-  padding-left: 13em;
+  padding-left: 10em;
   padding-top: 3em;
-  font-size: 22px;
+  font-size: 17px;
 }
 .text-training .head-text-training .text-link {
   color: black;
@@ -154,8 +154,8 @@ p {
 }
 
 .training-club {
-  font-size: 22px;
-  padding-left: 13em;
+  font-size: 17px;
+  padding-left: 10em;
   padding-top: 3em;
 }
 
@@ -170,7 +170,7 @@ p {
   margin: 10px;
 }
 .conteiner .title-card {
-  font-size: 22px;
+  font-size: 17px;
   color: #181616;
 }
 .conteiner .text-card {
@@ -190,9 +190,9 @@ p {
 .text-plan {
   flex-direction: column;
   padding-top: 4em;
-  padding-left: 13em;
+  padding-left: 10em;
   width: 69vw;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .image-fit-second {
@@ -207,9 +207,9 @@ p {
 .text-train {
   display: flex;
   flex-direction: column;
-  font-size: 22px;
+  font-size: 17px;
   padding-top: 4em;
-  padding-left: 13em;
+  padding-left: 10em;
   width: 69vw;
 }
 
@@ -253,9 +253,9 @@ p {
 #list-for-app {
   display: flex;
   flex-direction: column;
-  font-size: 22px;
+  font-size: 17px;
   padding-top: 4em;
-  padding-left: 13em;
+  padding-left: 10em;
 }
 
 #image-center-seven {
@@ -269,10 +269,10 @@ p {
 
 .text-training-club {
   display: block;
-  padding-left: 14em;
+  padding-left: 10em;
   line-height: 23px;
   padding-top: 3em;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 #image-center-eight {
@@ -285,9 +285,9 @@ p {
 }
 
 #text-finish-line {
-  padding-left: 13em;
-  line-height: 24px;
-  font-size: 22px;
+  padding-left: 10em;
+  line-height: 38px;
+  font-size: 17px;
   padding-top: 3em;
 }
 
@@ -304,7 +304,7 @@ p {
 #text-club {
   display: flex;
   flex-direction: column;
-  padding-left: 11em;
+  padding-left: 10em;
   line-height: 21px;
   padding-top: 4em;
   font-size: 22px;
@@ -341,9 +341,9 @@ p {
 #text-footer {
   display: flex;
   flex-direction: column;
-  padding-left: 13em;
+  padding-left: 10em;
   padding-top: 4em;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 #image-center-footer {
@@ -358,8 +358,8 @@ p {
 .text-final-footer {
   display: flex;
   flex-direction: column;
-  padding-left: 12em;
-  font-size: 22px;
+  padding-left: 10em;
+  font-size: 17px;
   padding-top: 4em;
 }
 .text-final-footer .ft-button {
@@ -380,8 +380,8 @@ p {
 }
 
 #text-section-footer {
-  font-size: 22px;
-  padding-left: 2em;
+  font-size: 17px;
+  padding-left: 10em;
   padding-top: 3em;
 }
 
@@ -440,6 +440,7 @@ footer #footer-conteiner .conteiner-footer-list .footer-icon-list {
   display: inline-flex;
   text-align: center;
   list-style-type: none;
+  padding-left: 14em;
 }
 footer #footer-conteiner .conteiner-footer-list .footer-icon-list .circle-svg:hover {
   color: transparent;
@@ -456,7 +457,6 @@ footer #footer-conteiner .conteiner-footer-list .footer-icon-list .fab {
 footer #footer-conteiner .l-sub-footer {
   display: flex;
   align-items: baseline;
-  flex-wrap: wrap;
 }
 footer #footer-conteiner .l-sub-footer .sub-footer-a {
   min-inline-size: fit-content;
@@ -492,6 +492,8 @@ footer #footer-conteiner .l-sub-footer .footer-text-list {
   place-items: flex-end;
   list-style-type: none;
   font-size: 11px;
+  padding-left: 41em;
+  padding-bottom: 3em;
 }
 footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li {
   padding: 15px;
@@ -507,7 +509,7 @@ footer #footer-conteiner .l-sub-footer .footer-text-list .first:first-child {
 footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li:last-child {
   flex-basis: 100%;
   height: 0;
-  padding-right: 35px;
+  padding-right: 6em;
 }
 
 @media screen and (max-width: 954px) {

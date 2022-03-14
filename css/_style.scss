@@ -1,6 +1,6 @@
 $color-back: #f5f5f5;;
 $color-a: black;
-$text-h2: 22px;
+$text-h2: 17px;
 $color-footer: #7e7e7e;
 
 @font-face {
@@ -128,7 +128,7 @@ p {
 .conteiner-text {
     display: flex;
     flex-direction: column;
-    padding-left: 13em;
+    padding-left: 10em;
     padding-top: 3em;
 
     .text {
@@ -162,7 +162,7 @@ p {
 .text-training {
     display: flex;
     flex-direction: column;
-    padding-left: 13em;
+    padding-left: 10em;
     padding-top: 3em;
     font-size: $text-h2;
 
@@ -200,7 +200,7 @@ p {
 
 .training-club {
     font-size: $text-h2;
-    padding-left: 13em;
+    padding-left: 10em;
     padding-top: 3em;
 }
 
@@ -239,7 +239,7 @@ p {
 .text-plan {
     flex-direction: column;
     padding-top: 4em;
-    padding-left: 13em;
+    padding-left: 10em;
     width: 69vw;
     font-size: $text-h2;
 }
@@ -259,7 +259,7 @@ p {
     flex-direction: column;
     font-size: $text-h2;
     padding-top: 4em;
-    padding-left: 13em;
+    padding-left: 10em;
     width: 69vw;
 }
 
@@ -312,7 +312,7 @@ p {
     flex-direction: column;
     font-size: $text-h2;
     padding-top: 4em;
-    padding-left: 13em;
+    padding-left: 10em;
 
 }
 
@@ -329,7 +329,7 @@ p {
 
 .text-training-club {
     display: block;
-    padding-left: 14em;
+    padding-left: 10em;
     line-height: 23px;
     padding-top: 3em;
     font-size: $text-h2;
@@ -348,8 +348,8 @@ p {
 }
 
 #text-finish-line {
-    padding-left: 13em;
-    line-height: 24px;
+    padding-left: 10em;
+    line-height: 38px;
     font-size: $text-h2;
     padding-top: 3em;
 }
@@ -368,7 +368,7 @@ p {
 #text-club {
     display: flex;
     flex-direction: column;
-    padding-left: 11em;
+    padding-left: 10em;
     line-height: 21px;
     padding-top: 4em;
     font-size: 22px;
@@ -412,7 +412,7 @@ p {
 #text-footer {
     display: flex;
     flex-direction: column;
-    padding-left: 13em;
+    padding-left: 10em;
     padding-top: 4em;
     font-size: $text-h2;
 }
@@ -430,7 +430,7 @@ p {
 .text-final-footer {
     display: flex;
     flex-direction: column;
-    padding-left: 12em;
+    padding-left: 10em;
     font-size: $text-h2;
     padding-top: 4em;
 
@@ -455,7 +455,7 @@ p {
 
 #text-section-footer {
     font-size: $text-h2;
-    padding-left: 2em;
+    padding-left: 10em;
     padding-top: 3em;
 }
 
@@ -517,6 +517,7 @@ footer {
                     display: inline-flex;
                     text-align: center;
                     list-style-type: none;
+                    padding-left: 14em;
                     
                     
                     .circle-svg {
@@ -542,7 +543,7 @@ footer {
         .l-sub-footer {
             display: flex;
             align-items: baseline;
-            flex-wrap: wrap;
+            
 
             .sub-footer-a {
                 min-inline-size: fit-content;
@@ -587,6 +588,8 @@ footer {
                 place-items: flex-end;
                 list-style-type: none;
                 font-size: 11px;
+                padding-left: 41em;
+                padding-bottom: 3em;
                 
                 
                 
@@ -604,9 +607,9 @@ footer {
                 }
 
                 .ft-li:last-child {
-                     flex-basis: 100%;
+                    flex-basis: 100%;
                     height: 0;
-                    padding-right: 35px;
+                    padding-right: 6em;
                 }
             
                 
