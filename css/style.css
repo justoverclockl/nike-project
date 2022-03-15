@@ -464,6 +464,8 @@ footer #footer-conteiner .conteiner-footer-list .footer-icon-list .fab {
 footer #footer-conteiner .l-sub-footer {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
+  text-align-last: right;
 }
 footer #footer-conteiner .l-sub-footer .sub-footer-a {
   min-inline-size: fit-content;

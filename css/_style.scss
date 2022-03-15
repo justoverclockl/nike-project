@@ -552,6 +552,8 @@ footer {
         .l-sub-footer {
             display: flex;
             align-items: baseline;
+            flex-wrap: wrap;
+            text-align-last: right;
             
 
             .sub-footer-a {
