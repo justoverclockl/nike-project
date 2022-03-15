@@ -7,6 +7,7 @@ body {
 
 p {
   line-height: 34px;
+  font-size: 20px;
 }
 
 .nav-head {
@@ -225,6 +226,17 @@ p {
   width: 4em;
   margin: 3px;
 }
+.conteiner-carousel ::-webkit-scrollbar {
+  width: 0.5em;
+}
+.conteiner-carousel ::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 0.5em;
+}
+.conteiner-carousel ::-webkit-scrollbar-thumb {
+  background: #f5f5f5;
+  border-radius: 100vw;
+}
 .conteiner-carousel .carousel-list {
   overflow-x: scroll;
   display: flex;
@@ -234,7 +246,9 @@ p {
 }
 .conteiner-carousel .carousel-list p {
   font: -webkit-control;
-  font-size: 26px;
+  line-height: 23px;
+  font-size: x-large;
+  font-family: arial;
 }
 .conteiner-carousel .carousel-list .image-carousel {
   width: 28em;
@@ -381,8 +395,8 @@ p {
 
 #text-section-footer {
   font-size: 17px;
-  padding-left: 10em;
-  padding-top: 3em;
+  padding-left: 1em;
+  padding-top: 6em;
 }
 
 .cards-footer {

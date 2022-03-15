@@ -14,6 +14,7 @@ body {
 
 p {
     line-height: 34px;
+    font-size: 20px;
 }
 
 .nav-head {
@@ -276,7 +277,18 @@ p {
             margin: 3px;
         }
     }
-
+    
+    ::-webkit-scrollbar {
+        width: .5em;
+      }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        margin-block: .5em;
+      }
+    ::-webkit-scrollbar-thumb {
+        background: $color-back;
+        border-radius: 100vw;
+    }
     .carousel-list {
         overflow-x: scroll;
         display: flex;
@@ -286,7 +298,9 @@ p {
         
         p {
         font: -webkit-control;
-        font-size: 26px;
+        line-height: 23px;
+        font-size: x-large;
+        font-family: arial;
         }
 
         .image-carousel {
@@ -454,8 +468,8 @@ p {
 
 #text-section-footer {
     font-size: $text-h2;
-    padding-left: 10em;
-    padding-top: 3em;
+    padding-left: 1em;
+    padding-top: 6em;
 }
 
 .cards-footer {
@@ -690,3 +704,7 @@ footer {
         padding-left: 0em;
     }
 }
+
+// @media screen and {max-width: 840px) ;
+    
+// }
