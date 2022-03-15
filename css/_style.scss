@@ -287,6 +287,8 @@ p {
         overflow-x: scroll;
         display: flex;
         list-style-type: none;
+        margin-inline-start: 48px;
+        overflow: auto;
         
         p {
         font: -webkit-control;
@@ -486,6 +488,8 @@ p {
 footer {
     background-color: white;
     margin-bottom: 2em;
+    width: 100%;
+    min-height: 200px;
     
     #footer-conteiner {
         background-color: #111;

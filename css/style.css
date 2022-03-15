@@ -168,7 +168,7 @@ p {
   padding: 9px;
 }
 .conteiner .card .image-card {
-  margin: 10px;
+  margin: 0px;
   max-width: 100%;
 }
 .conteiner .card .title-card {
@@ -233,6 +233,8 @@ p {
   overflow-x: scroll;
   display: flex;
   list-style-type: none;
+  margin-inline-start: 48px;
+  overflow: auto;
 }
 .conteiner-carousel .carousel-list p {
   font: -webkit-control;
@@ -410,6 +412,8 @@ p {
 footer {
   background-color: white;
   margin-bottom: 2em;
+  width: 100%;
+  min-height: 200px;
 }
 footer #footer-conteiner {
   background-color: #111;
