@@ -207,25 +207,28 @@ p {
 .conteiner {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     padding-top: 5em;
 
-    .image-card {
-        height: 77vh;
-        margin: 10px;
-    }
-
-    .title-card {
-        font-size: $text-h2;
-        color: rgb(24, 22, 22)
-    }
-
-    .text-card {
-        font-size: 17px;
-        color: rgb(24, 22, 22)
+    .card {
+        padding: 9px;
+        
+        .image-card {
+            margin: 0px;
+            max-width: 100%;
+        }
+        
+        .title-card {
+            font-size: $text-h2;
+            color: rgb(24, 22, 22)
+        }
+        
+        .text-card {
+            font-size: 17px;
+            color: rgb(24, 22, 22)
+        }
     }
 }
-
+    
 .image-fit-center {
     display: flex;
     justify-content: center;
@@ -467,6 +470,7 @@ p {
 .image-card-footer {
     width: 30vw;
     margin: 10px;
+    
 }
 .caption-card {
     font-size: 22px;

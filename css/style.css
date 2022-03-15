@@ -162,18 +162,20 @@ p {
 .conteiner {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   padding-top: 5em;
 }
-.conteiner .image-card {
-  height: 77vh;
-  margin: 10px;
+.conteiner .card {
+  padding: 9px;
 }
-.conteiner .title-card {
+.conteiner .card .image-card {
+  margin: 10px;
+  max-width: 100%;
+}
+.conteiner .card .title-card {
   font-size: 17px;
   color: #181616;
 }
-.conteiner .text-card {
+.conteiner .card .text-card {
   font-size: 17px;
   color: #181616;
 }
