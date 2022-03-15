@@ -3,6 +3,7 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -221,6 +222,10 @@ button:hover {
   justify-content: center;
 }
 
+#yellow {
+  width: 60vw;
+}
+
 .we-run {
   height: 90%;
   width: 100%;
@@ -267,8 +272,7 @@ button:hover {
   margin-left: 15rem;
 }
 #container-img5 .gallery {
-  width: 1200px;
-  height: 900px;
+  width: 60vw;
 }
 
 .title {
@@ -559,6 +563,37 @@ p {
 .down-footer span a {
   color: white;
   font-size: 15px;
+}
+
+@media screen and (max-width: 950px) {
+  .menu {
+    display: none;
+  }
+
+  #search {
+    display: none;
+  }
+
+  .paragraph-app {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #yellow {
+    max-width: 100%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .gallery {
+    max-width: 100%;
+  }
+
+  .streccing {
+    width: 60vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
