@@ -499,6 +499,7 @@ footer {
             
             .conteiner-list-footer-text {
                 display: flex;
+                flex-wrap: wrap;
             }
                 
                 .footer-list {
@@ -525,7 +526,7 @@ footer {
                     display: inline-flex;
                     text-align: center;
                     list-style-type: none;
-                    padding-left: 14em;
+                    flex-wrap: wrap;
                     
                     
                     .circle-svg {
@@ -596,8 +597,6 @@ footer {
                 place-items: flex-end;
                 list-style-type: none;
                 font-size: 11px;
-                padding-left: 41em;
-                padding-bottom: 3em;
                 
                 
                 

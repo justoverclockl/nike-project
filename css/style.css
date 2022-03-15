@@ -423,6 +423,7 @@ footer #footer-conteiner .conteiner-footer-list {
 }
 footer #footer-conteiner .conteiner-footer-list .conteiner-list-footer-text {
   display: flex;
+  flex-wrap: wrap;
 }
 footer #footer-conteiner .conteiner-footer-list .footer-list {
   color: white;
@@ -446,7 +447,7 @@ footer #footer-conteiner .conteiner-footer-list .footer-icon-list {
   display: inline-flex;
   text-align: center;
   list-style-type: none;
-  padding-left: 14em;
+  flex-wrap: wrap;
 }
 footer #footer-conteiner .conteiner-footer-list .footer-icon-list .circle-svg:hover {
   color: transparent;
@@ -498,8 +499,6 @@ footer #footer-conteiner .l-sub-footer .footer-text-list {
   place-items: flex-end;
   list-style-type: none;
   font-size: 11px;
-  padding-left: 41em;
-  padding-bottom: 3em;
 }
 footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li {
   padding: 15px;
