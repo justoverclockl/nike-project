@@ -471,59 +471,55 @@ footer #footer-conteiner .conteiner-footer-list .footer-icon-list .fab {
   inline-size: 27px;
   font-size: 25px;
 }
-footer #footer-conteiner .l-sub-footer {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  text-align-last: right;
-}
-footer #footer-conteiner .l-sub-footer .sub-footer-a {
+footer #footer-conteiner .sub-footer-a {
   min-inline-size: fit-content;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-footer #footer-conteiner .l-sub-footer .sub-logo-footer {
-  padding-left: 6em;
+footer #footer-conteiner .sub-logo-footer {
   font-size: 11px;
 }
-footer #footer-conteiner .l-sub-footer .sub-logo-footer .pointer-footer {
+footer #footer-conteiner .sub-logo-footer .pointer-footer {
   text-decoration: none;
   color: white;
   font-size: 11px;
 }
-footer #footer-conteiner .l-sub-footer .sub-logo-footer .pointer-footer .pointer-logo {
+footer #footer-conteiner .sub-logo-footer .pointer-footer .pointer-logo {
   font-size: 17px;
   margin: 12px;
 }
-footer #footer-conteiner .l-sub-footer .sub-logo-footer .pointer-footer .text-it {
+footer #footer-conteiner .sub-logo-footer .pointer-footer .text-it {
   text-decoration: none;
   color: white;
   font-size: 11px;
 }
-footer #footer-conteiner .l-sub-footer .sub-logo-footer .text-nike-inc {
+footer #footer-conteiner .sub-logo-footer .text-nike-inc {
   color: #7e7e7e;
   padding: 19px;
   font-size: 10px;
 }
-footer #footer-conteiner .l-sub-footer .footer-text-list {
-  display: inline-flex;
-  text-align-last: end;
+footer #footer-conteiner .footer-text-list {
   color: #7e7e7e;
   flex-flow: wrap;
   place-items: flex-end;
   list-style-type: none;
   font-size: 11px;
+  display: inline-flex;
 }
-footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li {
+footer #footer-conteiner .footer-text-list .ft-li {
   padding: 15px;
 }
-footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li:hover {
+footer #footer-conteiner .footer-text-list .ft-li:hover {
   cursor: pointer;
   color: white;
 }
-footer #footer-conteiner .l-sub-footer .footer-text-list .first:first-child {
+footer #footer-conteiner .footer-text-list .first:first-child {
   padding-bottom: 15px;
   padding-right: 15px;
 }
-footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li:last-child {
+footer #footer-conteiner .footer-text-list .ft-li:last-child {
   flex-basis: 100%;
   height: 0;
   padding-right: 6em;
@@ -547,7 +543,8 @@ footer #footer-conteiner .l-sub-footer .footer-text-list .ft-li:last-child {
   }
 
   .conteiner-text {
-    padding-left: 0;
+    padding-left: 5em;
+    font-size: 5px;
   }
 
   .text-training {

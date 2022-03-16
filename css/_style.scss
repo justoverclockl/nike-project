@@ -557,84 +557,78 @@ footer {
                 }
         }
         
-        .l-sub-footer {
+        
+        .sub-footer-a {
+            min-inline-size: fit-content;
             display: flex;
-            align-items: baseline;
+            align-items: end;
+            justify-content: space-between;
             flex-wrap: wrap;
-            text-align-last: right;
-            
 
-            .sub-footer-a {
-                min-inline-size: fit-content;
-            }
+        }
             
-            .sub-logo-footer {
-                padding-left: 6em;
+        .sub-logo-footer {
+            font-size: 11px;
+
+            .pointer-footer {
+                text-decoration: none;
+                color: white;
                 font-size: 11px;
 
-                .pointer-footer {
+                .pointer-logo {
+                    font-size: 17px;
+                    margin: 12px;
+                        
+                }
+
+                .text-it {
                     text-decoration: none;
                     color: white;
                     font-size: 11px;
-
-                    .pointer-logo {
-                        font-size: 17px;
-                        margin: 12px;
-                        
-                    }
-
-                    .text-it {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 11px;
-                    }
-
                 }
 
-                .text-nike-inc {
-                    color: $color-footer;
-                    padding: 19px;
-                    font-size: 10px;
-                }
-                
             }
-            
-            .footer-text-list {
-                display: inline-flex;
-                text-align-last: end;
-                color: #7e7e7e;
-                flex-flow: wrap;
-                place-items: flex-end;
-                list-style-type: none;
-                font-size: 11px;
-                
-                
-                
-                .ft-li {
-                    padding: 15px;
-                    &:hover {
-                        cursor:pointer;
-                        color: white;
-                    }
-                }
 
-                .first:first-child {
-                     padding-bottom: 15px;
-                     padding-right: 15px;
-                }
-
-                .ft-li:last-child {
-                    flex-basis: 100%;
-                    height: 0;
-                    padding-right: 6em;
-                }
-            
-                
+            .text-nike-inc {
+                color: $color-footer;
+                padding: 19px;
+                font-size: 10px;
             }
+                
         }
+            
+        .footer-text-list {
+            color: #7e7e7e;
+            flex-flow: wrap;
+            place-items: flex-end;
+            list-style-type: none;
+            font-size: 11px;
+            display: inline-flex;
+                
+            .ft-li {
+                 padding: 15px;
+                 &:hover {
+                    cursor:pointer;
+                    color: white;
+                }
+            }
+
+            .first:first-child {
+                padding-bottom: 15px;
+                padding-right: 15px;
+            }
+
+            .ft-li:last-child {
+                flex-basis: 100%;
+                height: 0;
+                padding-right: 6em;
+            }
+            
+                
+        }
+        
     }
 }
-
 
 @media screen and (max-width: 954px) {
 
@@ -655,56 +649,53 @@ footer {
     }
 
     .conteiner-text {
-        padding-left: 0;
+        padding-left: 5em;
+        font-size: 5px;
     }
 
     .text-training {
-        padding-left: 0em;
+        padding-left: 5em;
         
     }
 
     .training-club {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 
     .text-plan {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 
     .text-train {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 
     #list-for-app {
-        padding-left: 0em;
+        padding-left: 5em;
 
     }
 
     .text-training-club {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 
     #text-finish-line {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 
     #text-finish-line {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 
     #text-footer {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 
     .text-final-footer {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 
     #text-club {
-        padding-left: 0em;
+        padding-left: 5em;
     }
 }
-
-// @media screen and {max-width: 840px) ;
-    
-// }
