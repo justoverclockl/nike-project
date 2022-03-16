@@ -11,6 +11,7 @@ let swiper = new Swiper('.swiper', {
 // slider delle cards
 const next = document.getElementById('next');
 const div = document.querySelector('.cards-container');
+
 next.addEventListener('click', () => {
     div.scrollBy({
         left: 600,
@@ -54,45 +55,17 @@ class Login {
         return `Grazie per esserti registrato. La tua email è ${this.email}`
     }
 
-    displayLoginEmail() {
-        return this.email
-    }
-
-    static fromJson(json) {
-        return JSON.parse(json)
-    }
-
 }
 
-function addUser(email,password,registrationDate){
-    const user = new Login(email,password,registrationDate);
+function addUser(email, password, registrationDate) {
+    const user = new Login(email, password, registrationDate);
     let newUser = [];
-    newUser.push([email,password,registrationDate]);
+    newUser.push([email, password, registrationDate]);
     console.log(newUser)
-    user.displayLoginMessage()
+    const popup = document.getElementById('popup-text');
+    popup.innerHTML = user.displayLoginMessage()
 }
 
-
-
-/*function addUser(e) {
-    e.preventDefault()
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const popup = document.getElementById('popup-text');
-    const loginForm = document.getElementById('loginform');
-    const navLinks = document.getElementById('nav-links');
-    const userNew = new Login(email, password)
-    newUser.push(userNew)
-    console.log(newUser)
-    loginForm.setAttribute('style', 'display:none !important');
-    popup.innerHTML = userNew.displayLoginMessage()
-    localStorage.setItem("user", userNew.toJson());
-    if ("user" in localStorage) {
-        navLinks.innerHTML = `<ul>
-                    <li class="links">Bentornato ${userNew.displayLoginEmail()}</li>
-                </ul>`
-    }
-}*/
 
 const submitButton = document.getElementById('login');
 submitButton.addEventListener('click', (e) => {
@@ -101,3 +74,47 @@ submitButton.addEventListener('click', (e) => {
     const passwordValue = document.getElementById('password').value;
     addUser(emailValue, passwordValue, new Date().toISOString())
 })
+
+// popup per le cards
+
+const cards = document.querySelectorAll('.cards')
+
+cards.forEach((card => {
+    let open = false;
+    const getName = card.querySelector('.footer-left')
+    const getPrice = card.querySelector('.footer-right')
+
+
+    function showPopup() {
+        const el = document.getElementById('cards-container');
+        const popup = document.createElement('div')
+        popup.setAttribute('class', 'card-popup')
+        popup.setAttribute('id', 'card-popup')
+
+        popup.innerHTML = '' +
+            '<div class="close-card-popup" id="close-card-popup">&times;</div>' +
+            '<p class="card-popup-text">Il prezzo di ' + getName.innerText + ' è di:</p>' +
+            '<p class="card-popup-price">' + getPrice.innerText + ' €' +
+            '<div class="card-popup-center"><button class="card-popup-button">Acquista il prodotto</button></div>'
+
+        const overlay = document.createElement('div')
+        overlay.setAttribute('class', 'overlay')
+        overlay.setAttribute('id', 'overlay')
+        el.appendChild(overlay)
+        el.appendChild(popup)
+
+        function closePopup(){
+            popup.remove()
+            overlay.remove()
+        }
+        overlay.addEventListener('click', closePopup)
+        let elem = document.querySelector('.close-card-popup')
+        elem.addEventListener('click', closePopup)
+
+    }
+
+    card.addEventListener('click', () => {
+        showPopup()
+        open = true
+    })
+}))
