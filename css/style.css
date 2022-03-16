@@ -544,51 +544,86 @@ footer #footer-conteiner .footer-text-list .ft-li:last-child {
 
   .conteiner-text {
     padding-left: 5em;
-    font-size: 5px;
+  }
+  .conteiner-text p {
+    font-size: 18px;
   }
 
   .text-training {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  .text-training p {
+    font-size: 18px;
   }
 
   .training-club {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  .training-club p {
+    font-size: 18px;
   }
 
   .text-plan {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  .text-plan p {
+    font-size: 18px;
   }
 
   .text-train {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  .text-train p {
+    font-size: 18px;
   }
 
   #list-for-app {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  #list-for-app p {
+    font-size: 18px;
   }
 
   .text-training-club {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  .text-training-club p {
+    font-size: 18px;
   }
 
   #text-finish-line {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  #text-finish-line p {
+    font-size: 18px;
   }
 
   #text-finish-line {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  #text-finish-line p {
+    font-size: 18px;
   }
 
   #text-footer {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  #text-footer p {
+    font-size: 18px;
   }
 
   .text-final-footer {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  .text-final-footer p {
+    font-size: 18px;
   }
 
   #text-club {
-    padding-left: 0em;
+    padding-left: 5em;
+  }
+  #text-club p {
+    font-size: 18px;
   }
 }
 
