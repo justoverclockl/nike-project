@@ -746,3 +746,63 @@ footer {
         
     }
 }
+
+@media screen and (max-width: 599px) {
+
+    .conteiner-text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-training {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .training-club {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-plan {
+        padding-left: 4em;
+        
+    }
+
+    .text-train {
+        padding-left: 4em;
+    }
+
+    .list-for-app {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-training-club {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-finish-line {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-club {
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-footer {
+        padding-left: 0;
+        text-align: center;
+    
+    }
+
+    .text-final-footer {
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+}

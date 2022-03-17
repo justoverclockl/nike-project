@@ -543,87 +543,143 @@ footer #footer-conteiner .footer-text-list .ft-li:last-child {
   }
 
   .conteiner-text {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   .conteiner-text p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .text-training {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   .text-training p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .training-club {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   .training-club p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .text-plan {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   .text-plan p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .text-train {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   .text-train p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   #list-for-app {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   #list-for-app p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .text-training-club {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   .text-training-club p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   #text-finish-line {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   #text-finish-line p {
-    font-size: 18px;
+    font-size: 1px;
   }
 
   #text-finish-line {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   #text-finish-line p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   #text-footer {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   #text-footer p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .text-final-footer {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   .text-final-footer p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   #text-club {
-    padding-left: 5em;
+    padding-left: 3em;
   }
   #text-club p {
-    font-size: 18px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .conteiner-text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .text-training {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .training-club {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .text-plan {
+    padding-left: 4em;
+  }
+
+  .text-train {
+    padding-left: 4em;
+  }
+
+  .list-for-app {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .text-training-club {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .text-finish-line {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .text-club {
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .text-footer {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .text-final-footer {
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
   }
 }
 
