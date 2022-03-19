@@ -156,31 +156,39 @@ p {
   padding-top: 3em;
 }
 
-#conteiner-section-card-list {
-  display: flex;
-  padding-top: 6em;
-}
-#conteiner-section-card-list .conteiner {
+.conteiner {
   display: flex;
 }
-#conteiner-section-card-list .conteiner .card {
+.conteiner .card {
   padding: 9px;
-  display: flex;
-  flex-direction: column;
 }
-#conteiner-section-card-list .conteiner .card p {
+.conteiner .card p {
   line-height: 24px;
   font-size: 17;
 }
-#conteiner-section-card-list .conteiner .card .image-card {
-  margin: 0px;
-  max-width: 100%;
+.conteiner .card #immagine-uno {
+  background-image: url(/assets/nike-section1.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 86px;
 }
-#conteiner-section-card-list .conteiner .card .title-card {
+.conteiner .card #immagine-due {
+  background-image: url(/assets/nike-section2.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 86px;
+}
+.conteiner .card #immagine-tre {
+  background-image: url(/assets/nike-section3.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 86px;
+}
+.conteiner .card .title-card {
   font-size: 23px;
   color: #181616;
 }
-#conteiner-section-card-list .conteiner .card .text-card {
+.conteiner .card .text-card {
   font-size: 17px;
   color: #181616;
 }
@@ -796,4 +804,4 @@ footer #footer-conteiner .footer-text-list .first:first-child {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stylle.css.map */

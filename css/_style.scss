@@ -185,30 +185,37 @@ p {
   padding-top: 3em;
 }
 
-.conteiner {
+#conteiner-section-card-list {
   display: flex;
+  padding-top: 6em;
 
-  .card {
-    padding: 9px;
+  .conteiner {
+    display: flex;
 
-    p {
-      line-height: 24px;
-      font-size: 17;
-    }
+    .card {
+      padding: 9px;
+      display: flex;
+      flex-direction: column;
 
-    .image-card {
-      margin: 0px;
-      max-width: 100%;
-    }
+      p {
+        line-height: 24px;
+        font-size: 17;
+      }
 
-    .title-card {
-      font-size: 23px;
-      color: rgb(24, 22, 22);
-    }
+      .image-card {
+        margin: 0px;
+        max-width: 100%;
+      }
 
-    .text-card {
-      font-size: 17px;
-      color: rgb(24, 22, 22);
+      .title-card {
+        font-size: 23px;
+        color: rgb(24, 22, 22);
+      }
+
+      .text-card {
+        font-size: 17px;
+        color: rgb(24, 22, 22);
+      }
     }
   }
 }
