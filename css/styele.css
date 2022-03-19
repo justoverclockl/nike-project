@@ -481,7 +481,6 @@ footer #footer-conteiner .sub-footer-a {
 }
 footer #footer-conteiner .sub-logo-footer {
   font-size: 11px;
-  display: inline-flex;
 }
 footer #footer-conteiner .sub-logo-footer .pointer-footer {
   text-decoration: none;
@@ -529,11 +528,6 @@ footer #footer-conteiner .footer-text-list .first:first-child {
 
   .sub-logo-footer {
     height: 0;
-  }
-
-  .sub-footer-a {
-    padding-top: 4em;
-    align-items: center;
   }
 }
 @media screen and (max-width: 954px) {
@@ -701,15 +695,6 @@ footer #footer-conteiner .footer-text-list .first:first-child {
   footer {
     width: 103%;
   }
-
-  .conteiner-footer-list {
-    flex-direction: column;
-  }
-
-  .footer-text-list {
-    padding-left: 0;
-    padding-top: 31px;
-  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styele.css.map */

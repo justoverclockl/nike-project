@@ -1,808 +1,794 @@
-$color-back: #f5f5f5;;
+$color-back: #f5f5f5;
 $color-a: black;
 $text-h2: 17px;
 $color-footer: #7e7e7e;
 
-    
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
 }
 
 p {
-    line-height: 34px;
-    font-size: 20px;
+  line-height: 34px;
+  font-size: 20px;
 }
 
 .nav-head {
-    display: flex;
-    justify-content: space-between;
-    background-color: $color-back;
-    align-items: center;
-    padding-left: 31px;
-    height: 2em;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-back;
+  align-items: center;
+  padding-left: 31px;
+  height: 2em;
 
-    .image-logo {
-        width: 38px;
+  .image-logo {
+    width: 38px;
+  }
+
+  .list-one {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 2em;
+
+    .a-one {
+      text-decoration: none;
+      padding: 9px;
+      font-size: 13px;
+      color: $color-a;
+      &:hover {
+        color: transparent;
+      }
     }
-
-    .list-one {
-        display: inline-flex;
-        text-decoration: none;
-        list-style-type: none;
-        padding-right: 2em;
-
-        .a-one {
-            text-decoration: none;
-            padding: 9px;
-            font-size: 13px;
-            color: $color-a;
-            &:hover {
-                color: transparent;
-            }
-
-        }
-    }
-
+  }
 }
 
 .nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 41px;
+
+  .image-topleft {
+    width: 57px;
+  }
+
+  .list-two {
+    display: inline-flex;
+    list-style-type: none;
+
+    .a-two {
+      text-decoration: none;
+      padding: 9px;
+      font-size: 18px;
+      color: black;
+    }
+  }
+
+  .conteiner-three {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-inline: 41px;
 
-    .image-topleft {
-        width: 57px;
-    }
+    .conteiner-search {
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      height: 28px;
+      background: $color-back;
 
-    .list-two {
-        display: inline-flex;
+      input:focus {
+        outline: none;
+      }
+
+      #search-text {
+        border: none;
+        font-size: 11px;
         list-style-type: none;
-
-        .a-two {
-            text-decoration: none;
-            padding: 9px;
-            font-size: 18px;
-            color: black;
-            
-        }
+        background: $color-back;
+      }
     }
 
-    .conteiner-three {
-        display: flex;
-        align-items: center;
-
-        .conteiner-search {
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            height: 28px;
-            background: $color-back;
-
-            input:focus{
-                outline: none;
-                
-            }
-
-            #search-text {
-                border: none;
-                font-size: 11px;
-                list-style-type: none;
-                background: $color-back;
-            }
-
-
-        }
-
-        .conteiner-heart-badge {
-            .fav {
-                margin: 11px;
-                font-size: 24px;
-            }
-        }
+    .conteiner-heart-badge {
+      .fav {
+        margin: 11px;
+        font-size: 24px;
+      }
     }
+  }
 }
 
 .nav-footer {
-    width: 100%;
-    height: 50px;
-    background-color: $color-back;
-    width: 100%;
+  width: 100%;
+  height: 50px;
+  background-color: $color-back;
+  width: 100%;
 }
-
 
 .image-center {
-    width: 100%;
+  width: 100%;
 }
 
-
 .conteiner-text {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10em;
-    padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-top: 3em;
 
-    .text {
-        font-size: $text-h2;
+  .text {
+    font-size: $text-h2;
+  }
 
+  .conteiner-button {
+    padding-top: 10px;
+
+    .text-button {
+      border: solid black;
+      border-radius: 48px;
+      background: black;
+      color: white;
+      font-size: 21px;
     }
-
-    .conteiner-button {
-        padding-top: 10px;
-        
-        .text-button {
-            border: solid black;
-            border-radius: 48px;
-            background: black;
-            color: white;
-            font-size: 21px;
-        }
-    }
+  }
 }
 
 .second-image-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    .image-center-two {
-        padding-top: 8em;
-        width: 69vw;
-    }
+  .image-center-two {
+    padding-top: 8em;
+    width: 69vw;
+  }
 }
 
 .text-training {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10em;
-    padding-top: 3em;
-    font-size: $text-h2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-top: 3em;
+  font-size: $text-h2;
 
-
-    .head-text-training {
-       .text-link {
-        color: $color-a;
-        &:hover {
-            color: grey;
-        }
-       }
-        
-        
+  .head-text-training {
+    .text-link {
+      color: $color-a;
+      &:hover {
+        color: grey;
+      }
     }
+  }
 
-    .footer-text-training {
-        .text-link {
-            color: $color-a;
-            &:hover {
-                color: grey;
-            }
-        }
+  .footer-text-training {
+    .text-link {
+      color: $color-a;
+      &:hover {
+        color: grey;
+      }
     }
+  }
 }
 
 .training-fit {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    .image-center-three {
-        width: 93vw;
-        padding-top: 5em;
-    }
+  .image-center-three {
+    width: 93vw;
+    padding-top: 5em;
+  }
 }
 
 .training-club {
-    font-size: $text-h2;
-    padding-left: 10em;
-    padding-top: 3em;
+  font-size: $text-h2;
+  padding-left: 10em;
+  padding-top: 3em;
 }
 
 .conteiner {
-    display: flex;
-    justify-content: center;
-    padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
 
-    .card {
-        padding: 9px;
-        
-        .image-card {
-            margin: 0px;
-            max-width: 100%;
-        }
-        
-        .title-card {
-            font-size: $text-h2;
-            color: rgb(24, 22, 22)
-        }
-        
-        .text-card {
-            font-size: 17px;
-            color: rgb(24, 22, 22)
-        }
+  .card {
+    padding: 9px;
+
+    .image-card {
+      margin: 0px;
+      max-width: 100%;
     }
+
+    .title-card {
+      font-size: $text-h2;
+      color: rgb(24, 22, 22);
+    }
+
+    .text-card {
+      font-size: 17px;
+      color: rgb(24, 22, 22);
+    }
+  }
 }
-    
-.image-fit-center {
-    display: flex;
-    justify-content: center;
 
-    .image-fit {
-        width: 66vw;
-        padding-top: 5em;
-    }
+.image-fit-center {
+  display: flex;
+  justify-content: center;
+
+  .image-fit {
+    width: 66vw;
+    padding-top: 5em;
+  }
 }
 
 .text-plan {
-    flex-direction: column;
-    padding-top: 4em;
-    padding-left: 10em;
-    width: 69vw;
-    font-size: $text-h2;
+  flex-direction: column;
+  padding-top: 4em;
+  padding-left: 10em;
+  width: 69vw;
+  font-size: $text-h2;
 }
 
 .image-fit-second {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    .image-center-four {
-        padding-top: 4em;
-        width: 62vw;
-    }
+  .image-center-four {
+    padding-top: 4em;
+    width: 62vw;
+  }
 }
 
 .text-train {
-    display: flex;
-    flex-direction: column;
-    font-size: $text-h2;
-    padding-top: 4em;
-    padding-left: 10em;
-    width: 69vw;
+  display: flex;
+  flex-direction: column;
+  font-size: $text-h2;
+  padding-top: 4em;
+  padding-left: 10em;
+  width: 69vw;
 }
 
-
 .conteiner-carousel {
-    padding-top: 3em;
+  padding-top: 3em;
 
-    .button-carousel {
-        text-align: end;
-        padding-right: 3em;
+  .button-carousel {
+    text-align: end;
+    padding-right: 3em;
 
-        .button-for-carousel {
-            border: solid transparent;
-            border-radius: 50%;
-            height: 4em;
-            width: 4em;
-            margin: 3px;
-        }
+    .button-for-carousel {
+      border: solid transparent;
+      border-radius: 50%;
+      height: 4em;
+      width: 4em;
+      margin: 3px;
     }
-    
-    ::-webkit-scrollbar {
-        width: .5em;
-      }
-    ::-webkit-scrollbar-track {
-        background: transparent;
-        margin-block: .5em;
-      }
-    ::-webkit-scrollbar-thumb {
-        background: $color-back;
-        border-radius: 100vw;
-    }
-    .carousel-list {
-        overflow-x: scroll;
-        display: flex;
-        list-style-type: none;
-        margin-inline-start: 48px;
-        overflow: auto;
-        
-        p {
-        font: -webkit-control;
-        line-height: 23px;
-        font-size: x-large;
-        font-family: arial;
-        }
+  }
 
-        .image-carousel {
-            width: 28em;
-            margin-inline: 8px;
-        }
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $color-back;
+    border-radius: 100vw;
+  }
+  .carousel-list {
+    overflow-x: scroll;
+    display: flex;
+    list-style-type: none;
+    margin-inline-start: 48px;
+    overflow: auto;
+
+    p {
+      font: -webkit-control;
+      line-height: 23px;
+      font-size: x-large;
+      font-family: arial;
     }
+
+    .image-carousel {
+      width: 28em;
+      margin-inline: 8px;
+    }
+  }
 }
 
 #image-center-six {
-    display: flex;
-    justify-content: center;
-    padding-top: 7em;
+  display: flex;
+  justify-content: center;
+  padding-top: 7em;
 
-    .image-fitness {
-        width: 89vw;
-    }
+  .image-fitness {
+    width: 89vw;
+  }
 }
 
 #list-for-app {
-    display: flex;
-    flex-direction: column;
-    font-size: $text-h2;
-    padding-top: 4em;
-    padding-left: 10em;
-
+  display: flex;
+  flex-direction: column;
+  font-size: $text-h2;
+  padding-top: 4em;
+  padding-left: 10em;
 }
 
 #image-center-seven {
-    display: flex;
-    justify-content: center;
-    padding-top: 3em;
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
 
-    .image-center-five {
-        width: 62vw;
-
-}
+  .image-center-five {
+    width: 62vw;
+  }
 }
 
 .text-training-club {
-    display: block;
-    padding-left: 10em;
-    line-height: 23px;
-    padding-top: 3em;
-    font-size: $text-h2;
+  display: block;
+  padding-left: 10em;
+  line-height: 23px;
+  padding-top: 3em;
+  font-size: $text-h2;
 }
 
 #image-center-eight {
-    display: flex;
-    justify-content: center;
-    padding-top: 3em;
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
 
-    .image-smartphone-center {
-        width: 93vw;
-    }
-
-
+  .image-smartphone-center {
+    width: 93vw;
+  }
 }
 
 #text-finish-line {
-    padding-left: 10em;
-    line-height: 38px;
-    font-size: $text-h2;
-    padding-top: 3em;
+  padding-left: 10em;
+  line-height: 38px;
+  font-size: $text-h2;
+  padding-top: 3em;
 }
 
-
 #image-center-nine {
-    display: flex;
-    justify-content: center;
-    padding-top: 4em;
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
 }
 
 .image-nike-work {
-    width: 67vw;
+  width: 67vw;
 }
 
 #text-club {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10em;
-    line-height: 21px;
-    padding-top: 4em;
-    font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  line-height: 21px;
+  padding-top: 4em;
+  font-size: 22px;
 
-    .button-of-text {
-        width: 6em;
-        height: 3em;
-        border: solid;
-        border-radius: 22px;
-        background: black;
-        font-size: 16px;
-    }
+  .button-of-text {
+    width: 6em;
+    height: 3em;
+    border: solid;
+    border-radius: 22px;
+    background: black;
+    font-size: 16px;
+  }
 
-
-    .text-of-button {
-        color: white;
-        text-decoration: none;
-        }
-
+  .text-of-button {
+    color: white;
+    text-decoration: none;
+  }
 }
 
-
 .text-link-second {
-    color: $color-a;
-    &:hover {
-        color: grey;
-
-    }
+  color: $color-a;
+  &:hover {
+    color: grey;
+  }
 }
 
 #image-center-ten {
-    display: flex;
-    justify-content: center;
-    padding-top: 3em;
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
 
-    .image-nike-work-second {
-        width: 66vw;
-    }
+  .image-nike-work-second {
+    width: 66vw;
+  }
 }
 
 #text-footer {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10em;
-    padding-top: 4em;
-    font-size: $text-h2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-top: 4em;
+  font-size: $text-h2;
 }
 
 #image-center-footer {
-    display: flex;
-    justify-content: center;
-    padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
 
-    .image-last {
-        width: 58vw;
-    }
+  .image-last {
+    width: 58vw;
+  }
 }
 
 .text-final-footer {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10em;
-    font-size: $text-h2;
-    padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  font-size: $text-h2;
+  padding-top: 4em;
 
-    .ft-button {
-        width: 7em;
-        height: 3em;
-        border: solid;
-        border-radius: 24px;
-        font-size: 14px;
-        background: black;
-    }
+  .ft-button {
+    width: 7em;
+    height: 3em;
+    border: solid;
+    border-radius: 24px;
+    font-size: 14px;
+    background: black;
+  }
 
-    .txt-footer {
-        color: white;
-        text-decoration: none;
-    }
+  .txt-footer {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 #conteiner-footer {
-    padding-bottom: 3em;
+  padding-bottom: 3em;
 }
 
 #text-section-footer {
-    font-size: $text-h2;
-    padding-left: 1em;
-    padding-top: 6em;
+  font-size: $text-h2;
+  padding-left: 1em;
+  padding-top: 6em;
 }
 
 .cards-footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .image-card-footer {
-    width: 30vw;
-    margin: 10px;
-    
+  width: 30vw;
+  margin: 10px;
 }
 .caption-card {
-    font-size: 22px;
-    margin: auto;
-    padding-left: 10px;
+  font-size: 22px;
+  margin: auto;
+  padding-left: 10px;
 
-    .title-card {
-        display: flex;
-        align-items: center;
-    }
+  .title-card {
+    display: flex;
+    align-items: center;
+  }
 }
 
 footer {
-    background-color: white;
-    margin-bottom: 2em;
-    width: 100%;
-    min-height: 200px;
-    
-    #footer-conteiner {
-        background-color: #111;
-        
-        .conteiner-footer-list {
-            display: flex;
-            
-            .conteiner-list-footer-text {
-                display: flex;
-                flex-wrap: wrap;
-            }
-                
-                .footer-list {
-                    color: white;
-                    list-style-type: none;
-                    inline-size: 17em;
-                    font-size: 11px;
-                    padding-top: 12px;
-                    margin-left: 3em;
-                    li {
-                        padding: 10px;
-                    }
-                    
-                    .text-mod-footer {
-                        color: $color-footer;
-                        &:hover {
-                            color: white;
-                            cursor: pointer;
-                        }
-                    }
-                }
-                
-                .footer-icon-list {
-                    display: inline-flex;
-                    text-align: center;
-                    list-style-type: none;
-                    flex-wrap: wrap;
-                    
-                    
-                    .circle-svg {
-                        &:hover {
-                            color: transparent;
-                            transition: 2ms;
-                            cursor: pointer;
-                        }
-                        
-                    }
-                    
-                    .fab {
-                        margin: 9px;
-                        background: $color-footer;
-                        border-radius: 41%;
-                        inline-size: 27px;
-                        font-size: 25px;
-                        
-                    }
-                }
+  background-color: white;
+  margin-bottom: 2em;
+  width: 100%;
+  min-height: 200px;
+
+  #footer-conteiner {
+    background-color: #111;
+
+    .conteiner-footer-list {
+      display: flex;
+
+      .conteiner-list-footer-text {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .footer-list {
+        color: white;
+        list-style-type: none;
+        inline-size: 17em;
+        font-size: 11px;
+        padding-top: 12px;
+        margin-left: 3em;
+        li {
+          padding: 10px;
         }
-        
-        
-        .sub-footer-a {
-            min-inline-size: fit-content;
-            display: flex;
-            align-items: end;
-            justify-content: space-between;
-            flex-wrap: wrap;
 
+        .text-mod-footer {
+          color: $color-footer;
+          &:hover {
+            color: white;
+            cursor: pointer;
+          }
         }
-            
-        .sub-logo-footer {
-            font-size: 11px;
+      }
 
-            .pointer-footer {
-                text-decoration: none;
-                color: white;
-                font-size: 11px;
+      .footer-icon-list {
+        display: inline-flex;
+        text-align: center;
+        list-style-type: none;
+        flex-wrap: wrap;
 
-                .pointer-logo {
-                    font-size: 17px;
-                    margin: 12px;
-                        
-                }
-
-                .text-it {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 11px;
-                }
-
-            }
-
-            .text-nike-inc {
-                color: $color-footer;
-                padding: 19px;
-                font-size: 10px;
-            }
-                
+        .circle-svg {
+          &:hover {
+            color: transparent;
+            transition: 2ms;
+            cursor: pointer;
+          }
         }
-            
-        .footer-text-list {
-            color: #7e7e7e;
-            flex-flow: wrap;
-            place-items: flex-end;
-            list-style-type: none;
-            font-size: 11px;
-            display: inline-flex;
-                
-            .ft-li {
-                 padding: 15px;
-                 &:hover {
-                    cursor:pointer;
-                    color: white;
-                }
-            }
 
-            .first:first-child {
-                padding-bottom: 15px;
-                padding-right: 15px;
-            }
-
-            .ft-li:last-child {
-                flex-basis: 100%;
-                height: 0;
-                padding-right: 6em;
-            }
-            
-                
+        .fab {
+          margin: 9px;
+          background: $color-footer;
+          border-radius: 41%;
+          inline-size: 27px;
+          font-size: 25px;
         }
-        
+      }
     }
+
+    .sub-footer-a {
+      min-inline-size: fit-content;
+      justify-content: space-between;
+      font-size: 11px;
+      flex-wrap: wrap;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .sub-logo-footer {
+      font-size: 11px;
+      display: inline-flex;
+
+      .pointer-footer {
+        text-decoration: none;
+        color: white;
+        font-size: 11px;
+
+        .pointer-logo {
+          font-size: 17px;
+          margin: 12px;
+        }
+
+        .text-it {
+          text-decoration: none;
+          color: white;
+          font-size: 11px;
+        }
+      }
+
+      .text-nike-inc {
+        color: $color-footer;
+        padding: 19px;
+        font-size: 10px;
+      }
+    }
+
+    .footer-text-list {
+      color: #7e7e7e;
+      flex-flow: wrap;
+      place-items: flex-end;
+      list-style-type: none;
+      font-size: 11px;
+      display: inline-flex;
+      flex-wrap: wrap;
+
+      .ft-li {
+        padding: 15px;
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+      }
+
+      .first:first-child {
+        padding-inline: 15px;
+      }
+
+      //   .ft-li:last-child {
+      //     flex-basis: 100%;
+      //     height: 0;
+      //     padding-right: 6em;
+      //   }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-text-list {
+    padding-left: 33em;
+  }
+
+  .sub-logo-footer {
+    height: 0;
+  }
+
+  .sub-footer-a {
+    padding-top: 4em;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 954px) {
+  .nav-head {
+    display: none;
+  }
 
-    .nav-head {
-        display: none;
+  .conteiner-two {
+    display: none;
+  }
+
+  .conteiner-three {
+    flex-direction: row-reverse;
+  }
+
+  i.fav.far.fa-heart {
+    display: none;
+  }
+
+  .conteiner-text {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    .conteiner-two {
-        display: none;
+  .text-training {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    .conteiner-three {
-        flex-direction: row-reverse;
+  .training-club {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    i.fav.far.fa-heart {
-        display: none;
+  .text-plan {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    .conteiner-text {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
+  .text-train {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    .text-training {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
-        
+  #list-for-app {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    .training-club {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
+  .text-training-club {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    .text-plan {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
+  #text-finish-line {
+    padding-left: 3em;
+    p {
+      font-size: 1px;
     }
+  }
 
-    .text-train {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
+  #text-finish-line {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    #list-for-app {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
-
+  #text-footer {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    .text-training-club {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
+  .text-final-footer {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
+  }
 
-    #text-finish-line {
-        padding-left: 3em;
-        p {
-            font-size: 1px;
-        }
-        
+  #text-club {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
     }
-
-    #text-finish-line {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
-    }
-
-    #text-footer {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
-    }
-
-    .text-final-footer {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
-    }
-
-    #text-club {
-        padding-left: 3em;
-        p {
-            font-size: 14px;
-        }
-        
-    }
+  }
 }
 
 @media screen and (max-width: 599px) {
+  .conteiner-text {
+    padding-left: 0;
+    text-align: center;
+  }
 
-    .conteiner-text {
-        padding-left: 0;
-        text-align: center;
-    }
+  .text-training {
+    padding-left: 0;
+    text-align: center;
+  }
 
-    .text-training {
-        padding-left: 0;
-        text-align: center;
-    }
+  .training-club {
+    padding-left: 0;
+    text-align: center;
+  }
 
-    .training-club {
-        padding-left: 0;
-        text-align: center;
-    }
+  .text-plan {
+    padding-left: 4em;
+  }
 
-    .text-plan {
-        padding-left: 4em;
-        
-    }
+  .text-train {
+    padding-left: 4em;
+  }
 
-    .text-train {
-        padding-left: 4em;
-    }
+  .list-for-app {
+    padding-left: 0;
+    text-align: center;
+  }
 
-    .list-for-app {
-        padding-left: 0;
-        text-align: center;
-    }
+  .text-training-club {
+    padding-left: 0;
+    text-align: center;
+  }
 
-    .text-training-club {
-        padding-left: 0;
-        text-align: center;
-    }
+  .text-finish-line {
+    padding-left: 0;
+    text-align: center;
+  }
 
-    .text-finish-line {
-        padding-left: 0;
-        text-align: center;
-    }
+  .text-club {
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+  }
 
-    .text-club {
-        padding-left: 0;
-        text-align: center;
-        align-items: center;
-    }
+  .text-footer {
+    padding-left: 0;
+    text-align: center;
+  }
 
-    .text-footer {
-        padding-left: 0;
-        text-align: center;
-    
-    }
+  .text-final-footer {
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+  }
 
-    .text-final-footer {
-        padding-left: 0;
-        text-align: center;
-        align-items: center;
-    }
+  .conteiner-footer-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  footer {
+    width: 103%;
+  }
+
+  .conteiner-footer-list {
+    flex-direction: column;
+  }
+
+  .footer-text-list {
+    padding-left: 0;
+    padding-top: 31px;
+  }
+
+  .footer-list {
+    padding-left: 0;
+  }
 }
