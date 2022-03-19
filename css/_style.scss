@@ -187,11 +187,14 @@ p {
 
 .conteiner {
   display: flex;
-  justify-content: center;
-  padding-top: 5em;
 
   .card {
     padding: 9px;
+
+    p {
+      line-height: 24px;
+      font-size: 17;
+    }
 
     .image-card {
       margin: 0px;
@@ -199,7 +202,7 @@ p {
     }
 
     .title-card {
-      font-size: $text-h2;
+      font-size: 23px;
       color: rgb(24, 22, 22);
     }
 
@@ -454,8 +457,8 @@ p {
 }
 
 .image-card-footer {
-  width: 30vw;
-  margin: 10px;
+  width: 31vw;
+  margin: 6px;
 }
 .caption-card {
   font-size: 22px;
@@ -535,7 +538,7 @@ footer {
       font-size: 11px;
       flex-wrap: wrap;
       display: flex;
-      align-items: baseline;
+      align-items: center;
     }
 
     .sub-logo-footer {
@@ -716,57 +719,85 @@ footer {
 @media screen and (max-width: 599px) {
   .conteiner-text {
     padding-left: 0;
-    text-align: center;
   }
 
   .text-training {
     padding-left: 0;
-    text-align: center;
+  }
+
+  #list-for-app {
+    padding-left: 0;
   }
 
   .training-club {
     padding-left: 0;
-    text-align: center;
+  }
+
+  #text-finish-line {
+    padding-left: 0;
+  }
+
+  #text-club {
+    padding-left: 0;
+  }
+
+  #text-footer {
+    padding-left: 0;
   }
 
   .text-plan {
-    padding-left: 4em;
+    padding-left: 0;
   }
 
   .text-train {
-    padding-left: 4em;
+    padding-left: 0;
   }
 
   .list-for-app {
     padding-left: 0;
-    text-align: center;
   }
 
   .text-training-club {
     padding-left: 0;
-    text-align: center;
   }
 
   .text-finish-line {
     padding-left: 0;
-    text-align: center;
   }
 
   .text-club {
     padding-left: 0;
-    text-align: center;
-    align-items: center;
   }
 
   .text-footer {
     padding-left: 0;
-    text-align: center;
   }
 
   .text-final-footer {
     padding-left: 0;
-    text-align: center;
-    align-items: center;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $color-back;
+    border-radius: 100vw;
+  }
+
+  .cards-footer {
+    justify-content: flex-start;
+    overflow: scroll;
+    margin-inline-start: 48px;
+  }
+
+  .conteiner {
+    overflow-y: scroll;
+    justify-content: flex-start;
   }
 
   .conteiner-footer-list {
@@ -774,9 +805,17 @@ footer {
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 422px) {
   footer {
     width: 103%;
+  }
+  .conteiner-button {
+    padding: 0;
+
+    .text-button {
+      font-size: 17px;
+      margin: 11px;
+    }
   }
 
   .conteiner-footer-list {
@@ -790,5 +829,40 @@ footer {
 
   .footer-list {
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  p {
+    font-size: 8px;
+    line-height: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .image-center-two {
+    width: 95vw;
+  }
+
+  .image-fit {
+    width: 85vw;
+  }
+
+  .image-center-four {
+    width: 85vw;
+  }
+
+  .image-center-five {
+    width: 85vw;
+  }
+
+  .image-nike-work {
+    width: 85vw;
+  }
+
+  .image-nike-work-second {
+    width: 85vw;
   }
 }
