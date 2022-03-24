@@ -15,6 +15,21 @@ p {
   font-size: 20px;
 }
 
+.link {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    border-radius: 40em;
+    color: $color-footer;
+    cursor: pointer;
+  }
+}
+
+#link-final {
+  text-decoration: none;
+  color: black;
+}
+
 .nav-head {
   display: flex;
   justify-content: space-between;
@@ -39,7 +54,7 @@ p {
       font-size: 13px;
       color: $color-a;
       &:hover {
-        color: transparent;
+        color: $color-footer;
       }
     }
   }
@@ -50,6 +65,10 @@ p {
   justify-content: space-between;
   align-items: center;
   padding-inline: 41px;
+
+  .conteiner-two {
+    padding-left: 4em;
+  }
 
   .image-topleft {
     width: 57px;
@@ -129,6 +148,10 @@ p {
       background: black;
       color: white;
       font-size: 21px;
+      &:hover {
+        cursor: pointer;
+        background-color: $color-footer;
+      }
     }
   }
 }
@@ -377,12 +400,16 @@ p {
   font-size: 22px;
 
   .button-of-text {
-    width: 6em;
-    height: 3em;
+    width: 4em;
+    height: 2em;
     border: solid;
     border-radius: 22px;
     background: black;
     font-size: 16px;
+    &:hover {
+      background-color: $color-footer;
+      cursor: pointer;
+    }
   }
 
   .text-of-button {
@@ -440,6 +467,10 @@ p {
     border-radius: 24px;
     font-size: 14px;
     background: black;
+    &:hover {
+      background-color: $color-footer;
+      cursor: pointer;
+    }
   }
 
   .txt-footer {
@@ -493,6 +524,7 @@ footer {
       .conteiner-list-footer-text {
         display: flex;
         flex-wrap: wrap;
+        cursor: pointer;
       }
 
       .footer-list {
@@ -720,6 +752,10 @@ footer {
     p {
       font-size: 14px;
     }
+  }
+
+  .footer-list {
+    padding-left: 0;
   }
 }
 
