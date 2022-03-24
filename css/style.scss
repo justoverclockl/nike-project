@@ -1,596 +1,729 @@
-    $style: lightgrey;
-    body {
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
+$style: lightgrey;
+body {
+    height: 100vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #F5F5F5;
+}
+
+
+/* dove ci sono i logo iniziali*/
+
+.first-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.logo-jordan {
+    height: 28px;
+    width: 50px;
+    margin: 15px 5px 15px 5px;
+    &:hover {
+        color: $style;
     }
-    
-    header {
-        background-color: #F5F5F5;
-    }
-    /* dove ci sono i logo iniziali*/
-    
-    .first-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 40px;
-        width: 100%;
-    }
-    
-    .logo {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-left: 80px;
-    }
-    
-    .logo-jordan {
-        height: 28px;
-        width: 50px;
-        margin: 15px 5px 15px 5px;
-        &:hover {
-            color: $style;
-        }
-    }
-    
-    .logo-converse {
-        height: 30px;
-        width: 50px;
-        margin: 15px 5px 15px 5px;
-    }
-    
-    .title-nike {
-        margin-left: 6rem;
-    }
-    
-    .first-link {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        ul {
-            list-style-type: none;
-            li {
-                display: inline;
-                margin: 5px;
-                a {
-                    text-decoration: none;
-                    color: black;
-                    &:hover {
-                        color: $style;
-                        transition: 2ms;
-                    }
-                }
-            }
-        }
-    }
-    /*termina la prima riga*/
-    
-    .second-section {
-        height: 70px;
-        width: 100%;
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid grey;
-    }
-    
-    .logo-nike {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-left: 90px;
-    }
-    
-    .nike {
-        height: 30px;
-        width: 50px;
-    }
-    
-    .list-link {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        .menu {
-            list-style-type: none;
-            li {
-                display: inline-block;
-                text-transform: uppercase;
-                font-size: 15px;
-                position: relative;
-                a {
-                    display: block;
-                    padding: 15px 30px;
-                    text-decoration: none;
-                    color: black;
-                    transition: .3s;
-                    &:hover {
-                        color: lightgrey;
-                        border-bottom: 2px solid black;
-                    }
-                }
-            }
-        }
-    }
-    
-    .sub-menu {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 100px;
-        border-bottom: none;
-        visibility: hidden;
+}
+
+.logo-converse {
+    height: 30px;
+    width: 50px;
+    margin: 15px 5px 15px 5px;
+}
+
+.title-nike {
+    margin-left: 6rem;
+}
+
+.first-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    ul {
+        list-style-type: none;
         li {
-            width: 200px;
-            font-size: 12px;
+            display: inline;
+            margin: 5px;
             a {
-                color: #222;
+                text-decoration: none;
+                color: black;
                 &:hover {
-                    background-color: rgb(243, 95, 95);
+                    color: $style;
+                    transition: 2ms;
                 }
             }
         }
     }
-    
-    .end-board {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin: 1rem;
-    }
-    
-    .awsome {
-        display: flex;
-        align-items: center;
-        i {
-            margin: 1rem;
+}
+
+
+/*termina la prima riga*/
+
+.second-section {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+.logo-nike {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.nike {
+    height: 30px;
+    width: 50px;
+}
+
+.list-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .menu {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 15px;
+            position: relative;
+            a {
+                display: block;
+                padding: 15px 30px;
+                text-decoration: none;
+                color: black;
+                transition: .3s;
+                &:hover {
+                    color: lightgrey;
+                    border-bottom: 2px solid black;
+                }
+            }
         }
     }
-    
-    #search {
-        border: none;
-        background-color: $style;
-        border-style: hidden;
-        height: 30px;
-        width: 150px;
-        border-radius: 50px;
-        &:hover {
-            width: 500px;
-        }
-    }
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-    }
-    
-    h2 {
-        font-size: 24px;
-        line-height: 28px;
-        margin-left: 90px;
-    }
-    
-    h3 {
-        font-size: 30px;
-        text-align: center;
-    }
-    
-    #video-nike {
-        width: 90%;
-        margin-left: 90px;
-    }
-    
-    article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    button {
-        background-color: rgb(0, 0, 0);
-        color: #F5F5F5;
-        border-radius: 20px;
-        width: 155px;
-        height: 35px;
-        margin: 1rem;
-        margin-left: 14rem;
+}
+
+.sub-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    border-bottom: none;
+    visibility: hidden;
+    li {
+        width: 200px;
+        font-size: 12px;
         a {
-            text-decoration: none;
-            color: #F5F5F5;
+            color: #222;
+            &:hover {
+                background-color: rgb(243, 95, 95);
+            }
         }
     }
-    
-    button:hover {
-        opacity: 0.5;
+}
+
+.end-board {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem;
+}
+
+.awsome {
+    display: flex;
+    align-items: center;
+    i {
+        margin: 1rem;
     }
-    
-    .download-app {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .button {
-            display: flex;
-            justify-content: center;
-        }
+}
+
+#search {
+    border: none;
+    background-color: $style;
+    border-style: hidden;
+    height: 30px;
+    width: 150px;
+    border-radius: 50px;
+    &:hover {
+        width: 500px;
     }
-    
-    .image1 {
-        display: flex;
-        justify-content: center;
-    }
-    
-    #yellow {
-        width: 60vw;
-    }
-    
-    .we-run {
-        height: 90%;
-        width: 100%;
-    }
-    
-    #container-img2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .fig-werun {
-        text-align: left;
-        line-height: 40px;
-    }
-    
-    .first-par {
-        text-align: left;
-        margin-left: 14rem;
-    }
-    
-    .image3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .run-blu {
-            width: 100%;
-        }
-    }
-    
-    .image4 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .naples {
-            width: 100%;
-        }
-    }
-    
-    #container-img5 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 15rem;
-        .gallery {
-            width: 60vw;
-        }
-    }
-    
-    .title {
-        text-align: left;
-        margin-left: 14rem;
-    }
-    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 90px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#video-nike {
+    width: 90%;
+    margin-left: 90px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: #F5F5F5;
+    border-radius: 20px;
+    width: 155px;
+    height: 35px;
+    margin: 1rem;
+    // margin-left: 14rem;
     a {
         text-decoration: none;
-        color: black;
+        color: #F5F5F5;
     }
-    
-    .arrow {
-        display: flex;
-        justify-content: flex-end;
-        .arrow-direction {
-            background-color: lightgray;
-            border-radius: 50%;
-            height: 60px;
-            width: 60px;
-            margin-left: 50px;
-        }
-    }
-    
-    .carousel {
-        margin: 5px 0;
-        ul {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-            li {
-                display: inline;
-                margin: 0;
-                padding: 0;
-            }
-        }
-    }
-    
-    h3.car-title {
-        text-align: left;
-        margin-left: 40px;
-    }
-    
-    p.car-par {
-        text-align: left;
-        margin-left: 40px;
-    }
-    
-    .carousel-info {
-        margin-left: 40px;
-    }
-    
-    .image-trhee {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 2px;
-    }
-    
-    h2 {
-        font-size: 30px;
-        margin-left: 40px;
-    }
-    
-    .wrapper {
-        width: 500px;
-        margin: 0px;
-        padding: 0;
-    }
-    
-    .image-central {
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.download-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .button-download {
         display: flex;
         justify-content: center;
     }
-    
-    .streccing {
-        width: 1000px;
-    }
-    
-    .first-article {
-        p {
-            text-align: left;
-            margin-left: 20rem;
+}
+
+.image1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        margin-right: 15rem;
+        .paragraph-imag1 {
+            margin-left: 15rem;
+            font-size: 18px;
+            text-align: center;
         }
     }
-    
-    .title-art {
+}
+
+.link-paragraph {
+    text-decoration: solid;
+}
+
+.yellow {
+    width: 60vw;
+    // margin-left: 60px;
+}
+
+.we-run {
+    height: 90%;
+    width: 100%;
+}
+
+.more-info {
+    margin-left: 14rem;
+}
+
+#container-img2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fig-werun {
+    text-align: left;
+    line-height: 40px;
+    button {
+        margin-left: 14rem;
+        #link-plus {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.first-par {
+    text-align: left;
+    margin-left: 14rem;
+}
+
+.image3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .run-blu {
+        width: 100%;
+        .more-info {
+            margin-left: 14rem;
+        }
+    }
+}
+
+.image4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .naples {
+        width: 100%;
+    }
+}
+
+#container-img5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15rem;
+    .gallery {
+        width: 60vw;
+    }
+}
+
+.title {
+    text-align: left;
+    margin-left: 14rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-end;
+    .arrow-direction {
+        background-color: lightgray;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        margin-left: 50px;
+    }
+}
+
+.carousel {
+    margin: 5px 0;
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        li {
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+h3.car-title {
+    text-align: left;
+    margin-left: 40px;
+}
+
+p.car-par {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.carousel-info {
+    margin-left: 40px;
+}
+
+.image-trhee {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0px;
+    padding: 0;
+}
+
+.image-central {
+    display: flex;
+    justify-content: center;
+}
+
+.streccing {
+    width: 70vw;
+}
+
+.first-article {
+    p {
         text-align: left;
         margin-left: 20rem;
     }
-    
-    p {
-        text-align: left;
+}
+
+.title-art {
+    text-align: left;
+    margin-left: 20rem;
+}
+
+p {
+    text-align: left;
+    font-size: 21px;
+    margin-left: 14rem;
+}
+
+.title-os {
+    text-align: left;
+    margin-left: 14rem;
+}
+
+.second-article {
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.list-article {
+    margin-left: 14rem;
+    li {
         font-size: 23px;
-        margin-left: 14rem;
     }
-    
-    .title-os {
-        text-align: left;
-        margin-left: 14rem;
+}
+
+.image-pink {
+    display: flex;
+    justify-content: center;
+}
+
+.run-pink {
+    width: 67vw;
+}
+
+.third-article {
+    text-align: left;
+    h2.title-artic3 {
+        margin-left: 17rem;
+        p {
+            margin-left: 14rem;
+        }
     }
-    
-    .second-article {
-        text-align: left;
-        margin-left: 5rem;
+}
+
+.image-girl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.girl-run {
+    width: 67vw;
+}
+
+.last-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+        width: 450px;
+        margin-left: 40px;
     }
-    
-    .list-article {
-        margin-left: 14rem;
+}
+
+.title-series {
+    margin-left: 5rem;
+}
+
+.para-series {
+    margin-left: 5rem;
+}
+
+.series-info {
+    margin-left: 5rem;
+}
+
+.total-footer {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.list-footer1 {
+    margin-top: 50px;
+    ul {
+        list-style-type: none;
         li {
-            font-size: 23px;
-        }
-    }
-    
-    .image-pink {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .run-pink {
-        width: 100%
-    }
-    
-    .third-article {
-        text-align: left;
-        h2.title-artic3 {
-            margin-left: 17rem;
-            p {
-                margin-left: 14rem;
-            }
-        }
-    }
-    
-    .image-girl {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .girl-run {
-        width: 100%;
-    }
-    
-    .last-three {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        img {
-            width: 450px;
-            margin-left: 40px;
-        }
-    }
-    
-    .title-series {
-        margin-left: 5rem;
-    }
-    
-    .para-series {
-        margin-left: 5rem;
-    }
-    
-    .series-info {
-        margin-left: 5rem;
-    }
-    
-    .total-footer {
-        width: 100%;
-        height: 400px;
-        background-color: black;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-    .list-footer1 {
-        margin-top: 50px;
-        ul {
-            list-style-type: none;
-            li {
-                margin: 1rem;
-                a {
-                    color: white;
-                    font-weight: 10px;
-                }
-            }
-        }
-    }
-    
-    .list-footer2 {
-        margin-top: 50px;
-        ul {
-            list-style-type: none;
-            li {
-                margin: 1rem;
-                color: white;
-                cursor: pointer;
-                a {
-                    color: lightgray;
-                    font-weight: 10px;
-                    &:hover {
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-    
-    .list-footer3 {
-        margin-top: 50px;
-        ul {
-            list-style-type: none;
-            li {
-                margin: 1rem;
-                color: white;
-                cursor: pointer;
-                a {
-                    color: lightgray;
-                    font-weight: 10px;
-                    &:hover {
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-    
-    .list-footer4 {
-        margin-top: 50px;
-        ul {
-            list-style-type: none;
-            li {
-                margin: 1rem;
-                color: white;
-                cursor: pointer;
-                a {
-                    color: lightgray;
-                    font-weight: 10px;
-                    &:hover {
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-    
-    .icon-footer {
-        display: flex;
-        flex-direction: row;
-        div {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: lightgray;
-            margin: 5px;
-        }
-        i {
-            margin: 5px;
-            background-color: lightgrey;
-            margin: 13px;
-            &:hover {
-                color: white;
-                cursor: pointer;
-            }
-        }
-    }
-    
-    .down-list {
-        ul {
-            list-style-type: none;
-            li {
-                display: inline;
-                margin: 0;
-                a {
-                    color: white;
-                    font-size: 8px;
-                    margin: 5px;
-                }
-            }
-        }
-    }
-    
-    .down-footer {
-        display: inline-flex;
-        margin-left: 300px;
-        span {
-            color: white;
-            font-size: 10px;
+            margin: 1rem;
             a {
                 color: white;
-                font-size: 15px;
+                font-weight: 10px;
             }
         }
     }
-    
-    @media screen and (max-width: 950px) {
-        .menu {
-            display: none;
-        }
-        #search {
-            display: none;
-        }
-        .paragraph-app {
-            text-align: center;
-            font-size: 15px;
-        }
-        #yellow {
-            max-width: 100%;
-        }
-        p {
-            font-size: 15px;
-        }
-        .gallery {
-            max-width: 100%;
-        }
-        .streccing {
-            width: 60vw;
+}
+
+.list-footer2 {
+    margin-top: 50px;
+    ul {
+        list-style-type: none;
+        li {
+            margin: 1rem;
+            color: white;
+            cursor: pointer;
+            a {
+                color: lightgray;
+                font-weight: 10px;
+                &:hover {
+                    color: white;
+                }
+            }
         }
     }
+}
+
+.list-footer3 {
+    margin-top: 50px;
+    ul {
+        list-style-type: none;
+        li {
+            margin: 1rem;
+            color: white;
+            cursor: pointer;
+            a {
+                color: lightgray;
+                font-weight: 10px;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.list-footer4 {
+    margin-top: 50px;
+    ul {
+        list-style-type: none;
+        li {
+            margin: 1rem;
+            color: white;
+            cursor: pointer;
+            a {
+                color: lightgray;
+                font-weight: 10px;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.icon-footer {
+    display: flex;
+    flex-direction: row;
+    div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: lightgray;
+        margin: 5px;
+    }
+    i {
+        margin: 5px;
+        background-color: lightgrey;
+        margin: 13px;
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.down-list {
+    ul {
+        list-style-type: none;
+        li {
+            display: inline;
+            margin: 0;
+            a {
+                color: white;
+                font-size: 8px;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+.down-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    span {
+        color: white;
+        font-size: 10px;
+        a {
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .list-link {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width:950px) {
+    .menu {
+        display: none;
+    }
+    #search {
+        display: none;
+    }
+    .title-nike {
+        display: none;
+    }
+    #video-nike {
+        margin: auto;
+        width: 100%;
+    }
+    .image1 h3 {
+        margin: 0;
+    }
+    article h3 {
+        margin: auto;
+    }
+    .fig-werun h3 {
+        margin: auto;
+        line-height: 1;
+    }
+    .first-par {
+        margin: auto;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .paragraph-app {
+        margin: auto;
+        font-size: 15px;
+    }
+    .paragraph-imag1 {
+        margin: auto;
+        font-size: 15px;
+    }
+    #container-img5 {
+        width: 100%;
+        margin: auto;
+    }
+    .carousel h2 {
+        margin: auto;
+    }
+    .gallery {
+        width: 100%;
+        margin-left: 50px;
+    }
+    .carousel1 {
+        width: 50vw;
+    }
+    .car-par {
+        font-size: 15px;
+        margin: auto;
+    }
+    .carousel2 {
+        width: 50vw;
+    }
+    .carousel3 {
+        width: 50vw;
+    }
+    .carousel4 {
+        width: 50vw;
+    }
+    .carousel5 {
+        width: 50vw;
+    }
+    .wrapper {
+        width: 50vw;
+    }
+    .first-article h2 {
+        margin: auto;
+    }
+    .first-article p {
+        margin: 0;
+        line-height: 1;
+    }
+    .title-os {
+        margin: auto;
+    }
+    .second-article p {
+        margin: 0;
+        line-height: 1.7;
+    }
+    .second-article .title {
+        margin-left: 0;
+    }
+    .third-article {
+        p {
+            margin: auto;
+            font-size: 18px;
+        }
+    }
+    .title-artic3 {
+        margin: auto;
+        margin-top: 10px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .list-footer1 {
+        display: none;
+    }
+    .list-footer2 {
+        display: none;
+    }
+    .list-footer3 {
+        display: none;
+    }
+    .list-footer4 {
+        display: none;
+    }
+}
