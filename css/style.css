@@ -473,6 +473,9 @@ footer #footer-conteiner .conteiner-footer-list .conteiner-list-footer-text {
   display: flex;
   flex-wrap: wrap;
 }
+footer #footer-conteiner .conteiner-footer-list .conteiner-list-footer-text:hover {
+  cursor: pointer;
+}
 footer #footer-conteiner .conteiner-footer-list .footer-list {
   color: white;
   list-style-type: none;

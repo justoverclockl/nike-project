@@ -524,7 +524,9 @@ footer {
       .conteiner-list-footer-text {
         display: flex;
         flex-wrap: wrap;
-        cursor: pointer;
+        &:hover {
+          cursor: pointer;
+        }
       }
 
       .footer-list {
