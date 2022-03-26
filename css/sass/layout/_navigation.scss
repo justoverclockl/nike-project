@@ -1,4 +1,4 @@
-@use '../abstracts/placeholders';
+@use "../abstracts/placeholders";
 
 .brand-header {
   height: 36px;
@@ -173,6 +173,178 @@ button {
 
 .hamburger {
   display: none;
+}
+
+.container-login {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 16, 0.35);
+  backdrop-filter: blur(4px);
+
+  &.active {
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+
+    .user-login {
+      transform: translate3d(0, -5%, 0);
+      transition: transform 0.4s;
+    }
+  }
+}
+
+.cont-modal {
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.user-login {
+  width: 436px;
+  height: 483px;
+  border-radius: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.user-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.user-logo {
+  svg {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    color: #111;
+    font-family: Nike Goth;
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+    max-width: 25ch;
+    padding: 32px 0 26px;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.user-inside {
+  margin: 28px;
+  padding: 0 28px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.input-log-text {
+  border: 1px solid #e5e5e5;
+  color: #8d8d8d;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  line-height: 17px;
+  padding: 0 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-container {
+  max-width: 100%;
+
+  button {
+    font-size: 15px;
+    padding: 0 16px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    font-family: Nike Goth;
+    border-radius: 3px;
+    line-height: 17px;
+    border: 1px solid #000;
+    background-color: #000;
+    margin: 5px 0;
+  }
+}
+
+#user-checkbox {
+  opacity: 0;
+
+  + label {
+    display: inline-block;
+    width: 130px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 14px;
+    color: #8d8d8d;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #bcbcbc;
+      border-radius: 3px;
+    }
+  }
+
+  &:checked + label:after {
+    content: url("../../../assets/man-images/checkmark.svg");
+    position: absolute;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.check-input {
+  margin: 15px 0 21px;
+}
+
+.recovery-input {
+  font-size: 12px;
+  color: #bcbcbc;
+}
+
+.terms-input {
+  font-size: 12px;
+  text-align: center;
+  color: #8d8d8d;
+  padding: 3px 0 24px;
+  a {
+    color: #8d8d8d;
+    text-decoration: underline;
+  }
+}
+
+.join-input {
+  margin: 5px 0;
+  padding: 10px 0 0;
+  a {
+    color: #000;
+  }
 }
 
 @media screen and(max-width: 1130px) {
