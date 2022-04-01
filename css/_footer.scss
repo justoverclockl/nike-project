@@ -1,0 +1,128 @@
+.container.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  .footer-elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    & ul {
+      list-style: none;
+      & li:nth-child(1) {
+        margin-bottom: 1rem;
+      }
+      & li:nth-child(2) {
+        color: #9d9d9d;
+        line-height: 1.8;
+      }
+      & li:nth-child(3) {
+        color: #9d9d9d;
+        line-height: 1.8;
+      }
+      & li:nth-child(4) {
+        color: #9d9d9d;
+        line-height: 1.8;
+      }
+      & li:nth-child(5) {
+        color: #9d9d9d;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+.footer-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #ffffff;
+  .footer-second-elements {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-inline: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    .footer.right {
+      display: flex;
+      flex-wrap: wrap;
+      .footer-icons {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10rem;
+        .icons {
+          margin-right: 2rem;
+        }
+      }
+    }
+    .footer.left {
+      display: flex;
+      gap: 4rem;
+      flex-wrap: wrap;
+      .footer-second-one {
+        font-weight: bold;
+      }
+      .footer-second-two {
+        & li:nth-child(1) {
+          font-weight: bold;
+        }
+        & li:nth-child(2) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(3) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(4) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(5) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(6) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(7) {
+          color: #7e7e7e;
+        }
+      }
+      .footer-second-three {
+        & li:nth-child(1) {
+          font-weight: bold;
+        }
+        & li:nth-child(2) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(3) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(4) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(5) {
+          color: #7e7e7e;
+        }
+      }
+      .footer-second-four {
+        & li:nth-child(1) {
+          font-weight: bold;
+        }
+        & li:nth-child(2) {
+          color: #7e7e7e;
+        }
+        & li:nth-child(3) {
+          color: #7e7e7e;
+        }
+      }
+      ul {
+        list-style: none;
+        li {
+          font-size: .8rem;
+          line-height: 2.5;
+        }
+      }
+    }
+  }
+}
+
+
