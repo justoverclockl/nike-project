@@ -44,7 +44,7 @@ class Login {
     constructor(email, password, userId, registrationDate) {
         this.email = email
         this.password = password
-        this.registrationDate = new Date().toISOString()
+        this.registrationDate = Date.now()
     }
 
     toJson() {
@@ -57,9 +57,10 @@ class Login {
 
 }
 
+let newUser = [];
+
 function addUser(email, password, registrationDate) {
     const user = new Login(email, password, registrationDate);
-    let newUser = [];
     newUser.push([email, password, registrationDate]);
     console.log(newUser)
     const popup = document.getElementById('popup-text');
@@ -78,15 +79,16 @@ submitButton.addEventListener('click', (e) => {
 // popup per le cards
 
 const cards = document.querySelectorAll('.cards')
+const cardContainer = document.getElementById('cards-container');
 
 cards.forEach((card => {
     let open = false;
+
     const getName = card.querySelector('.footer-left')
     const getPrice = card.querySelector('.footer-right')
 
-
     function showPopup() {
-        const el = document.getElementById('cards-container');
+
         const popup = document.createElement('div')
         popup.setAttribute('class', 'card-popup')
         popup.setAttribute('id', 'card-popup')
@@ -100,17 +102,21 @@ cards.forEach((card => {
         const overlay = document.createElement('div')
         overlay.setAttribute('class', 'overlay')
         overlay.setAttribute('id', 'overlay')
-        el.appendChild(overlay)
-        el.appendChild(popup)
+        cardContainer.appendChild(overlay)
+        cardContainer.appendChild(popup)
 
-        function closePopup(){
-            popup.remove()
-            overlay.remove()
-        }
+
         overlay.addEventListener('click', closePopup)
         let elem = document.querySelector('.close-card-popup')
         elem.addEventListener('click', closePopup)
 
+    }
+
+    function closePopup(){
+        const popup = document.getElementById('card-popup')
+        const overlay = document.getElementById('overlay')
+        popup.remove()
+        overlay.remove()
     }
 
     card.addEventListener('click', () => {

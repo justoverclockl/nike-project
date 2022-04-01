@@ -169,6 +169,7 @@
   border-radius: 20px;
   font-size: 1rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .container.slider {
@@ -706,6 +707,7 @@
   -moz-animation: fadeIn ease 0.5s;
   -o-animation: fadeIn ease 0.5s;
   -ms-animation: fadeIn ease 0.5s;
+  z-index: 99999;
 }
 
 @keyframes fadeIn {
