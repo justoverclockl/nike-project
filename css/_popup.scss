@@ -81,6 +81,7 @@
   -moz-animation: fadeIn ease .5s;
   -o-animation: fadeIn ease .5s;
   -ms-animation: fadeIn ease .5s;
+  z-index: 99999;
 }
 @keyframes fadeIn{
   0% {
