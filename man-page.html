@@ -27,32 +27,65 @@
                     <section>
                         <div class="user-logo">
                             <svg class="pre-logo-svg" height="20px" width="60px" fill="#111" viewBox="0 0 69 32"><path d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"></path></svg>
-                            <h2>
-                                IL TUO ACCOUNT PER ACCEDERE AL MONDO NIKE
+                            <h2 id="info-logo">
+                                <span>IL TUO ACCOUNT PER ACCEDERE AL MONDO NIKE</span>
+                                <span>REIMPOSTA PASSWORD</span>
+                                <span>DIVENTA UN MEMBER NIKE</span>
                             </h2>
+                            <p id="terms-pass" class="terms-input">Inserisci il tuo indirizzo e-mail e ti invieremo le istruzioni per reimpostare la password.</p>
+                            <p id="terms-register" class="terms-input">Crea un profilo Member Nike e ottieni l'accesso in anteprima a tutti i migliori prodotti Nike, a contenuti in grado di ispirarti e alla community.</p>
                         </div>
-                        <form class="form-container">
-                            <div class="input-container">
-                                <input type="text" class="input-log-text" id="user-email" placeholder="Indirizzo e-mail" required>
+                        <form id="login-form" class="form-container">
+                            <input type="text" class="input-log-text" name="email" id="user-email" placeholder="Indirizzo e-mail" required>
+                            <input type="password" class="input-log-text" name="password" id="user-password" placeholder="Password" required>
+                            <div id="register-block" class="register-input">
+                                <input type="text" class="input-log-text" name="firstName" id="user-name" placeholder="Nome" required>
+                                <input type="text" class="input-log-text" name="surname" id="user-surname" placeholder="Cognome" required>
+                                <input type="text" class="input-log-text" name="date" placeholder="Data di nascita" required>
+                                <p class="terms-input" style="padding: 10px 0;">Ottieni una ricompensa per i Member Nike ogni anno nel giorno del tuo compleanno.</p>
+                                <input type="list" class="input-log-text" name="country" id="user-country">
+                                <datalist>
+                                    <option selected="selected">Italia</option> 
+                                </datalist>
+                                <input name="man" type="button">Uomo</button>
+                                <input name="woman" type="button">Donna</button>
+                                <div class="input-container check-input">
+                                    <input type="checkbox" name="email-sub" id="register-check" class="login-checkbox" checked>
+                                    <label for="register-check" class="lab-register">Iscriviti per ricevere e-mail e aggiornamenti da Nike su prodotti, offerte e vantaggi per i member</label>
+                                </div>
+                                <p class="terms-input">Creando un account, accetti la 
+                                    <a href="#">Politica sulla privacy</a> e i 
+                                    <a href="#">Termini di utilizzo</a> di Nike.</p>
                             </div>
-                            <div class="input-container">
-                                <input type="password" class="input-log-text" id="user-password" placeholder="Password" required>
+                            <div id="disable-login">
+                                <div class="input-container check-input">
+                                    <input type="checkbox" name="stay-online" id="user-checkbox" class="login-checkbox" checked>
+                                    <label for="user-checkbox">Rimani collegato</label>
+                                    <a id="recovery-pass" class="recovery-input check-input" href="#">Hai dimenticato la password?</a>
+                                </div>
+                                <p class="terms-input">Effettuando l'accesso, accetti la 
+                                    <a href="#">Politica sulla privacy</a> 
+                                    e i 
+                                    <a href="#">Termini di utilizzo</a> 
+                                    di Nike.
+                                </p>
                             </div>
-                            <div class="input-container check-input">
-                                <input type="checkbox" id="user-checkbox" checked>
-                                <label for="user-checkbox">Rimani collegato</label>
-                                <a class="recovery-input check-input" href="#">Hai dimenticato la password?</a>
+                            <div id="info-button">
+                                <button type="submit">ACCEDI</button>
+                                <button type="submit">REIMPOSTA</button>
+                                <button type="submit">UNISCITI A NOI</button>
                             </div>
-                            <p class="terms-input">Effettuando l'accesso, accetti la 
-                                <a href="#">Politica sulla privacy</a> 
-                                e i 
-                                <a href="#">Termini di utilizzo</a> 
-                                di Nike.
-                            </p>
-                            <button type="button" id="login-button">ACCEDI</button>
-                            <p class="terms-input join-input">Non sei un member? 
-                                <a href="#">Unisciti a noi</a>
-                            </p>
+                            <div id="info-text">
+                                <p class="terms-input join-input">Non sei un member? 
+                                    <a href="#">Unisciti a noi</a>
+                                </p>
+                                <p class="terms-input join-input">Oppure torna alla schermata di 
+                                    <a href="#">Accesso</a>
+                                </p>
+                                <p class="terms-input join-input">Sei già un member?
+                                    <a href="#">Accedi</a>
+                                </p>
+                            </div>
                         </form>
                     </section>
                 </div>

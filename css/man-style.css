@@ -196,8 +196,8 @@ button {
 }
 
 .user-login {
-  width: 436px;
-  height: 483px;
+  width: 100%;
+  max-width: 436px;
   border-radius: 3px;
   background-color: #fff;
   position: relative;
@@ -226,6 +226,12 @@ button {
   text-align: center;
   font-weight: 700;
 }
+.user-logo h2 span {
+  display: none;
+}
+.user-logo h2 span.active {
+  display: block;
+}
 
 .user-inside {
   margin: 28px;
@@ -234,12 +240,14 @@ button {
 
 .input-container {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: baseline;
   width: 100%;
   margin: 5px 0;
 }
 
 .input-log-text {
+  margin: 5px 0;
   border: 1px solid #e5e5e5;
   color: #8d8d8d;
   width: 100%;
@@ -254,10 +262,24 @@ button {
   outline: none;
 }
 
+#user-password {
+  display: block;
+}
+#user-password.input-log-text.active {
+  display: none;
+}
+
+#disable-login {
+  display: block;
+}
+#disable-login.active {
+  display: none;
+}
+
 .form-container {
   max-width: 100%;
 }
-.form-container button {
+.form-container #info-button button {
   font-size: 15px;
   padding: 0 16px;
   width: 100%;
@@ -270,33 +292,37 @@ button {
   border: 1px solid #000;
   background-color: #000;
   margin: 5px 0;
+  display: none;
+}
+.form-container #info-button button.active {
+  display: block;
 }
 
-#user-checkbox {
+.login-checkbox {
   opacity: 0;
 }
-#user-checkbox + label {
+.login-checkbox + label {
   display: inline-block;
-  width: 130px;
   font-size: 12px;
   line-height: 14px;
   margin-left: 14px;
   color: #8d8d8d;
 }
-#user-checkbox + label:before {
+.login-checkbox + label:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 20px;
   height: 20px;
   border: 1px solid #bcbcbc;
   border-radius: 3px;
 }
-#user-checkbox:checked + label:after {
+.login-checkbox:checked + label:after {
   content: url("../../../assets/man-images/checkmark.svg");
   position: absolute;
   left: 5px;
+  top: 14px;
   width: 10px;
   height: 10px;
 }
@@ -305,7 +331,13 @@ button {
   margin: 15px 0 21px;
 }
 
+.lab-register {
+  margin-left: 20px;
+  margin-top: 9px;
+}
+
 .recovery-input {
+  margin-left: 42px;
   font-size: 12px;
   color: #bcbcbc;
 }
@@ -321,12 +353,37 @@ button {
   text-decoration: underline;
 }
 
+#info-text .terms-input {
+  display: none;
+}
+#info-text .terms-input.active {
+  display: block;
+}
+
+#terms-pass,
+#terms-register {
+  display: none;
+}
+#terms-pass.terms-input.active,
+#terms-register.terms-input.active {
+  display: block;
+  padding: 0 0 27px;
+  font-size: 14px;
+}
+
 .join-input {
   margin: 5px 0;
   padding: 10px 0 0;
 }
 .join-input a {
   color: #000;
+}
+
+#register-block {
+  display: none;
+}
+#register-block.register-input.active {
+  display: block;
 }
 
 @media screen and (max-width: 1130px) {
