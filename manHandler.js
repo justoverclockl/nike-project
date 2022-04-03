@@ -242,3 +242,27 @@ infoButton.addEventListener("click", (element) => {
 });
 
 //#endregion
+
+//#region Animation scroll carousel
+
+document.querySelectorAll(".icons-trend").forEach((node) => {
+  node.addEventListener("click", (element) => {
+    const carousel = element.target.closest(".carousel-trend");
+    const btn = element.target.closest(".icon-trend");
+    for (let carouselElement of carousel.children) {
+      if (carouselElement.classList.contains("container-trend")) {
+        carouselElement.scroll({
+          left:
+            // check if current button is the same,
+            // if isn't, invert the behavior
+            btn != node.children[0]
+              ? carouselElement.scrollLeft + 600
+              : carouselElement.scrollLeft - 600,
+          behavior: "smooth",
+        });
+      }
+    }
+  });
+});
+
+//#endregion
