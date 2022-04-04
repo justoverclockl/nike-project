@@ -11,8 +11,9 @@ body {
 }
 
 .pop-up-container {
+  position: fixed;
   display: none;
-  background: black;
+  background: white;
   bottom: 0;
   height: 400px;
   width: 600px;
@@ -21,8 +22,46 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-}
+  border: solid;
+  width: 24rem;
+  height: 26rem;
 
+  span {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .image-pop-up {
+    padding-top: 12px;
+  }
+
+  .close-popup {
+    align-self: self-end;
+    background: none;
+    align-self: self-end;
+    border: none;
+    font-size: 19px;
+  }
+
+  .pop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-for-popup {
+    display: flex;
+    align-items: center;
+
+    .input {
+      margin: 10px;
+    }
+  }
+}
 p {
   line-height: 34px;
   font-size: 20px;
@@ -62,6 +101,7 @@ p {
     padding-right: 2em;
 
     .a-one {
+      cursor: pointer;
       text-decoration: none;
       padding: 9px;
       font-size: 13px;

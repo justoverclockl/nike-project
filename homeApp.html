@@ -50,7 +50,7 @@
               </li>
               <li>|</li>
               <li>
-                <p id="accedi" class="a-one">Accedi</p>
+                <a id="accedi" class="a-one">Accedi</a>
               </li>
             </ul>
           </div>
@@ -110,10 +110,28 @@
       <div id="pop-up-container" class="pop-up-container">
         <div id="pop-up" class="pop-up">
           <picture>
-            <img src="assets/log-nike-app.jpg" alt="immagine-nike"
+            <img
+              class="image-popup"
+              src="assets/logo-nike-BLK.original.png"
+              width="30px"
+              alt="immagine-nike"
           /></picture>
-          <p>sono un pop-up</p>
-          <button id="close">chiudi</button>
+          <button id="close" class="close-popup">X</button>
+          <h2>IL TUO ACCOUNT PER <br />ACCEDERE AL MONDO NIKE</h2>
+          <input type="text" placeholder="Indirizzo e-mail" required />
+          <input type="password" placeholder="Password" />
+          <div class="text-for-popup">
+            <input type="checkbox" />
+            <p>Rimani collegato</p>
+            <p>Hai dimenticato la password?</p>
+          </div>
+          <span>
+            Effettuando l'accesso,accetti la
+            <a href="*"> Politica sulla privacy,</a>e i
+            <a href="*">Termini di utilizzo</a><span>di Nike.</span>
+          </span>
+          <button>ACCEDI</button>
+          <p>Non sei un member? <a href="*">Unisciti a noi.</a></p>
         </div>
       </div>
       <div>
