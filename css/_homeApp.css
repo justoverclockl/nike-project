@@ -5,6 +5,19 @@ body {
   background-color: white;
 }
 
+.pop-up-container {
+  display: none;
+  background: white;
+  bottom: 0;
+  height: 400px;
+  width: 600px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 p {
   line-height: 34px;
   font-size: 20px;
