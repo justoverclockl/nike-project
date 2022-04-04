@@ -603,4 +603,18 @@ h2 {
   font-size: 15px;
 }
 
-/*# sourceMappingURL=smart-app.css.map */
+@media screen and (max-width: 950px) {
+  .list-link {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=smart.app.css.map */
