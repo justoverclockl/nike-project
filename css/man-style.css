@@ -189,12 +189,6 @@ button {
   transition: transform 0.4s;
 }
 
-.cont-modal {
-  width: 100vw;
-  height: 100vh;
-  z-index: 3;
-}
-
 .user-login {
   width: 100%;
   max-width: 436px;
@@ -238,6 +232,56 @@ button {
   padding: 0 28px;
 }
 
+.cookie-inside {
+  padding: 24px;
+}
+.cookie-inside h1 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.cookie-text {
+  margin-top: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.cookie-text:nth-last-child(1) {
+  font-size: 14px;
+  line-height: 20px;
+  color: #757575;
+}
+
+.bottom-padd {
+  padding-bottom: 20px;
+}
+
+.cookie-btn {
+  margin-top: 20px;
+  width: 49%;
+  padding: 5px 19px;
+  border-radius: 50px;
+  border: 1.5px solid transparent;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.cookie-btn:hover:not(:nth-child(1)) {
+  background-color: #757575;
+}
+.cookie-btn:nth-child(1) {
+  border-color: #ccc;
+  background-color: #fff;
+  color: #111;
+}
+.cookie-btn:nth-child(1):hover {
+  border-color: #111;
+}
+
 .input-container {
   position: relative;
   display: flex;
@@ -279,7 +323,8 @@ button {
 .form-container {
   max-width: 100%;
 }
-.form-container #info-button button {
+
+.info-btn {
   font-size: 15px;
   padding: 0 16px;
   width: 100%;
@@ -294,7 +339,7 @@ button {
   margin: 5px 0;
   display: none;
 }
-.form-container #info-button button.active {
+.info-btn.active, .info-btn.nl-btn {
   display: block;
 }
 
@@ -325,6 +370,34 @@ button {
   top: 14px;
   width: 10px;
   height: 10px;
+}
+
+.input-gender {
+  margin-top: 30px;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}
+.input-gender + label {
+  font-size: 14px;
+  position: relative;
+  border: 1px solid #e5e5e5;
+  color: #8d8d8d;
+  border-radius: 3px;
+  padding: 11px 55px;
+}
+.input-gender + label[for=gender-man] {
+  margin-right: 5px;
+}
+.input-gender:checked + label {
+  border-color: #111;
+  color: #111;
+}
+.input-gender:checked + label:before {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  content: url("../../../assets/man-images/checkmark.svg");
 }
 
 .check-input {
@@ -602,12 +675,6 @@ footer {
   justify-content: space-between;
 }
 
-.icon-trend:nth-child(1) {
-  margin-right: 12px;
-  background-color: #f5f5f5;
-  color: #d1d1d1;
-}
-
 .icon-trend {
   display: flex;
   align-items: center;
@@ -616,6 +683,25 @@ footer {
   height: 48px;
   background-color: #e5e5e5;
   border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.icon-trend:hover {
+  background-color: #ccc;
+}
+.icon-trend:nth-child(1) {
+  margin-right: 12px;
+  background-color: #f5f5f5;
+  color: #d1d1d1;
+  cursor: default;
+}
+.icon-trend:nth-child(1).active {
+  cursor: pointer;
+  background-color: #e5e5e5;
+  color: #111;
+}
+.icon-trend:nth-child(1).active:hover {
+  background-color: #ccc;
 }
 
 .items-details {
@@ -807,6 +893,14 @@ footer {
 
 main {
   margin-bottom: 56px;
+}
+
+.nl-text {
+  justify-content: center;
+  max-width: 350px;
+}
+.nl-text * {
+  margin: 5px 0;
 }
 
 @media screen and (max-width: 960px) {
@@ -1007,9 +1101,14 @@ footer {
   justify-content: space-between;
   padding-left: 4%;
 }
-.footer-location.footer-link ul li a, .footer-location.footer-link ul li a span {
+.footer-location.footer-link ul li a,
+.footer-location.footer-link ul li a span,
+.footer-location.footer-link ul li p {
   margin-left: 18px;
   font-size: 10px;
+}
+.footer-location.footer-link ul li p {
+  margin-top: 5px;
 }
 .footer-location span {
   color: #fff;
@@ -1021,7 +1120,7 @@ footer {
   fill: #fff;
 }
 
-hr {
+footer hr {
   display: none;
 }
 

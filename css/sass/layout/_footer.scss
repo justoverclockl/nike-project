@@ -99,10 +99,17 @@ footer {
   justify-content: space-between;
   padding-left: 4%;
 
-  &.footer-link ul li a,
-  &.footer-link ul li a span {
-    margin-left: 18px;
-    font-size: 10px;
+  &.footer-link ul li {
+    a,
+    a span,
+    p {
+      margin-left: 18px;
+      font-size: 10px;
+    }
+
+    p {
+      margin-top: 5px;
+    }
   }
 
   span {
@@ -118,7 +125,7 @@ footer {
   }
 }
 
-hr {
+footer hr {
   display: none;
 }
 

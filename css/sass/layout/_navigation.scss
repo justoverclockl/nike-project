@@ -199,12 +199,6 @@ button {
   }
 }
 
-.cont-modal {
-  width: 100vw;
-  height: 100vh;
-  z-index: 3;
-}
-
 .user-login {
   width: 100%;
   max-width: 436px;
@@ -252,6 +246,60 @@ button {
   padding: 0 28px;
 }
 
+.cookie-inside {
+  padding: 24px;
+  h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.cookie-text {
+  margin-top: 20px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  &:nth-last-child(1) {
+    font-size: 14px;
+    line-height: 20px;
+    color: #757575;
+  }
+}
+
+.bottom-padd{
+  padding-bottom: 20px;
+}
+
+.cookie-btn {
+  margin-top: 20px;
+  width: 49%;
+  padding: 5px 19px;
+  border-radius: 50px;
+  border: 1.5px solid transparent;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+
+  &:hover:not(:nth-child(1)) {
+    background-color: #757575;
+  }
+
+  &:nth-child(1) {
+    border-color: #ccc;
+    background-color: #fff;
+    color: #111;
+
+    &:hover {
+      border-color: #111;
+    }
+  }
+}
+
 .input-container {
   position: relative;
   display: flex;
@@ -294,27 +342,26 @@ button {
 
 .form-container {
   max-width: 100%;
+}
 
-  #info-button {
-    button {
-      font-size: 15px;
-      padding: 0 16px;
-      width: 100%;
-      height: 40px;
-      cursor: pointer;
-      color: #fff;
-      font-family: Nike Goth;
-      border-radius: 3px;
-      line-height: 17px;
-      border: 1px solid #000;
-      background-color: #000;
-      margin: 5px 0;
-      display: none;
+.info-btn {
+  font-size: 15px;
+  padding: 0 16px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  font-family: Nike Goth;
+  border-radius: 3px;
+  line-height: 17px;
+  border: 1px solid #000;
+  background-color: #000;
+  margin: 5px 0;
+  display: none;
 
-      &.active {
-        display: block;
-      }
-    }
+  &.active,
+  &.nl-btn {
+    display: block;
   }
 }
 
@@ -347,6 +394,37 @@ button {
     top: 14px;
     width: 10px;
     height: 10px;
+  }
+}
+
+.input-gender {
+  margin-top: 30px;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+
+  + label {
+    font-size: 14px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    color: #8d8d8d;
+    border-radius: 3px;
+    padding: 11px 55px;
+
+    &[for=gender-man] {
+      margin-right: 5px;
+    }
+  }
+
+  &:checked + label {
+    border-color: #111;
+    color: #111;
+    &:before {
+      position: absolute;
+      left: 25%;
+      top: 25%;
+      content: url("../../../assets/man-images/checkmark.svg");
+    }
   }
 }
 

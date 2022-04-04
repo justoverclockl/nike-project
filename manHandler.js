@@ -11,6 +11,10 @@ const infoButton = document.getElementById("info-button");
 const infoText = document.getElementById("info-text");
 const registerBlock = document.getElementById("register-block");
 const termsRegister = document.getElementById("terms-register");
+const checkMan = document.getElementById("gender-man");
+const checkWoman = document.getElementById("gender-woman");
+const nlButton = document.getElementById("nl-button");
+const nlModal = document.getElementById("nl-modal");
 
 //#region show login modal
 
@@ -30,6 +34,7 @@ document.getElementById("log-btn").addEventListener("click", () => {
 
 //#region close login modal
 
+// login modal, close if click outside
 contLog.addEventListener("click", (element) => {
   if (element.target == contLog) {
     editByDiffIndex(
@@ -49,9 +54,18 @@ contLog.addEventListener("click", (element) => {
   }
 });
 
+// newsletter modal, close if click outside
+nlModal.addEventListener("click", (element) => {
+  if (element.target == nlModal) {
+    editClass(nlModal, false, "active");
+  }
+});
+
+// X button
 closeBtn.addEventListener("click", () =>
   editByDiffIndex(
     [
+      nlModal,
       disableLogin,
       userPassword,
       termsPass,
@@ -71,7 +85,7 @@ closeBtn.addEventListener("click", () =>
 //#region login modal change
 
 // Recovery Password
-recoveryPass.addEventListener("click", () =>
+recoveryPass.addEventListener("click", () => {
   editByDiffIndex(
     [
       termsPass,
@@ -84,8 +98,12 @@ recoveryPass.addEventListener("click", () =>
     true,
     "active",
     1
-  )
-);
+  );
+  for (let element of registerBlock.children) {
+    element.disabled = true;
+  }
+  userPassword.disabled = true;
+});
 
 // Register
 infoText.children[0].addEventListener("click", () => {
@@ -105,10 +123,24 @@ infoText.children[0].addEventListener("click", () => {
   for (let element of registerBlock.children) {
     element.disabled = false;
   }
+  userPassword.disabled = false;
+
+  // man - woman button click
+  // seems hardcode, can't find better way to implement that
+  checkMan.addEventListener("change", () => {
+    if (checkMan.checked) {
+      checkWoman.checked = false;
+    }
+  });
+  checkWoman.addEventListener("change", () => {
+    if (checkWoman.checked) {
+      checkMan.checked = false;
+    }
+  });
 });
 
 // Login close password
-infoText.children[1].addEventListener("click", () =>
+infoText.children[1].addEventListener("click", () => {
   editByDiffIndex(
     [
       termsPass,
@@ -121,11 +153,12 @@ infoText.children[1].addEventListener("click", () =>
     false,
     "active",
     0
-  )
-);
+  );
+  userPassword.disabled = false;
+});
 
 // Login close register
-infoText.children[2].addEventListener("click", () =>
+infoText.children[2].addEventListener("click", () => {
   editByDiffIndex(
     [
       registerBlock,
@@ -138,8 +171,11 @@ infoText.children[2].addEventListener("click", () =>
     false,
     "active",
     2
-  )
-);
+  );
+  for (let element of registerBlock.children) {
+    element.disabled = true;
+  }
+});
 
 //#endregion
 
@@ -181,25 +217,27 @@ function editByDiffIndex(parent, isActive, className, index = null) {
   });
 }
 
-//#endregion
-
-//#region getInput
-
-const form = document.getElementById("login-form");
-
-infoButton.addEventListener("click", (element) => {
-  if (element.target.classList.contains("active")) {
+/**
+ * run form login/register/recovery password
+ * @param {*} element
+ * @param {HTMLElement} form
+ */
+function runForm(element, form) {
+  if (
+    element.target.classList.contains("active") ||
+    element.target.classList.contains("nl-btn")
+  ) {
     event.preventDefault();
     const account = {};
 
     let inputs = form.elements;
 
     for (let input of inputs) {
-      if (
-        !input.disabled &&
-        input.type != "checkbox" &&
-        input.type != "submit"
-      ) {
+      if (!input.disabled && input.type != "submit") {
+        if (input.value === "") {
+          alert("Inserisci correttamente tutti i valori!");
+          return false;
+        }
         switch (input.name) {
           case "email":
             account.email = input.value;
@@ -225,19 +263,38 @@ infoButton.addEventListener("click", (element) => {
             account.country = input.value;
             break;
 
-          case "man":
+          case "nl-gender":
             account.gender = input.value;
+            break;
+
+          case "man":
+            if (input.checked) account.gender = input.name;
             break;
 
           case "woman":
-            account.gender = input.value;
+            if (input.checked) account.gender = input.name;
             break;
         }
+        input.value = "";
+        input.checked = false;
       }
-      input.value = "";
     }
 
     console.log(account);
+  }
+}
+
+//#endregion
+
+//#region getInput form
+
+const form = document.getElementById("login-form");
+const nlForm = document.getElementById("nl-form");
+
+infoButton.addEventListener("click", (element) => runForm(element, form));
+nlButton.addEventListener("click", (element) => {
+  if (runForm(element, nlForm)) {
+    editClass(nlModal, true, "active");
   }
 });
 
@@ -249,20 +306,46 @@ document.querySelectorAll(".icons-trend").forEach((node) => {
   node.addEventListener("click", (element) => {
     const carousel = element.target.closest(".carousel-trend");
     const btn = element.target.closest(".icon-trend");
+    const firstButton = node.children[0];
     for (let carouselElement of carousel.children) {
       if (carouselElement.classList.contains("container-trend")) {
+        const scrollX = carouselElement.scrollLeft;
         carouselElement.scroll({
           left:
             // check if current button is the same,
-            // if isn't, invert the behavior
-            btn != node.children[0]
-              ? carouselElement.scrollLeft + 600
-              : carouselElement.scrollLeft - 600,
+            // if isn't, invert the direction
+            btn != firstButton ? scrollX + 600 : scrollX - 600,
           behavior: "smooth",
+        });
+        carouselElement.addEventListener("scroll", (e) => {
+          // condition required because behavior smooth
+          // trigger too many times scroll event
+          if (e.target.scrollLeft > 0 && e.target.scrollLeft <= 1) {
+            editClass(firstButton, true, "active");
+          } else if (e.target.scrollLeft === 0) {
+            editClass(firstButton, false, "active");
+          }
         });
       }
     }
   });
+});
+
+//#endregion
+
+//#region Cookie settings handler
+
+const cookieModal = document.getElementById("cookie-modal");
+const acceptCookie = document.getElementById("accept-cookie");
+
+acceptCookie.addEventListener("click", () => {
+  sessionStorage.setItem("setCookie", "randomUser");
+  editClass(cookieModal, false, "active");
+});
+
+window.addEventListener("load", () => {
+  if (!sessionStorage.getItem("setCookie"))
+    editClass(cookieModal, true, "active");
 });
 
 //#endregion

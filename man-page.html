@@ -17,6 +17,55 @@
 </head>
 <body>
     <header>
+        <div id="nl-modal" class="container-login">
+            <div class="user-login">
+                <div class="cookie-inside">
+                    <button id="close-btn" class="user-close-btn">
+                        <svg fill="#111" height="17px" viewBox="0 0 24 24"><path d="M15.04 12L24 2.96 21.04 0 12 8.96 3.04 0 0 2.96 9.04 12 0 20.96 3.04 24 12 14.96 21.04 24 24 20.96z"></path>
+                        </svg>
+                    </button>
+                    <h1 class="bottom-padd">Iscrizione completata!</h1>
+                    <hr>
+                    <p class="cookie-text" style="padding-bottom: 20px;">
+                        Ti sei iscritto correttamente alla newsletter di Nike,
+                        da adesso riceverai tutte le promozioni e novità sul mondo Nike.
+                    </p>
+                    <hr>
+                    <p class="cookie-text">
+                        Puoi annullare la tua iscrizione cliccando sul link ricevuto via email.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="cookie-modal" class="container-login">
+            <div class="user-login">
+                <div class="cookie-inside">
+                    <h1 class="bottom-padd">Impostazioni dei cookie</h1>
+                    <hr>
+                    <p class="cookie-text">
+                        Nike richiede di accettare i cookie per scopi legati a prestazioni, 
+                        social media e annunci pubblicitari. I cookie di terze parti per social 
+                        media e a scopo pubblicitario vengono utilizzati per offrire funzionalità social
+                         e annunci pubblicitari personalizzati. Per ulteriori informazioni o per 
+                         modificare le tue preferenze, clicca "Ulteriori informazioni" oppure visita 
+                         "Impostazioni dei cookie" in fondo alla pagina Web. Per ulteriori informazioni
+                          relative ai cookie e all'elaborazione dei tuoi dati personali, consulta 
+                          l'Informativa sulla privacy e sui cookie. Accetti i cookie e l'elaborazione 
+                          dei dati personali interessati?
+                    </p>
+                    <div class="bottom-padd">
+                        <button class="cookie-btn">Ulteriori informazioni</button>
+                        <button id="accept-cookie" class="cookie-btn">Si, accetto</button>
+                    </div>
+                    <hr>
+                    <p class="cookie-text">
+                        Puoi sempre modificare le tue preferenze accedendo alla sezione 
+                        "Impostazioni dei cookie" in fondo alla pagina. Per i dettagli 
+                        completi, consulta l'Informativa sulla privacy e sui cookie.
+                    </p>
+                </div>
+            </div>
+        </div>
         <div id="container-log" class="container-login">
             <div class="user-login">
                 <div class="user-inside">
@@ -35,7 +84,7 @@
                             <p id="terms-pass" class="terms-input">Inserisci il tuo indirizzo e-mail e ti invieremo le istruzioni per reimpostare la password.</p>
                             <p id="terms-register" class="terms-input">Crea un profilo Member Nike e ottieni l'accesso in anteprima a tutti i migliori prodotti Nike, a contenuti in grado di ispirarti e alla community.</p>
                         </div>
-                        <form id="login-form" class="form-container">
+                        <form id="login-form" class="form-container" method="GET">
                             <input type="text" class="input-log-text" name="email" id="user-email" placeholder="Indirizzo e-mail" required>
                             <input type="password" class="input-log-text" name="password" id="user-password" placeholder="Password" required>
                             <div id="register-block" class="register-input">
@@ -43,12 +92,15 @@
                                 <input type="text" class="input-log-text" name="surname" id="user-surname" placeholder="Cognome" required>
                                 <input type="text" class="input-log-text" name="date" placeholder="Data di nascita" required>
                                 <p class="terms-input" style="padding: 10px 0;">Ottieni una ricompensa per i Member Nike ogni anno nel giorno del tuo compleanno.</p>
-                                <input type="list" class="input-log-text" name="country" id="user-country">
-                                <datalist>
-                                    <option selected="selected">Italia</option> 
-                                </datalist>
-                                <input name="man" type="button">Uomo</button>
-                                <input name="woman" type="button">Donna</button>
+                                <select class="input-log-text" name="country" id="user-country">
+                                    <optgroup label="Paese/regione">
+                                        <option value="IT" selected="selected">Italia</option>
+                                    </optgroup>
+                                </select>
+                                <input name="man" type="checkbox" id="gender-man" class="input-gender">
+                                <label for="gender-man">Uomo</label>
+                                <input name="woman" type="checkbox" id="gender-woman" class="input-gender">
+                                <label for="gender-woman">Donna</label>
                                 <div class="input-container check-input">
                                     <input type="checkbox" name="email-sub" id="register-check" class="login-checkbox" checked>
                                     <label for="register-check" class="lab-register">Iscriviti per ricevere e-mail e aggiornamenti da Nike su prodotti, offerte e vantaggi per i member</label>
@@ -71,9 +123,9 @@
                                 </p>
                             </div>
                             <div id="info-button">
-                                <button type="submit">ACCEDI</button>
-                                <button type="submit">REIMPOSTA</button>
-                                <button type="submit">UNISCITI A NOI</button>
+                                <button class="info-btn" type="submit">ACCEDI</button>
+                                <button class="info-btn" type="submit">REIMPOSTA</button>
+                                <button class="info-btn" type="submit">UNISCITI A NOI</button>
                             </div>
                             <div id="info-text">
                                 <p class="terms-input join-input">Non sei un member? 
@@ -781,6 +833,33 @@
                         <li><a href="#">Nike Run Club</a></li>
                         <li><a href="#">Nike Training Club</a></li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sect-trend">
+            <div class="sect-category nl-text">
+                <div class="center-text">
+                    <h4 class="text-title">NEWSLETTER</h4>
+                    <p>Iscriviti alla newsletter di Nike per restare informato su tutte le novità!</p>
+                    <form id="nl-form" method="GET">
+                        <input type="email" class="input-log-text" name="email" placeholder="Inrizzo e-mail" required>
+                        <input type="text" class="input-log-text" name="date" placeholder="Data di nascita" required>
+                        <select class="input-log-text" name="country">
+                            <optgroup label="Paese/regione">
+                                <option value="IT" selected="selected">Italia</option>
+                            </optgroup>
+                        </select>
+                        <select class="input-log-text" name="nl-gender">
+                            <optgroup label="Preferenze di acquisto">
+                                <option value="0">Uomo</option>
+                                <option value="1">Donna</option>
+                            </optgroup>
+                        </select>
+                        <div id="nl-button">
+                            <button class="info-btn nl-btn" type="submit">ISCRIVITI</button>
+                        </div>
+                    </form>
+                    <p class="terms-input">Iscrivendoti, accetti l'Informativa sulla privacy e le Condizioni d'uso di Nike.</p>
                 </div>
             </div>
         </section>
