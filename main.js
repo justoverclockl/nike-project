@@ -61,7 +61,7 @@ let newUser = [];
 
 function addUser(email, password, registrationDate) {
     const user = new Login(email, password, registrationDate);
-    newUser.push([email, password, registrationDate]);
+    newUser.push({email, password, registrationDate});
     console.log(newUser)
     const popup = document.getElementById('popup-text');
     popup.innerHTML = user.displayLoginMessage()
@@ -80,6 +80,7 @@ submitButton.addEventListener('click', (e) => {
 
 const cards = document.querySelectorAll('.cards')
 const cardContainer = document.getElementById('cards-container');
+const overlay = document.getElementById('overlay')
 
 cards.forEach((card => {
     let open = false;
@@ -118,6 +119,8 @@ cards.forEach((card => {
         popup.remove()
         overlay.remove()
     }
+
+
 
     card.addEventListener('click', () => {
         showPopup()

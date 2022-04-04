@@ -212,6 +212,7 @@
 }
 .container.slider .cards {
   min-width: 600px;
+  cursor: pointer;
 }
 .container.slider img.image-card {
   width: 100%;
