@@ -19,16 +19,19 @@ body {
   top: 0;
   border: solid;
   width: 24rem;
-  height: 26rem;
+  height: 30rem;
 }
 .pop-up-container span {
-  font-size: 10px;
+  font-size: 13px;
+  line-height: 20px;
 }
 .pop-up-container p {
-  font-size: 10px;
+  font-size: 15px;
+  margin: 6px;
 }
-.pop-up-container .image-pop-up {
+.pop-up-container .image-popup {
   padding-top: 12px;
+  width: 30px;
 }
 .pop-up-container .close-popup {
   align-self: self-end;
@@ -47,8 +50,16 @@ body {
   display: flex;
   align-items: center;
 }
-.pop-up-container .text-for-popup .input {
+.pop-up-container input.inp-popup {
   margin: 10px;
+}
+.pop-up-container button.enter-popup {
+  margin: 20px;
+  width: 73%;
+  background: black;
+  color: white;
+  height: 39px;
+  border: none;
 }
 
 p {

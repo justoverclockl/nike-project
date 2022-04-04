@@ -24,18 +24,21 @@ body {
   top: 0;
   border: solid;
   width: 24rem;
-  height: 26rem;
+  height: 30rem;
 
   span {
-    font-size: 10px;
+    font-size: 13px;
+    line-height: 20px;
   }
 
   p {
-    font-size: 10px;
+    font-size: 15px;
+    margin: 6px;
   }
 
-  .image-pop-up {
+  .image-popup {
     padding-top: 12px;
+    width: 30px;
   }
 
   .close-popup {
@@ -56,10 +59,18 @@ body {
   .text-for-popup {
     display: flex;
     align-items: center;
+  }
 
-    .input {
-      margin: 10px;
-    }
+  input.inp-popup {
+    margin: 10px;
+  }
+  button.enter-popup {
+    margin: 20px;
+    width: 73%;
+    background: black;
+    color: white;
+    height: 39px;
+    border: none;
   }
 }
 p {
