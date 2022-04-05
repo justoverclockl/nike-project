@@ -21,17 +21,25 @@ body {
   width: 24rem;
   height: 30rem;
 }
+.pop-up-container h2 {
+  font-size: 16px;
+}
+.pop-up-container a {
+  color: #8d8d8d;
+}
 .pop-up-container span {
   font-size: 13px;
-  line-height: 20px;
+  line-height: 26px;
+  color: #8d8d8d;
 }
 .pop-up-container p {
-  font-size: 15px;
-  margin: 6px;
+  font-size: 13px;
+  color: #8d8d8d;
+  margin-inline: 12px;
 }
 .pop-up-container .image-popup {
   padding-top: 12px;
-  width: 30px;
+  width: 49px;
 }
 .pop-up-container .close-popup {
   align-self: self-end;
@@ -51,7 +59,9 @@ body {
   align-items: center;
 }
 .pop-up-container input.inp-popup {
-  margin: 10px;
+  margin: 6px;
+  height: 2em;
+  width: 18em;
 }
 .pop-up-container button.enter-popup {
   margin: 20px;
