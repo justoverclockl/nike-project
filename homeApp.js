@@ -1,4 +1,4 @@
-const logIN = document.getElementById("accedi");
+const logIN = document.getElementById("enter");
 logIN.addEventListener("click", () => {
   const popUp = (document.getElementById("pop-up-container").style.display =
     "block");
