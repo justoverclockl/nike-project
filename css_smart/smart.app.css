@@ -603,16 +603,182 @@ h2 {
   font-size: 15px;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 1280px) {
   .list-link {
     display: none;
   }
-
+}
+@media screen and (min-width: 100px) and (max-width: 950px) {
   .menu {
     display: none;
   }
 
-  .sub-menu {
+  #search {
+    display: none;
+  }
+
+  .title-nike {
+    display: none;
+  }
+
+  #video-nike {
+    margin: auto;
+    width: 100%;
+  }
+
+  .image1 .title {
+    margin: 0;
+  }
+
+  article h3 {
+    margin: auto;
+  }
+
+  .fig-werun h3 {
+    margin: auto;
+    line-height: 1;
+  }
+  .fig-werun button {
+    margin: 0;
+  }
+
+  .first-par {
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .paragraph-app {
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .paragraph-imag1 {
+    margin: auto;
+    font-size: 15px;
+  }
+
+  #container-img5 {
+    width: 100%;
+    margin: auto;
+  }
+
+  .carousel h2 {
+    margin: auto;
+  }
+
+  .gallery {
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .carousel1 {
+    width: 50vw;
+  }
+
+  .car-par {
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .carousel2 {
+    width: 50vw;
+  }
+
+  .carousel3 {
+    width: 50vw;
+  }
+
+  .carousel4 {
+    width: 50vw;
+  }
+
+  .carousel5 {
+    width: 50vw;
+  }
+
+  .wrapper {
+    width: 50vw;
+  }
+
+  .first-article h2 {
+    margin: auto;
+  }
+
+  .first-article p {
+    margin: 0;
+    line-height: 1;
+  }
+
+  .title-os {
+    margin: auto;
+  }
+
+  .second-article h2 {
+    margin: 0;
+  }
+  .second-article p {
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  .second-article .title {
+    margin-left: 0;
+  }
+
+  .third-article h2 {
+    margin: 0;
+  }
+  .third-article p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .qr-code {
+    display: none;
+  }
+
+  .title-artic3 {
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .icon-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .down-footer {
+    display: none;
+  }
+
+  .down-list {
+    display: none;
+  }
+
+  .list-footer1 {
+    display: none;
+  }
+
+  .list-footer2 {
+    display: none;
+  }
+
+  .list-footer3 {
+    display: none;
+  }
+
+  .list-footer4 {
     display: none;
   }
 }

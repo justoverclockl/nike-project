@@ -616,7 +616,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 350px) and (max-width: 950px) {
+@media screen and (min-width: 100px) and (max-width: 950px) {
   .menu {
     display: none;
   }
@@ -630,15 +630,22 @@ h2 {
     margin: auto;
     width: 100%;
   }
-  .image1 h3 {
-    margin: 0;
+  .image1 {
+    .title {
+      margin: 0;
+    }
   }
   article h3 {
     margin: auto;
   }
-  .fig-werun h3 {
-    margin: auto;
-    line-height: 1;
+  .fig-werun {
+    h3 {
+      margin: auto;
+      line-height: 1;
+    }
+    button {
+      margin: 0;
+    }
   }
   .first-par {
     margin: auto;
@@ -696,18 +703,29 @@ h2 {
   .title-os {
     margin: auto;
   }
-  .second-article p {
-    margin: 0;
-    line-height: 1.7;
+  .second-article {
+    h2 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      line-height: 1.7;
+    }
   }
   .second-article .title {
     margin-left: 0;
   }
   .third-article {
+    h2 {
+      margin: 0;
+    }
     p {
-      margin: auto;
+      margin: 0;
       font-size: 18px;
     }
+  }
+  .qr-code {
+    display: none;
   }
   .title-artic3 {
     margin: auto;
@@ -718,6 +736,19 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: auto;
+  }
+  .icon-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .down-footer {
+    display: none;
+  }
+  .down-list {
+    display: none;
   }
   .list-footer1 {
     display: none;
