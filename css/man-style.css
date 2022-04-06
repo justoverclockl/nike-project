@@ -777,6 +777,7 @@ footer {
 
 .banner-img {
   display: flex;
+  width: 100%;
   flex-flow: column;
   position: relative;
   z-index: -1;

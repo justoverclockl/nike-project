@@ -1,7 +1,7 @@
 //#region  editClass Handler
 
 const contLog = document.getElementById("container-log");
-const closeBtn = document.getElementById("close-btn");
+const closeBtn = document.querySelectorAll("#close-btn");
 const recoveryPass = document.getElementById("recovery-pass");
 const textLogo = document.getElementById("info-logo");
 const termsPass = document.getElementById("terms-pass");
@@ -28,6 +28,7 @@ document.getElementById("log-btn").addEventListener("click", () => {
   for (let element of registerBlock.children) {
     element.disabled = true;
   }
+  userPassword.disabled = false;
 });
 
 //#endregion
@@ -62,23 +63,25 @@ nlModal.addEventListener("click", (element) => {
 });
 
 // X button
-closeBtn.addEventListener("click", () =>
-  editByDiffIndex(
-    [
-      nlModal,
-      disableLogin,
-      userPassword,
-      termsPass,
-      contLog,
-      registerBlock,
-      textLogo.children,
-      infoButton.children,
-      infoText.children,
-    ],
-    false,
-    "active"
-  )
-);
+closeBtn.forEach((btn) => {
+  btn.addEventListener("click", () =>
+    editByDiffIndex(
+      [
+        nlModal,
+        disableLogin,
+        userPassword,
+        termsPass,
+        contLog,
+        registerBlock,
+        textLogo.children,
+        infoButton.children,
+        infoText.children,
+      ],
+      false,
+      "active"
+    )
+  );
+});
 
 //#endregion
 
@@ -228,15 +231,18 @@ function runForm(element, form) {
     element.target.classList.contains("nl-btn")
   ) {
     event.preventDefault();
+    let haveNullInput = false;
     const account = {};
 
     let inputs = form.elements;
 
     for (let input of inputs) {
       if (!input.disabled && input.type != "submit") {
-        if (input.value === "") {
+        if (!input.value) {
           alert("Inserisci correttamente tutti i valori!");
           return false;
+        } else {
+          haveNullInput = true;
         }
         switch (input.name) {
           case "email":
@@ -275,12 +281,13 @@ function runForm(element, form) {
             if (input.checked) account.gender = input.name;
             break;
         }
-        input.value = "";
-        input.checked = false;
+        if (input.type != "checkbox") input.value = "";
+        else input.checked = false;
       }
     }
 
     console.log(account);
+    return haveNullInput;
   }
 }
 
