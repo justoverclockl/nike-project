@@ -1,0 +1,267 @@
+footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: #111;
+}
+
+.footer-margin {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding: 40px 40px 0 40px;
+  position: relative;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1 0 auto;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 25%;
+
+  ul {
+    display: flex;
+  }
+  ul li {
+    margin-left: 16px;
+  }
+
+  ul li a svg {
+    fill: #7e7e7e;
+    &:hover {
+      transition: 0.3s ease;
+      fill: #fff;
+    }
+  }
+}
+
+.footer-font {
+  font-family: Nike TG;
+  font-size: 14px;
+
+  li {
+    margin-bottom: 3px;
+  }
+}
+
+.footer-link {
+  margin-right: 10px;
+  ul li {
+    height: 32px;
+
+    a,
+    p {
+      color: #fff;
+    }
+  }
+
+  a:not(.footer-font, .footer-font li a) {
+    font-size: 12px;
+    line-height: 2.3;
+    font-weight: 400;
+    color: #7e7e7e;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.footer-guide {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+
+    li:nth-last-child(1) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding-right: 48px;
+    }
+  }
+
+  .footer-link ul li a {
+    font-size: 10px;
+    padding: 8px;
+  }
+}
+
+.footer-location {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4%;
+
+  &.footer-link ul li {
+    a,
+    a span,
+    p {
+      margin-left: 18px;
+      font-size: 10px;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+  }
+
+  span {
+    color: #fff;
+  }
+
+  ul {
+    display: flex;
+
+    li a svg {
+      fill: #fff;
+    }
+  }
+}
+
+footer hr {
+  display: none;
+}
+
+@media screen and (max-width: 820px) {
+  .footer-social-link ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer-margin {
+    padding: 20px 0;
+  }
+  .footer-link {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  hr {
+    display: block;
+    border-color: #3d3d3d;
+  }
+
+  .footer-info {
+    display: block;
+  }
+
+  .footer-social-link {
+    width: unset;
+    margin-top: 24px;
+    ul {
+      flex-direction: row;
+    }
+  }
+
+  .footer-legal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .footer-guide .footer-link ul li a {
+      font-size: 12px;
+    }
+  }
+
+  .footer-link {
+    ul {
+      flex-direction: column;
+      li a {
+        font-size: 14px;
+        padding-left: 0;
+      }
+    }
+    padding: 20px 20px 0;
+  }
+
+  .footer-height {
+    li:not(.footer-curtain) {
+      max-height: 0px;
+      opacity: 0;
+      animation: backwardsHeight 0.3s backwards;
+    }
+  }
+
+  .footer-curtain {
+    width: 100%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 2px;
+      background-color: white;
+      right: 0;
+      top: 4px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 2px;
+      height: 10px;
+      background-color: white;
+      right: 4px;
+      top: 0;
+    }
+
+    &:focus {
+      ~ li {
+        opacity: 1;
+        animation: linearHeight 0.3s forwards;
+      }
+    }
+  }
+
+  .footer-guide {
+    order: 2;
+    justify-content: unset;
+
+    ul li:nth-last-child(1) {
+      position: relative;
+    }
+  }
+
+  .footer-location {
+    height: 100%;
+    order: 1;
+    flex-direction: column;
+
+    &.footer-link {
+      ul li a {
+        span {
+          font-size: 12px;
+        }
+        font-size: 12px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@keyframes linearHeight {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 32px;
+  }
+}
+
+@keyframes backwardsHeight {
+  from {
+    max-height: 32px;
+  }
+  to {
+    max-height: 0px;
+  }
+}

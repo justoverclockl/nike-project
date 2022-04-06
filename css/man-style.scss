@@ -1,0 +1,19 @@
+@use "./sass/layout/navigation";
+@use "./sass/base/reset";
+@use "./sass/layout/main";
+@use "./sass/layout/footer";
+
+@font-face {
+  font-family: Nike Futura;
+  src: url("../assets/fonts/Nike-Futura.otf");
+}
+
+@font-face {
+  font-family: Nike TG;
+  src: url("../assets/fonts/Nike-TG.woff2");
+}
+
+@font-face {
+  font-family: Nike Goth;
+  src: url("../assets/fonts/TradeGothicForNike365.ttf");
+}
