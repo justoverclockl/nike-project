@@ -1,0 +1,894 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.pop-up-container {
+  position: fixed;
+  display: none;
+  background: white;
+  bottom: 0;
+  height: 400px;
+  width: 600px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  border: solid;
+  width: 24rem;
+  height: 30rem;
+}
+.pop-up-container h2 {
+  font-size: 16px;
+}
+.pop-up-container a {
+  color: #8d8d8d;
+}
+.pop-up-container span {
+  font-size: 13px;
+  line-height: 26px;
+  color: #8d8d8d;
+}
+.pop-up-container p {
+  font-size: 13px;
+  color: #8d8d8d;
+  margin-inline: 12px;
+}
+.pop-up-container .image-popup {
+  padding-top: 12px;
+  width: 49px;
+}
+.pop-up-container .close-popup {
+  align-self: self-end;
+  background: none;
+  align-self: self-end;
+  border: none;
+  font-size: 19px;
+}
+.pop-up-container .pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pop-up-container .text-for-popup {
+  display: flex;
+  align-items: center;
+}
+.pop-up-container input.inp-popup {
+  margin: 6px;
+  height: 2em;
+  width: 18em;
+}
+.pop-up-container button.enter-popup {
+  margin: 20px;
+  width: 73%;
+  background: black;
+  color: white;
+  height: 39px;
+  border: none;
+}
+
+p {
+  line-height: 34px;
+  font-size: 20px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+.link:hover {
+  border-radius: 40em;
+  color: #7e7e7e;
+  cursor: pointer;
+}
+
+#link-final {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  align-items: center;
+  padding-left: 31px;
+  height: 2em;
+}
+.nav-head .image-logo {
+  width: 38px;
+}
+.nav-head .list-one {
+  display: inline-flex;
+  text-decoration: none;
+  list-style-type: none;
+  padding-right: 2em;
+}
+.nav-head .list-one .a-one {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 13px;
+  color: black;
+}
+.nav-head .list-one .a-one:hover {
+  color: #7e7e7e;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 41px;
+}
+.nav-main .conteiner-two {
+  padding-left: 4em;
+}
+.nav-main .image-topleft {
+  width: 57px;
+}
+.nav-main .list-two {
+  display: inline-flex;
+  list-style-type: none;
+}
+.nav-main .list-two .a-two {
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  color: black;
+}
+.nav-main .conteiner-three {
+  display: flex;
+  align-items: center;
+}
+.nav-main .conteiner-three .conteiner-search {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  background: #f5f5f5;
+}
+.nav-main .conteiner-three .conteiner-search input:focus {
+  outline: none;
+}
+.nav-main .conteiner-three .conteiner-search #search-text {
+  border: none;
+  font-size: 11px;
+  list-style-type: none;
+  background: #f5f5f5;
+}
+.nav-main .conteiner-three .conteiner-heart-badge .fav {
+  margin: 11px;
+  font-size: 24px;
+}
+
+.nav-footer {
+  width: 100%;
+  height: 50px;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.image-center {
+  width: 100%;
+}
+
+.conteiner-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-top: 3em;
+}
+.conteiner-text .text {
+  font-size: 17px;
+}
+.conteiner-text .conteiner-button {
+  padding-top: 10px;
+}
+.conteiner-text .conteiner-button .text-button {
+  border: solid black;
+  border-radius: 48px;
+  background: black;
+  color: white;
+  font-size: 21px;
+}
+.conteiner-text .conteiner-button .text-button:hover {
+  cursor: pointer;
+  background-color: #7e7e7e;
+}
+
+.second-image-center {
+  display: flex;
+  justify-content: center;
+}
+.second-image-center .image-center-two {
+  padding-top: 8em;
+  width: 76vw;
+}
+
+.text-training {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-top: 3em;
+}
+.text-training .head-text-training .text-link {
+  color: black;
+}
+.text-training .head-text-training .text-link:hover {
+  color: grey;
+}
+.text-training .footer-text-training .text-link {
+  color: black;
+}
+.text-training .footer-text-training .text-link:hover {
+  color: grey;
+}
+
+.training-fit {
+  display: flex;
+  justify-content: center;
+}
+.training-fit .image-center-three {
+  width: 93vw;
+  padding-top: 5em;
+}
+
+.training-club {
+  padding-left: 10em;
+  padding-top: 3em;
+}
+
+#conteiner-section-card-list {
+  display: flex;
+  padding-top: 6em;
+  justify-content: center;
+}
+#conteiner-section-card-list .conteiner {
+  display: flex;
+}
+#conteiner-section-card-list .conteiner .card {
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+}
+#conteiner-section-card-list .conteiner .card p {
+  line-height: 24px;
+  font-size: 17;
+}
+#conteiner-section-card-list .conteiner .card .image-card {
+  margin: 0px;
+  max-width: 100%;
+}
+#conteiner-section-card-list .conteiner .card .title-card {
+  font-size: 23px;
+  color: #181616;
+}
+#conteiner-section-card-list .conteiner .card .text-card {
+  font-size: 17px;
+  color: #181616;
+}
+
+.image-fit-center {
+  display: flex;
+  justify-content: center;
+}
+.image-fit-center .image-fit {
+  width: 76vw;
+  padding-top: 5em;
+}
+
+.text-plan {
+  flex-direction: column;
+  padding-top: 4em;
+  padding-left: 10em;
+  width: 69vw;
+}
+
+.image-fit-second {
+  display: flex;
+  justify-content: center;
+}
+.image-fit-second .image-center-four {
+  padding-top: 4em;
+  width: 76vw;
+}
+
+.text-train {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+  padding-left: 10em;
+  width: 69vw;
+}
+
+.conteiner-carousel {
+  padding-top: 3em;
+}
+.conteiner-carousel .button-carousel {
+  text-align: end;
+  padding-right: 3em;
+}
+.conteiner-carousel .button-carousel .button-for-carousel {
+  border: solid transparent;
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+  margin: 3px;
+}
+.conteiner-carousel ::-webkit-scrollbar {
+  width: 0.5em;
+}
+.conteiner-carousel ::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 0.5em;
+}
+.conteiner-carousel ::-webkit-scrollbar-thumb {
+  background: #f5f5f5;
+  border-radius: 100vw;
+}
+.conteiner-carousel .carousel-list {
+  overflow-x: scroll;
+  display: flex;
+  list-style-type: none;
+  margin-inline-start: 48px;
+  overflow: auto;
+}
+.conteiner-carousel .carousel-list p {
+  font: -webkit-control;
+  line-height: 23px;
+  font-size: x-large;
+  font-family: arial;
+}
+.conteiner-carousel .carousel-list .image-carousel {
+  width: 28em;
+  margin-inline: 8px;
+}
+
+#image-center-six {
+  display: flex;
+  justify-content: center;
+  padding-top: 7em;
+}
+#image-center-six .image-fitness {
+  width: 89vw;
+}
+
+#list-for-app {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+  padding-left: 10em;
+}
+
+#image-center-seven {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+}
+#image-center-seven .image-center-five {
+  width: 76vw;
+}
+
+.text-training-club {
+  display: block;
+  padding-left: 10em;
+  line-height: 23px;
+  padding-top: 3em;
+}
+
+#image-center-eight {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+}
+#image-center-eight .image-smartphone-center {
+  width: 93vw;
+}
+
+#text-finish-line {
+  padding-left: 10em;
+  line-height: 38px;
+  padding-top: 3em;
+}
+
+#image-center-nine {
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.image-nike-work {
+  width: 76vw;
+}
+
+#text-club {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  line-height: 21px;
+  padding-top: 4em;
+}
+#text-club .button-of-text {
+  width: 4em;
+  height: 2em;
+  border: solid;
+  border-radius: 22px;
+  background: black;
+  font-size: 16px;
+}
+#text-club .button-of-text:hover {
+  background-color: #7e7e7e;
+  cursor: pointer;
+}
+#text-club .text-of-button {
+  color: white;
+  text-decoration: none;
+}
+
+.text-link-second {
+  color: black;
+}
+.text-link-second:hover {
+  color: grey;
+}
+
+#image-center-ten {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+}
+#image-center-ten .image-nike-work-second {
+  width: 76vw;
+}
+
+#text-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-top: 4em;
+}
+
+#image-center-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+#image-center-footer .image-last {
+  width: 76vw;
+}
+
+.text-final-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-top: 4em;
+}
+.text-final-footer .ft-button {
+  width: 7em;
+  height: 3em;
+  border: solid;
+  border-radius: 24px;
+  font-size: 14px;
+  background: black;
+}
+.text-final-footer .ft-button:hover {
+  background-color: #7e7e7e;
+  cursor: pointer;
+}
+.text-final-footer .txt-footer {
+  color: white;
+  text-decoration: none;
+}
+
+#conteiner-footer {
+  padding-bottom: 3em;
+}
+
+#text-section-footer {
+  font-size: 17px;
+  padding-left: 1em;
+  padding-top: 6em;
+}
+
+.cards-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.image-card-footer {
+  width: 31vw;
+  margin: 6px;
+}
+
+.caption-card {
+  font-size: 22px;
+  margin: auto;
+  padding-left: 10px;
+}
+.caption-card .title-card {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: white;
+  margin-bottom: 2em;
+  width: 100%;
+  min-height: 200px;
+}
+footer #footer-conteiner {
+  background-color: #111;
+}
+footer #footer-conteiner .conteiner-footer-list {
+  display: flex;
+}
+footer #footer-conteiner .conteiner-footer-list .conteiner-list-footer-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer #footer-conteiner .conteiner-footer-list .conteiner-list-footer-text:hover {
+  cursor: pointer;
+}
+footer #footer-conteiner .conteiner-footer-list .footer-list {
+  color: white;
+  list-style-type: none;
+  inline-size: 17em;
+  font-size: 11px;
+  padding-top: 12px;
+  margin-left: 3em;
+}
+footer #footer-conteiner .conteiner-footer-list .footer-list li {
+  padding: 10px;
+}
+footer #footer-conteiner .conteiner-footer-list .footer-list .text-mod-footer {
+  color: #7e7e7e;
+}
+footer #footer-conteiner .conteiner-footer-list .footer-list .text-mod-footer:hover {
+  color: white;
+  cursor: pointer;
+}
+footer #footer-conteiner .conteiner-footer-list .footer-icon-list {
+  display: inline-flex;
+  text-align: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+footer #footer-conteiner .conteiner-footer-list .footer-icon-list .circle-svg:hover {
+  color: transparent;
+  transition: 2ms;
+  cursor: pointer;
+}
+footer #footer-conteiner .conteiner-footer-list .footer-icon-list .fab {
+  margin: 9px;
+  background: #7e7e7e;
+  border-radius: 41%;
+  inline-size: 27px;
+  font-size: 25px;
+}
+footer #footer-conteiner .sub-footer-a {
+  min-inline-size: fit-content;
+  justify-content: space-between;
+  font-size: 11px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+footer #footer-conteiner .sub-logo-footer {
+  font-size: 11px;
+  display: inline-flex;
+}
+footer #footer-conteiner .sub-logo-footer .pointer-footer {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+}
+footer #footer-conteiner .sub-logo-footer .pointer-footer .pointer-logo {
+  font-size: 17px;
+  margin: 12px;
+}
+footer #footer-conteiner .sub-logo-footer .pointer-footer .text-it {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+}
+footer #footer-conteiner .sub-logo-footer .text-nike-inc {
+  color: #7e7e7e;
+  padding: 19px;
+  font-size: 10px;
+}
+footer #footer-conteiner .footer-text-list {
+  color: #7e7e7e;
+  flex-flow: wrap;
+  place-items: flex-end;
+  list-style-type: none;
+  font-size: 11px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+footer #footer-conteiner .footer-text-list .ft-li {
+  padding: 15px;
+}
+footer #footer-conteiner .footer-text-list .ft-li:hover {
+  cursor: pointer;
+  color: white;
+}
+footer #footer-conteiner .footer-text-list .first:first-child {
+  padding-inline: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-text-list {
+    padding-left: 33em;
+  }
+
+  .sub-logo-footer {
+    height: 0;
+  }
+
+  .sub-footer-a {
+    padding-top: 4em;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 954px) {
+  .nav-head {
+    display: none;
+  }
+
+  .conteiner-two {
+    display: none;
+  }
+
+  .conteiner-three {
+    flex-direction: row-reverse;
+  }
+
+  i.fav.far.fa-heart {
+    display: none;
+  }
+
+  .conteiner-text {
+    padding-left: 3em;
+  }
+  .conteiner-text p {
+    font-size: 14px;
+  }
+
+  .text-training {
+    padding-left: 3em;
+  }
+  .text-training p {
+    font-size: 14px;
+  }
+
+  .training-club {
+    padding-left: 3em;
+  }
+  .training-club p {
+    font-size: 14px;
+  }
+
+  .text-plan {
+    padding-left: 3em;
+  }
+  .text-plan p {
+    font-size: 14px;
+  }
+
+  .text-train {
+    padding-left: 3em;
+  }
+  .text-train p {
+    font-size: 14px;
+  }
+
+  #list-for-app {
+    padding-left: 3em;
+  }
+  #list-for-app p {
+    font-size: 14px;
+  }
+
+  .text-training-club {
+    padding-left: 3em;
+  }
+  .text-training-club p {
+    font-size: 14px;
+  }
+
+  #text-finish-line {
+    padding-left: 3em;
+  }
+  #text-finish-line p {
+    font-size: 1px;
+  }
+
+  #text-finish-line {
+    padding-left: 3em;
+  }
+  #text-finish-line p {
+    font-size: 14px;
+  }
+
+  #text-footer {
+    padding-left: 3em;
+  }
+  #text-footer p {
+    font-size: 14px;
+  }
+
+  .text-final-footer {
+    padding-left: 3em;
+  }
+  .text-final-footer p {
+    font-size: 14px;
+  }
+
+  #text-club {
+    padding-left: 3em;
+  }
+  #text-club p {
+    font-size: 14px;
+  }
+
+  .footer-list {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .conteiner-text {
+    padding-left: 0;
+  }
+
+  .text-training {
+    padding-left: 0;
+  }
+
+  #list-for-app {
+    padding-left: 0;
+  }
+
+  .training-club {
+    padding-left: 0;
+  }
+
+  #text-finish-line {
+    padding-left: 0;
+  }
+
+  #text-club {
+    padding-left: 0;
+  }
+
+  #text-footer {
+    padding-left: 0;
+  }
+
+  .text-plan {
+    padding-left: 0;
+  }
+
+  .text-train {
+    padding-left: 0;
+  }
+
+  .list-for-app {
+    padding-left: 0;
+  }
+
+  .text-training-club {
+    padding-left: 0;
+  }
+
+  .text-finish-line {
+    padding-left: 0;
+  }
+
+  .text-club {
+    padding-left: 0;
+  }
+
+  .text-footer {
+    padding-left: 0;
+  }
+
+  .text-final-footer {
+    padding-left: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5em;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f5f5f5;
+    border-radius: 100vw;
+  }
+
+  .cards-footer {
+    justify-content: flex-start;
+    overflow: scroll;
+    margin-inline-start: 48px;
+  }
+
+  .conteiner {
+    overflow-y: scroll;
+    justify-content: flex-start;
+  }
+
+  .conteiner-footer-list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 422px) {
+  footer {
+    width: 103%;
+  }
+
+  .conteiner-button {
+    padding: 0;
+  }
+  .conteiner-button .text-button {
+    font-size: 17px;
+    margin: 11px;
+  }
+
+  .conteiner-footer-list {
+    flex-direction: column;
+  }
+
+  .footer-text-list {
+    padding-left: 0;
+    padding-top: 31px;
+  }
+
+  .footer-list {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  p {
+    font-size: 8px;
+    line-height: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .image-center-two {
+    width: 95vw;
+  }
+
+  .image-fit {
+    width: 85vw;
+  }
+
+  .image-center-four {
+    width: 85vw;
+  }
+
+  .image-center-five {
+    width: 85vw;
+  }
+
+  .image-nike-work {
+    width: 85vw;
+  }
+
+  .image-nike-work-second {
+    width: 85vw;
+  }
+}
+
+/*# sourceMappingURL=_homeAppc-css.map */
