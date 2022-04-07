@@ -10,6 +10,75 @@ body {
   background-color: white;
 }
 
+.pop-up-cookie {
+  display: none;
+  position: fixed;
+  background: white;
+  bottom: 0;
+  height: 400px;
+  width: 600px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  width: 27rem;
+  height: 34rem;
+
+  .title-cookie {
+    padding-left: 13px;
+  }
+
+  .text-pop-up-cookie {
+    font-size: 17px;
+    display: flex;
+    text-align: inherit;
+    padding-left: 19px;
+    line-height: 24px;
+  }
+
+  .button-cookie {
+    display: flex;
+    justify-content: center;
+    &:hover {
+      color: transparent;
+    }
+
+    .first-button-cookie {
+      margin-inline: 10px;
+      background: grey;
+      border: none;
+      width: 115px;
+      height: 3em;
+      border-radius: 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+
+    .second-button-cookie {
+      margin-inline: 10px;
+      background: black;
+      color: white;
+      border: none;
+      width: 115px;
+      border-radius: 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: grey;
+        color: black;
+      }
+    }
+  }
+
+  .last-text-cookie {
+    font-size: 12px;
+    padding-left: 27px;
+    line-height: 18px;
+  }
+}
+
 .pop-up-container {
   position: fixed;
   display: none;
@@ -19,10 +88,8 @@ body {
   width: 600px;
   left: 0;
   margin: auto;
-
   right: 0;
   top: 0;
-  border: solid;
   width: 24rem;
   height: 30rem;
 
