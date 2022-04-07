@@ -5,6 +5,68 @@ body {
   background-color: white;
 }
 
+.pop-up-cookie {
+  display: none;
+  position: fixed;
+  background: white;
+  bottom: 0;
+  height: 400px;
+  width: 600px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  width: 28rem;
+  height: 34rem;
+}
+.pop-up-cookie .title-cookie {
+  padding-left: 13px;
+}
+.pop-up-cookie .text-pop-up-cookie {
+  font-size: 17px;
+  display: flex;
+  text-align: inherit;
+  padding-left: 19px;
+  line-height: 24px;
+}
+.pop-up-cookie .button-cookie {
+  display: flex;
+  justify-content: center;
+}
+.pop-up-cookie .button-cookie:hover {
+  color: transparent;
+}
+.pop-up-cookie .button-cookie .first-button-cookie {
+  margin-inline: 10px;
+  background: white;
+  border: black solid 1px;
+  width: 13rem;
+  height: 3em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.pop-up-cookie .button-cookie .first-button-cookie:hover {
+  background: lightgray;
+}
+.pop-up-cookie .button-cookie .second-button-cookie {
+  margin-inline: 10px;
+  background: black;
+  color: white;
+  border: none;
+  width: 13rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.pop-up-cookie .button-cookie .second-button-cookie:hover {
+  background: lightgray;
+}
+.pop-up-cookie .last-text-cookie {
+  font-size: 12px;
+  padding-left: 35px;
+  line-height: 18px;
+  padding-top: 11px;
+}
+
 .pop-up-container {
   position: fixed;
   display: none;
@@ -16,7 +78,6 @@ body {
   margin: auto;
   right: 0;
   top: 0;
-  border: solid;
   width: 24rem;
   height: 30rem;
 }
@@ -46,6 +107,7 @@ body {
   align-self: self-end;
   border: none;
   font-size: 19px;
+  cursor: pointer;
 }
 .pop-up-container .pop-up {
   display: flex;
@@ -246,6 +308,7 @@ p {
 #conteiner-section-card-list {
   display: flex;
   padding-top: 6em;
+  justify-content: center;
 }
 #conteiner-section-card-list .conteiner {
   display: flex;
@@ -318,6 +381,7 @@ p {
   height: 4em;
   width: 4em;
   margin: 3px;
+  cursor: pointer;
 }
 .conteiner-carousel ::-webkit-scrollbar {
   width: 0.5em;
