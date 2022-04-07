@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style_news.css" />
+    <script src="news_page.js"></script>
     <title>Nike News - The official news website for NIKE, Inc.</title>
   </head>
   <body>
@@ -17,11 +18,11 @@
         <p>Your source for the latest NIKE, Inc. stories</p>
       </div>
       <div class="right">
-        <div class="search">
-          <input id="search" type="search" placeholder="Search Nike News" />
+        <div class="search" >
+          <input id="search" type="search" placeholder="Search Nike News" onclick="closeInput()"/>
         </div>
         <button>
-          <img src="assets/news_page/icons-search.png" />
+          <img src="assets/news_page/icons-search.png" onclick="openInput()" />
         </button>
         <a href="#"
           ><img id="icomenu" src="assets/news_page/icons-menu.png"
