@@ -12,23 +12,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
   </head>
-
+  
   <body>
+    
     <header>
       <nav class="first-nav">
         <div class="logo">
-          <a href="# "
-            ><img
+          <a href="# "></a>
+            <img
               src="assets/logo-jordan-header.svg "
               alt="jordan "
               class="logo-jordan"
-          /></a>
-          <a href="# "
-            ><img
-              src="assets/CONVERSE-Logo.svg "
+              />
+          </a>
+          <a href="# ">
+            <img
+            src="assets/CONVERSE-Logo.svg "
               alt="converse "
               class="logo-converse"
-          /></a>
+            />
+          </a>
         </div>
 
         <div class="first-link">
@@ -40,22 +43,23 @@
               <a href="# ">Unisciti a noi</a>
             </li>
             <li>
-              <a href="# ">Accedi</a>
+              <a id="enter">Accedi</a>
             </li>
           </ul>
         </div>
       </nav>
-
+      
       <section class="second-section">
         <div class="logo-nike">
           <img src="assets/nike_logo.svg " alt="logo-nike " class="nike" />
         </div>
-
+        
         <nav class="list-link">
           <ul class="menu">
             <li class="has-children">
-              <a href="#"
-                >Novità <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <a href="#">
+                Novità
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
               </a>
             </li>
             <ul class="sub-menu">
@@ -64,7 +68,7 @@
               <li><a href="# ">Best seller</a></li>
               <li><a href="# ">Calendario dei lanci</a></li>
             </ul>
-
+            
             <li class="first"><a href="# ">Uomo</a></li>
             <li class="first"><a href="# ">Donna</a></li>
             <li class="first"><a href="# ">Bambini</a></li>
@@ -72,17 +76,18 @@
             <li class="first"><a href="# ">Collezioni</a></li>
           </ul>
         </nav>
-
+        
         <div class="end-board">
+          
           <div class="lens-search">
             <i class="fas fa-search"></i>
-          </div>
-          <input
+            <input
             type="text"
             name="search-bar"
             id="search"
             placeholder="Cerca..."
-          />
+            />
+          </div>
           <div class="awsome">
             <i class="far fa-heart"></i>
             <i class="fas fa-shopping-bag"></i>
@@ -90,8 +95,52 @@
         </div>
       </section>
     </header>
-
+    
     <main>
+   
+      <!-- popup initial -->
+
+      <div id="pop-up-container" class="pop-up-container">
+        <div id="pop-up" class="pop-up">
+          <button id="enter-popup" class="enter-popup">Accedi</button>
+          <span id="close-popup" class="close-popup">X</span>
+          <img id="logo-pop" src="assets/nike_logo.svg" alt="nike-logo">
+          <h3>
+            IL TUO ACCOUNT PER
+            <br />
+            ACCEDERE AL MONDO NIKE
+          </h3>
+          <label id="form-pop">
+          <input type="text" class="inp-popup" placeholder="   Indirizzo e-mail" required>
+          <input type="password" class="inp-popup" placeholder="   Password" required>
+          </label>
+          <div class="text-for-popup">
+            <label id="checkP">
+            <input type="checkbox" checked>
+            <p>Rimani collegato</p>
+            <a href="">Hai dimenticato la password?</a>
+          </label>
+          </div>
+          <span class="policy">
+            Effettuando l'accesso,accetti la
+            <a href="">Politica sulla privacy,</a>
+            e i
+            <br>
+            <a href="">Termini di utilizzo</a>
+            <span>di Nike.</span>
+          </span>
+          <div class="access-member">
+          <button class="enter-popup">ACCEDI</button>
+          <p>
+            Non sei un member?
+            <a href="">Unisciti a noi.</a>
+          </p>
+          </div>
+        </div>
+      </div>
+      <!-- js terminate pop-up -->
+      
+      
       <div class="container">
         <h2 class="title-nike">Nike run club</h2>
         <video
@@ -106,7 +155,8 @@
       </div>
       <article>
         <h3>
-          La tua guida per una migliore esperienza di running. <br />
+          La tua guida per una migliore esperienza di running.
+          <br />
           Scaricala subito gratuitamente.
         </h3>
 
@@ -117,14 +167,18 @@
           </div>
           <p class="paragraph-app">
             L'app Nike Run Club ti motiva a correre in modo costante, con una
-            community che ti terrà compagnia e ti farà divertire. Hai <br />
+            community che ti terrà compagnia e ti farà divertire. Hai
+            <br />
             appena iniziato a correre? Ci siamo noi. Hai bisogno di un coach per
-            stare al passo o di un amico per farti compagnia? <br />
+            stare al passo o di un amico per farti compagnia?
+            <br />
             Eccoci. Vuoi che monitoriamo le tue statistiche mentre tu pensi al
-            panorama? Nessun problema. Anche se non ti va di <br />
-            <a href="#">correre</a> oggi, Nike Run Club ti offre suggerimenti
-            per il benessere che ti aiuteranno a prepararti per domani. Inizia
-            quando e <br />
+            panorama? Nessun problema. Anche se non ti va di
+            <br />
+            <a href="#">correre</a>
+            oggi, Nike Run Club ti offre suggerimenti per il benessere che ti
+            aiuteranno a prepararti per domani. Inizia quando e
+            <br />
             dove vuoi: saremo sempre con te.
           </p>
         </div>
@@ -139,11 +193,15 @@
 
           <p class="paragraph-imag1">
             Sia che tu non abbia mai corso in vita tua, che ti stia preparando
-            per la tua prima 5 <br />
+            per la tua prima 5
+            <br />
             km o che ti stia allenando per una maratona, l'app Nike Run Club ha
-            gli strumenti <br />
-            giusti per aiutarti. Ti aiuteremo a <a href="#">iniziare</a> e
-            saremo al tuo fianco durante tutto il <br />
+            gli strumenti
+            <br />
+            giusti per aiutarti. Ti aiuteremo a
+            <a href="#">iniziare</a>
+            e saremo al tuo fianco durante tutto il
+            <br />
             percorso.
           </p>
         </div>
@@ -154,18 +212,23 @@
           </figure>
           <figcaption class="fig-werun">
             <h3 class="title">
-              Corse guidate con audio*: una voce che ti <br />
+              Corse guidate con audio*: una voce che ti
+              <br />
               dà una marcia in più.
             </h3>
 
             <p class="first-par">
               Con atleti professionisti accreditati di livello mondiale, è come
-              avere con te un coach <br />
+              avere con te un coach
+              <br />
               in ogni fase del percorso.
             </p>
 
             <p class="first-par">* Non disponibile in tutti i paesi</p>
-            <button><a href="#"></a>Scopri di più</button>
+            <button>
+              <a href="#"></a>
+              Scopri di più
+            </button>
           </figcaption>
         </div>
 
@@ -178,18 +241,24 @@
             />
             <figcaption class="fig-werun">
               <h3 class="title">
-                Sfide: create per farti muovere, sfidare gli amici e <br />
+                Sfide: create per farti muovere, sfidare gli amici e
+                <br />
                 condividere tutto con la community.
               </h3>
 
               <p class="first-par">
                 Partecipa a una sfida individuale settimanale o mensile (e
-                invita gli amici a <br />
+                invita gli amici a
+                <br />
                 partecipare con te) o punta a un obiettivo più ambizioso insieme
-                alla community Nike <br />
+                alla community Nike
+                <br />
                 Run Club.
               </p>
-              <button><a href="#"></a>Scopri di più</button>
+              <button>
+                <a href="#"></a>
+                Scopri di più
+              </button>
             </figcaption>
           </figure>
         </div>
@@ -204,20 +273,27 @@
 
             <figcaption class="fig-werun">
               <h3 class="title">
-                Run Tracker: monitoreremo la tua corsa mentre ti <br />
+                Run Tracker: monitoreremo la tua corsa mentre ti
+                <br />
                 godi il paesaggio.
               </h3>
 
               <p class="first-par">
                 Pianifica il tuo percorso, che siano corse brevi o lunghe, e
-                mantieni il tuo ritmo con la <br />
+                mantieni il tuo ritmo con la
+                <br />
                 nostra funzione Run Tracker. E i tuoi progressi sono a portata
-                di clic: avrai davanti ai <br />
+                di clic: avrai davanti ai
+                <br />
                 tuoi occhi dettagli come andatura, frequenza cardiaca e cadenza,
-                così potrai vedere <br />
+                così potrai vedere
+                <br />
                 quanta strada hai fatto.
               </p>
-              <button class="info-run"><a href="#"></a>Scopri di più</button>
+              <button class="info-run">
+                <a href="#"></a>
+                Scopri di più
+              </button>
             </figcaption>
           </figure>
         </div>
@@ -234,14 +310,22 @@
             <h3 class="title">
               <a id="link-plus" href="#">Una marcia in più con Nike run club</a>
             </h3>
-            <button><a href="#"></a>Scopri di più</button>
+            <button>
+              <a href="#"></a>
+              Scopri di più
+            </button>
 
             <p class="first-par">
-              Nike Run Club ti offre gli strumenti per supportarti <br />
-              prima, durante e dopo la corsa, indipendentemente <br />
-              dal motivo che ti ha spinto a iniziare. Dalle corse <br />
-              guidate con audio ai suggerimenti sull'alimentazione e <br />
-              ai consigli di mindfulness sulla corsa, Nike Run Club ti <br />
+              Nike Run Club ti offre gli strumenti per supportarti
+              <br />
+              prima, durante e dopo la corsa, indipendentemente
+              <br />
+              dal motivo che ti ha spinto a iniziare. Dalle corse
+              <br />
+              guidate con audio ai suggerimenti sull'alimentazione e
+              <br />
+              ai consigli di mindfulness sulla corsa, Nike Run Club ti
+              <br />
               guiderà ogni volta.
             </p>
           </figcaption>
@@ -249,17 +333,18 @@
       </article>
       <div class="carousel">
         <h2 class="title">Raccolte di corse guidate con audio.</h2>
+
         <div class="arrow">
-          <button class="arrow-direction">
+          <button id="goBack" class="arrow-direction">
             <i class="fas fa-angle-left"></i>
           </button>
-          <button class="arrow-direction">
+          <button id="next" class="arrow-direction">
             <i class="fas fa-angle-right"></i>
           </button>
         </div>
 
         <div class="carousel-list">
-          <ul>
+          <ul class="slide">
             <li>
               <figure>
                 <img class="carousel1" src="assets/carousel1.jpg" />
@@ -268,12 +353,15 @@
                 <h3 class="car-title">Raccolta "Per iniziare"</h3>
 
                 <p class="car-par">
-                  Iniziare è facile. le nostre corse guidate offrono <br />
-                  consigli che ti faranno migliorare costantemente, <br />
+                  Iniziare è facile. le nostre corse guidate offrono
+                  <br />
+                  consigli che ti faranno migliorare costantemente,
+                  <br />
                   dalla First Run di 20 minuti alla rilassata 5K Run.
                 </p>
                 <button class="carousel-info">
-                  <a href="#"></a>Scopri di più
+                  <a href="#"></a>
+                  Scopri di più
                 </button>
               </figcaption>
             </li>
@@ -286,12 +374,15 @@
                 <h3 class="car-title">Mindful Running</h3>
 
                 <p class="car-par">
-                  Collega mente e corpo durante ogni corsa con le <br />
-                  coach di NRC: le tue corse diventeranno un <br />
+                  Collega mente e corpo durante ogni corsa con le
+                  <br />
+                  coach di NRC: le tue corse diventeranno un
+                  <br />
                   momento di riflessione e di crescita.
                 </p>
                 <button class="carousel-info">
-                  <a href="#"></a>Scopri di più
+                  <a href="#"></a>
+                  Scopri di più
                 </button>
               </figcaption>
             </li>
@@ -304,12 +395,15 @@
                 <h3 class="car-title">Corse basate sulla distanza</h3>
 
                 <p class="car-par">
-                  Dalle corse di 1 km alle mezze maratone, i nostri <br />
-                  esperti ti offriranno consigli efficaci preparandoti al <br />
+                  Dalle corse di 1 km alle mezze maratone, i nostri
+                  <br />
+                  esperti ti offriranno consigli efficaci preparandoti al
+                  <br />
                   meglio per quando affronterai la gara.
                 </p>
                 <button class="carousel-info">
-                  <a href="#"></a>Scopri di più
+                  <a href="#"></a>
+                  Scopri di più
                 </button>
               </figcaption>
             </li>
@@ -322,13 +416,17 @@
                 <h3 class="car-title">Speed Run</h3>
 
                 <p class="car-par">
-                  per andare più veloce serve determinazione, ma <br />
-                  non ti preoccupare, avrai tutto il necessario. Scegli <br />
-                  fra le molteplici Speed run progettate per <br />
+                  per andare più veloce serve determinazione, ma
+                  <br />
+                  non ti preoccupare, avrai tutto il necessario. Scegli
+                  <br />
+                  fra le molteplici Speed run progettate per
+                  <br />
                   aumentare la forza esplosiva.
                 </p>
                 <button class="carousel-info">
-                  <a href="#"></a>Scopri di più
+                  <a href="#"></a>
+                  Scopri di più
                 </button>
               </figcaption>
             </li>
@@ -341,13 +439,17 @@
                 <h3 class="car-title">Long run</h3>
 
                 <p class="car-par">
-                  Sviluppa la resistenza nelle corse di oltre 30 minuti <br />
-                  mentre ascolti coach Nike Run Club e/o atleti Nike. <br />
-                  La nostra app ti fornirà gli strumenti e le tecniche <br />
+                  Sviluppa la resistenza nelle corse di oltre 30 minuti
+                  <br />
+                  mentre ascolti coach Nike Run Club e/o atleti Nike.
+                  <br />
+                  La nostra app ti fornirà gli strumenti e le tecniche
+                  <br />
                   necessarie per affrontare le lunghe distanze.
                 </p>
                 <button class="carousel-info">
-                  <a href="#"></a>Scopri di più
+                  <a href="#"></a>
+                  Scopri di più
                 </button>
               </figcaption>
             </li>
@@ -364,13 +466,20 @@
           <figcaption>
             <h3 class="car-title">Sfoggia i tuoi colori</h3>
             <p class="car-par">
-              Fai vedere agli altri la distanza totale percorsa <br />
-              grazie a un display che mostra un codice colore <br />
-              durante la corsa. Controlla i colori della tua corsa <br />
-              con Nike Run Club per scoprire dove hai corso più <br />
+              Fai vedere agli altri la distanza totale percorsa
+              <br />
+              grazie a un display che mostra un codice colore
+              <br />
+              durante la corsa. Controlla i colori della tua corsa
+              <br />
+              con Nike Run Club per scoprire dove hai corso più
+              <br />
               veloce e più lentamente. Scopri di più
             </p>
-            <button class="carousel-info"><a href="#"></a>Scopri di più</button>
+            <button class="carousel-info">
+              <a href="#"></a>
+              Scopri di più
+            </button>
           </figcaption>
         </div>
 
@@ -381,13 +490,20 @@
           <figcaption>
             <h3 class="car-title">Tagga le tue scarpe</h3>
             <p class="car-par">
-              Monitora i chilometri percorsi con ogni paio di <br />
-              scarpe da running che possiedi, anche quelle di <br />
-              altri marchi. Aggiungi le tue scarpe a Nike Run <br />
-              Club e imposta un obbiettivo di chilometri per <br />
+              Monitora i chilometri percorsi con ogni paio di
+              <br />
+              scarpe da running che possiedi, anche quelle di
+              <br />
+              altri marchi. Aggiungi le tue scarpe a Nike Run
+              <br />
+              Club e imposta un obbiettivo di chilometri per
+              <br />
               ricevere notifiche quando ti avvicini.
             </p>
-            <button class="carousel-info"><a href="#"></a>Scopri di più</button>
+            <button class="carousel-info">
+              <a href="#"></a>
+              Scopri di più
+            </button>
           </figcaption>
         </div>
 
@@ -399,12 +515,18 @@
             <h3 class="car-title">Condividi la tua corsa</h3>
 
             <p class="car-par">
-              Persomalizza i tuoi post aggiungendo foto, <br />
-              statistiche e adesivi, quindi decidi chi può vederli, <br />
-              scegliendo tra tutti gli utenti del social network o <br />
+              Persomalizza i tuoi post aggiungendo foto,
+              <br />
+              statistiche e adesivi, quindi decidi chi può vederli,
+              <br />
+              scegliendo tra tutti gli utenti del social network o
+              <br />
               solo i tuoi amici nike.
             </p>
-            <button class="carousel-info"><a href="#"></a>Scopri di più</button>
+            <button class="carousel-info">
+              <a href="#"></a>
+              Scopri di più
+            </button>
           </figcaption>
         </div>
       </section>
@@ -413,9 +535,11 @@
 
         <p>
           Nike Run Club è stata creata per aiutare ogni runner a migliorarsi. Ci
-          sono <br />
+          sono
+          <br />
           tanti modi per personalizzare l'app e ottenere tutti i benefici di cui
-          hai <br />
+          hai
+          <br />
           bisogno.
         </p>
 
@@ -423,12 +547,14 @@
 
         <p>
           Il ritmo a cui corri ti dà un'idea della distanza che puoi coprire in
-          un <br />
+          un
+          <br />
           determinato lasso di tempo. Inoltre, ti consente di sapere se devi
           <br />
           accelerare, rallentare o mantenere un determinato passo. Trova la tua
           <br />
-          andatura NRC toccando lo schermo durante una corsa o cercando <br />
+          andatura NRC toccando lo schermo durante una corsa o cercando
+          <br />
           l'andatura media nella sezione "Attività" dell'app.
         </p>
 
@@ -436,11 +562,13 @@
 
         <p>
           Poniti un traguardo da raggiungere con le sfide Nike Run Club. Che si
-          tratti <br />
+          tratti
+          <br />
           di correre 15 km in una settimana, 100 km in un mese o quello che
           <br />
           preferisci, stabilisci un obiettivo e affrontalo con il supporto degli
-          amici e <br />
+          amici e
+          <br />
           della community di running. Quando completerai le sfide, guadagnerai
           <br />
           ricompense e badge così potrai goderti ciò che hai conquistato.
@@ -450,11 +578,14 @@
 
         <p>
           Mantieni la concentrazione e lascia che il ritmo ti spinga sempre più
-          avanti. <br />
+          avanti.
+          <br />
           Con le integrazioni Spotify e Apple Music di Nike Run Club, puoi
-          ascoltare <br />
+          ascoltare
+          <br />
           musica e podcast mentre corri. Puoi anche collegare Nike Run Club e
-          Nike <br />
+          Nike
+          <br />
           Training Club per condividere corse e allenamenti tra le due app.
         </p>
       </article>
@@ -467,11 +598,10 @@
         <h2 class="title-os">Utilizzala su più dispositivi</h2>
 
         <p>
-          Android <br />
-          NRC è disponibile per telefoni e tablet Android. Scaricala da<a
-            href="#"
-            >Google Play</a
-          >
+          Android
+          <br />
+          NRC è disponibile per telefoni e tablet Android. Scaricala da
+          <a href="#">Google Play</a>
           <br />
           per iniziare.
         </p>
@@ -479,7 +609,8 @@
 
         <p>
           Scarica Nike Run Club dall'Apple Store per utilizzarla sul tuo iPhone,
-          iPad <br />
+          iPad
+          <br />
           o iPod Touch
         </p>
 
@@ -500,22 +631,25 @@
 
         <p>
           ●Scegli l'app o il dispositivo partner che desideri connettere a Nike
-          Run <br />
+          Run
+          <br />
           Club.
         </p>
 
-        <p><b> Apple watch </b></p>
+        <p><b>Apple watch</b></p>
 
         <p>
           Non vuoi andare a correre con lo smartphone? Nessun problema: puoi
           <br />
           usare Nike Run Club anche sul tuo Apple Watch. Ricevi tutte le
-          notifiche <br />
+          notifiche
+          <br />
           e la guida di cui hai bisogno, direttamente dal tuo polso.
         </p>
 
         <h2 class="title">
-          Noi siamo con te, in qualsiasi modo e <br />
+          Noi siamo con te, in qualsiasi modo e
+          <br />
           luogo tu voglia correre
         </h2>
 
@@ -523,11 +657,14 @@
           Non ci importa che atleta sei, noi siamo qui per supportarti. Se sei
           <br />
           principiante, fai le cose gradualmente e imposta i tuoi obiettivi e le
-          tue <br />
+          tue
+          <br />
           sfide. Disattiva il GPS e utilizza Nike Run Club per correre sul tapis
-          roulant, <br />
+          roulant,
+          <br />
           se preferisci stare al chiuso. O forse il running non fa per te? Va
-          bene. Usa <br />
+          bene. Usa
+          <br />
           Nike Run Club per le tue camminate, per seguire i tuoi percorsi e
           <br />
           monitorare i tuoi progressi.
@@ -545,9 +682,11 @@
 
         <p>
           Non posso correre senza. Mi piace tenere traccia delle mie corse e
-          battere <br />
+          battere
+          <br />
           i miei record. Mi piacciono i commenti incoraggianti di atleti e star
-          dello <br />
+          dello
+          <br />
           sport.
         </p>
 
@@ -563,11 +702,14 @@
 
         <p>
           Ho corso 8 km e non potevo fermarmi perché [il coach] continuava a
-          dire <br />
+          dire
+          <br />
           "Sei a metà strada" e poi "Tre chilometri alla fine". Non pensavo che
-          ce <br />
+          ce
+          <br />
           l'avrei fatta, e invece sì. Sono sempre sul pezzo riguardo ai miei
-          obiettivi e <br />
+          obiettivi e
+          <br />
           l'app mi aiuta a raggiungerli.
         </p>
 
@@ -575,10 +717,14 @@
 
         <p>
           Scarica Nike Run Club oggi stesso e iscriviti per iniziare a
-          monitorare le <br />
+          monitorare le
+          <br />
           tue corse e registrare i tuoi progressi. Trova Nike Run Club nell'App
-          Store <br />
-          per <a href="#">iOS</a> e Google Play Store per
+          Store
+          <br />
+          per
+          <a href="#">iOS</a>
+          e Google Play Store per
           <a href="#">Android.</a>
         </p>
 
@@ -600,7 +746,8 @@
 
         <p>
           Dispositivo mobile: assicurati di aver connesso il dispositivo al
-          Wi-Fi. Tocca <br />
+          Wi-Fi. Tocca
+          <br />
           la scheda "Attività", quindi "Cronologia". Scorri verso il basso per
           <br />
           aggiornare e sincronizzare i dati.
@@ -610,11 +757,15 @@
           Sistema operativo Apple Watch and Wear: se l'orologio è collegato al
           <br />
           dispositivo, la corsa dovrebbe essere sincronizzata automaticamente.
-          Se <br />
+          Se
+          <br />
           stai correndo senza il dispositivo, l'attività verrà sincronizzata
-          quando <br />
-          l'orologio viene ricollegato. Se continui ad avere problemi di <br />
-          sincronizzazione delle corse, <a href="#">contattaci.</a>
+          quando
+          <br />
+          l'orologio viene ricollegato. Se continui ad avere problemi di
+          <br />
+          sincronizzazione delle corse,
+          <a href="#">contattaci.</a>
         </p>
 
         <p>Perché l'app Nike Run Club non funziona?</p>
@@ -623,10 +774,13 @@
 
         <p>
           Accedi all'app Nike Run Club e seleziona la scheda "Attività". Qui
-          troverai <br />
+          troverai
+          <br />
           tutti i dettagli delle tue corse. Se non sai ancora come utilizzare
-          l'app, leggi <br />
-          le nostre <a href="#">Domande frequenti.</a>
+          l'app, leggi
+          <br />
+          le nostre
+          <a href="#">Domande frequenti.</a>
         </p>
 
         <p>Come accedo alla dashboard di Nike Run Club?</p>
@@ -657,7 +811,8 @@
 
         <p>
           Le corse possono essere registrate sia in chilometri che in miglia.
-          Puoi <br />
+          Puoi
+          <br />
           scegliere l'unità di misura nel menu "Impostazioni".
         </p>
 
@@ -665,9 +820,11 @@
 
         <p>
           Scarica e apri l'app sul tuo dispositivo per accedere alla schermata
-          di <br />
+          di
+          <br />
           accesso di Nike Run Club. Seleziona "Accedi", quindi inserisci
-          l'indirizzo e- <br />
+          l'indirizzo e-
+          <br />
           mail e la password per accedere al tuo profilo.
         </p>
 
@@ -675,7 +832,8 @@
 
         <p>
           L'app Nike Run Club è scaricabile gratuitamente, e non è necessario
-          alcun <br />
+          alcun
+          <br />
           acquisto nell'app.
         </p>
 
@@ -696,7 +854,10 @@
             <p class="para-series">
               Tutto quello di cui hai bisogno per dare il massimo
             </p>
-            <button class="series-info"><a href="#"></a>Scarica ora</button>
+            <button class="series-info">
+              <a href="#"></a>
+              Scarica ora
+            </button>
           </figcaption>
         </div>
 
@@ -707,7 +868,10 @@
           <figcaption>
             <h2 class="title-series">Nike Training Club</h2>
             <p class="para-series">Il tuo personal trainer ovunque ti trovi</p>
-            <button class="series-info"><a href="#"></a>Scarica ora</button>
+            <button class="series-info">
+              <a href="#"></a>
+              Scarica ora
+            </button>
           </figcaption>
         </div>
 
@@ -720,7 +884,10 @@
             <p class="para-series">
               Tutto quello che vuoi sapere sulle sneakers
             </p>
-            <button class="series-info"><a href="#"></a>Scarica ora</button>
+            <button class="series-info">
+              <a href="#"></a>
+              Scarica ora
+            </button>
           </figcaption>
         </div>
       </section>
@@ -786,8 +953,11 @@
             <i class="fa-brands fa-youtube"></i>
           </div>
         </div>
+      </div>
+      <div class="total-down">
         <div class="down-footer">
-          <span>United Kingdom 2022 Nike, Inc. All Rights Reserved</span>
+          <p>United Kingdom 2022 Nike Inc. All Rights Reserved </p> 
+          
         </div>
 
         <div class="down-list">
@@ -800,7 +970,9 @@
             <li><a href="#">Privacy & Cookey</a></li>
           </ul>
         </div>
-      </div>
+        </div>
     </footer>
+
+    <script src="/smart-app.js"></script>
   </body>
 </html>

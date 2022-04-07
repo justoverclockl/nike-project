@@ -62,6 +62,7 @@ header {
         &:hover {
           color: $style;
           transition: 2ms;
+          cursor: pointer;
         }
       }
     }
@@ -151,14 +152,22 @@ header {
     margin: 1rem;
   }
 }
+.lens-search {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  background: #f5f5f5;
+}
 
 #search {
   border: none;
-  background-color: $style;
-  border-style: hidden;
-  height: 30px;
-  width: 150px;
-  border-radius: 50px;
+  font-size: 11px;
+  list-style-type: none;
+  background: #f5f5f5;
+  &:focus {
+    outline: none;
+  }
 }
 
 .container {
@@ -167,6 +176,110 @@ header {
   justify-content: stretch;
 }
 
+//initial pop-up
+.pop-up-container {
+  position: fixed;
+  display: none;
+  background: white;
+  bottom: 0;
+  height: 450px;
+  width: 450px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  border: none;
+  width: 24rem;
+  height: 30rem;
+  text-align: center;
+  h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+.popup {
+  width: 500px;
+  height: 400px;
+  background: #fefefe;
+  margin: 40px auto;
+  padding: 10px 20px;
+  position: relative;
+  color: #333;
+}
+#enter-popup {
+  display: none;
+}
+
+#close-popup {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 25px;
+  cursor: pointer;
+}
+#logo-pop {
+  width: 60px;
+  margin: 10px;
+}
+#form-pop {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.inp-popup {
+  height: 30px;
+  border: 1px solid lightgray;
+  margin: 10px;
+}
+#checkP {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  input {
+    background-color: #333;
+  }
+  p {
+    font-size: 15px;
+    margin: 10px;
+  }
+  a {
+    color: lightgray;
+  }
+  &:hover {
+    cursor: pointer;
+    color: lightgray;
+  }
+}
+
+.policy {
+  font-size: 12px;
+  color: lightgray;
+  a {
+    text-decoration: underline;
+    color: lightgray;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.access-member {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  button {
+    width: 300px;
+    border-radius: 0%;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: underline;
+    font-size: 15px;
+  }
+}
+// popup terminal
 h2 {
   font-size: 24px;
   line-height: 28px;
@@ -327,6 +440,7 @@ a {
     border-radius: 50%;
     height: 60px;
     width: 60px;
+    cursor: pointer;
   }
 }
 
@@ -563,6 +677,7 @@ h2 {
 .icon-footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   div {
     width: 40px;
     height: 40px;
@@ -579,6 +694,16 @@ h2 {
       cursor: pointer;
     }
   }
+}
+.total-down {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .down-list {
@@ -597,16 +722,9 @@ h2 {
 }
 
 .down-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 300px;
-  span {
+  p {
     color: white;
     font-size: 10px;
-    a {
-      color: white;
-      font-size: 15px;
-    }
   }
 }
 
