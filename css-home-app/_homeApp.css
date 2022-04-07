@@ -62,8 +62,9 @@ body {
 }
 .pop-up-cookie .last-text-cookie {
   font-size: 12px;
-  padding-left: 27px;
+  padding-left: 35px;
   line-height: 18px;
+  padding-top: 11px;
 }
 
 .pop-up-container {
