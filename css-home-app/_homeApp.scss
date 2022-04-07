@@ -21,7 +21,7 @@ body {
   margin: auto;
   right: 0;
   top: 0;
-  width: 27rem;
+  width: 28rem;
   height: 34rem;
 
   .title-cookie {
@@ -45,15 +45,14 @@ body {
 
     .first-button-cookie {
       margin-inline: 10px;
-      background: grey;
-      border: none;
-      width: 115px;
+      background: white;
+      border: black solid 1px;
+      width: 13rem;
       height: 3em;
       border-radius: 20px;
       cursor: pointer;
       &:hover {
-        background-color: black;
-        color: white;
+        background: lightgray;
       }
     }
 
@@ -62,12 +61,11 @@ body {
       background: black;
       color: white;
       border: none;
-      width: 115px;
+      width: 13rem;
       border-radius: 20px;
       cursor: pointer;
       &:hover {
-        background-color: grey;
-        color: black;
+        background: lightgray;
       }
     }
   }
@@ -124,6 +122,7 @@ body {
     align-self: self-end;
     border: none;
     font-size: 19px;
+    cursor: pointer;
   }
 
   .pop-up {
@@ -434,6 +433,7 @@ p {
       height: 4em;
       width: 4em;
       margin: 3px;
+      cursor: pointer;
     }
   }
 

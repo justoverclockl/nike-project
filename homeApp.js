@@ -18,14 +18,19 @@ setTimeout(() => {
   });
 
 const buttonNext = document.getElementById("next");
-const list = document.getElementsByClassName("carousel-list");
+const list = document.querySelector(".carousel-list");
 
-function scroll() {
-  buttonNext.addEventListener("click", () => {
-    list.scoop({
-      left: -700,
-      behavior: "smooth",
-    });
+buttonNext.addEventListener("click", () => {
+  list.scrollBy({
+    left: 500,
+    behavior: "smooth",
   });
-  const prev = document.getElementById;
-}
+});
+
+const buttonBack = document.getElementById("back");
+buttonBack.addEventListener("click", () => {
+  list.scrollBy({
+    left: -500,
+    behavior: "smooth",
+  });
+});
