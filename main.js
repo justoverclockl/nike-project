@@ -41,14 +41,24 @@ closePopup.addEventListener('click', () => {
 // classe per il modulo login
 
 class Login {
-    constructor(email, password, userId, registrationDate) {
+    static count = 0
+
+    constructor(id, email, password, registrationDate) {
+        this.id = ++this.constructor.count
         this.email = email
         this.password = password
-        this.registrationDate = Date.now()
+        this.registrationDate = new Date().toISOString()
     }
 
     toJson() {
         return JSON.stringify(this)
+    }
+
+    static incrementId() {
+        if (!this.latestId) {
+            this.latestId = 1;
+        } else this.latestId++;
+        return this.latestId;
     }
 
     displayLoginMessage() {
@@ -59,9 +69,9 @@ class Login {
 
 let newUser = [];
 
-function addUser(email, password, registrationDate) {
-    const user = new Login(email, password, registrationDate);
-    newUser.push([email, password, registrationDate]);
+function addUser(id, email, password, registrationDate) {
+    const user = new Login(id ,email, password, registrationDate);
+    newUser.push(user);
     console.log(newUser)
     const popup = document.getElementById('popup-text');
     popup.innerHTML = user.displayLoginMessage()
@@ -71,9 +81,10 @@ function addUser(email, password, registrationDate) {
 const submitButton = document.getElementById('login');
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
+    const id = Login.incrementId()
     const emailValue = document.getElementById('email').value;
     const passwordValue = document.getElementById('password').value;
-    addUser(emailValue, passwordValue, new Date().toISOString())
+    addUser(id, emailValue, passwordValue, new Date().toISOString())
 })
 
 // popup per le cards
@@ -112,7 +123,7 @@ cards.forEach((card => {
 
     }
 
-    function closePopup(){
+    function closePopup() {
         const popup = document.getElementById('card-popup')
         const overlay = document.getElementById('overlay')
         popup.remove()
