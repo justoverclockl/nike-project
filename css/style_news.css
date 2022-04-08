@@ -92,7 +92,13 @@ h3 {
 #menu {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(17, 17, 17);
+  height: 100%;
+  width: 100%;
   display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .logo-white {
@@ -110,16 +116,16 @@ h3 {
 #closebtn {
   margin-right: 20px;
   margin-top: 20px;
-  width: 33px;
+  width: 37px;
   color: white;
   cursor: pointer;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  position: relative;
+  top: 13%;
+  width: 100%;
+  text-align: center;
 }
 
 ul {
@@ -147,7 +153,11 @@ ul {
 } */
 
 .footer-end {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
 }
 
 .footer-end p {

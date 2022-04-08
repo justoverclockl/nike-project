@@ -11,7 +11,7 @@ iconSearch.addEventListener("mouseout", () => {
 
 let iconMenu = document.getElementById("icon-menu");
 iconMenu.addEventListener("click", () => {
-  const menu = (document.getElementById("menu").style.display = "block");
+  let menu = (document.getElementById("menu").style.display = "block");
 });
 
 /*let lista = document.querySelectorAll("li");
