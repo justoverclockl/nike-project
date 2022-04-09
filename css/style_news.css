@@ -87,10 +87,90 @@ h3 {
   margin-right: 20px;
 }
 
+/* js-page search */
+
+#page-search {
+  background-color: #f1f1f1;
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+.container-search {
+  display: block;
+  position: relative;
+  top: 7%;
+  left: 17%;
+  width: 100%;
+}
+
+.link-search {
+  display: block;
+  position: relative;
+}
+
+.logo-black {
+  width: 37px;
+  cursor: pointer;
+}
+
+h3 a {
+  color: black;
+  font-size: 18px;
+}
+
+#close-btn {
+  width: 17px;
+  cursor: pointer;
+}
+
+#input-text {
+  border: none;
+  border-radius: 7px;
+  padding: 27px;
+  width: 67%;
+}
+
+::placeholder {
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(181, 180, 180);
+}
+
+.link-search span {
+  font-size: 17px;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.link-search li {
+  font-size: 13px;
+  color: gray;
+  padding: 3px;
+  text-align: justify;
+}
+
+.link-search li:hover {
+  text-decoration: underline;
+}
+
 /* js-page hamburger menu*/
 
 #menu {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   background-color: rgb(17, 17, 17);
   height: 100%;
   width: 100%;
@@ -111,6 +191,7 @@ h3 {
   margin-top: 20px;
   margin-left: 20px;
   width: 57px;
+  cursor: pointer;
 }
 
 #closebtn {
