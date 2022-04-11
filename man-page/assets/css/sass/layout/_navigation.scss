@@ -388,7 +388,7 @@ button {
   }
 
   &:checked + label:after {
-    content: url("../../../assets/man-images/checkmark.svg");
+    content: url("../images/checkmark.svg");
     position: absolute;
     left: 5px;
     top: 14px;
@@ -420,10 +420,10 @@ button {
     border-color: #111;
     color: #111;
     &:before {
+      content: url("../images/checkmark.svg");
       position: absolute;
       left: 25%;
       top: 25%;
-      content: url("../../../assets/man-images/checkmark.svg");
     }
   }
 }
