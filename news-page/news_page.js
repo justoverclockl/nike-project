@@ -35,14 +35,25 @@ closeIconMenu.addEventListener("click", () => {
   const closeMenu = (document.getElementById("menu").style.display = "none");
 });
 
-/*let lista = document.querySelectorAll("li");
-for (let i = 0; i < lista.length; i++) {
+const list = document.getElementById("list");
 
-  lista[i].addEventListener("mouseover", function () {
-    
-    
-    this.style.color = "#818181";
-    this.style.transition = "0.3";
+function enterList(event) {
+  event.currentTarget.style.color = "gray";
+}
 
-  });
-}*/
+function exitList(event) {
+  event.currentTarget.style.color = "white";
+}
+
+function hoverElement(event) {
+  event.target.style.color = "white";
+}
+
+function hoveroutElement(event) {
+  event.target.style.color = "inherit";
+}
+
+list.addEventListener("mouseenter", enterList);
+list.addEventListener("mouseleave", exitList);
+list.addEventListener("mouseover", hoverElement);
+list.addEventListener("mouseout", hoveroutElement);
