@@ -364,7 +364,7 @@ button {
   border-radius: 3px;
 }
 .login-checkbox:checked + label:after {
-  content: url("../../../assets/man-images/checkmark.svg");
+  content: url("../images/checkmark.svg");
   position: absolute;
   left: 5px;
   top: 14px;
@@ -394,10 +394,10 @@ button {
   color: #111;
 }
 .input-gender:checked + label:before {
+  content: url("../images/checkmark.svg");
   position: absolute;
   left: 25%;
   top: 25%;
-  content: url("../../../assets/man-images/checkmark.svg");
 }
 
 .check-input {
@@ -1249,15 +1249,15 @@ footer hr {
 }
 @font-face {
   font-family: Nike Futura;
-  src: url("../assets/fonts/Nike-Futura.otf");
+  src: url("../fonts/Nike-Futura.otf");
 }
 @font-face {
   font-family: Nike TG;
-  src: url("../assets/fonts/Nike-TG.woff2");
+  src: url("../fonts/Nike-TG.woff2");
 }
 @font-face {
   font-family: Nike Goth;
-  src: url("../assets/fonts/TradeGothicForNike365.ttf");
+  src: url("../fonts/TradeGothicForNike365.ttf");
 }
 
 /*# sourceMappingURL=man-style.css.map */
