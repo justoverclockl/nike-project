@@ -3,10 +3,23 @@ $color-a: black;
 $text-h2: 17px;
 $color-footer: #7e7e7e;
 
+@font-face {
+  font-family: "Nike1";
+  src: url("/font-nike-home-app/nike-futura-extra-bold-v200.woff2");
+}
+@font-face {
+  font-family: "Nike2";
+  src: url("/font-nike-home-app/nike-glyphs.woff");
+}
+@font-face {
+  font-family: "Nike3";
+  src: url("/font-nike-home-app/Nike-TG.woff2");
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nike2";
   background-color: white;
 }
 
