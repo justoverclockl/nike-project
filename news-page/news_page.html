@@ -4,35 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style_news.css" />
+    <link rel="icon" href="assets/favicon.png" type="ico" />
+    <link rel="stylesheet" href="style_news.css" />
     <title>Nike News - The official news website for NIKE, Inc.</title>
   </head>
   <body>
     <header>
       <div>
-        <a href="#"><img src="assets/news_page/icons-nike.png" alt="" /></a>
+        <a href="#"><img src="assets/icons-nike.png" alt="" /></a>  
       </div>
-      <div class="text">
+      <div class="text">    
         <h3><a href="#">NIKE NEWS</a></h3>
         <p>Your source for the latest NIKE, Inc. stories</p>
       </div>
       <div class="right">
-        <div class="search">
-          <input id="search" type="search" placeholder="Search Nike News" />
+        <img id="icon-search" src="assets/icons-search.png" />
+        <img id="icon-menu" src="assets/icons-menu.png" />
+      </div>
+        <!--page-search-->
+      <div id="page-search">
+        <section class="header-search">
+          <div class="logo-black">
+            <img src="assets/icons-nike.png" alt="" /></a>
+          </div>
+            <h3><a href="#">NIKE NEWS</a></h3>
+            <img id="close-btn" src="assets/close-icon.png"/>
+        </section>
+        <section class="container-search">
+          <div class="search-box">
+            <img id="search-img" src="assets/search-white.png">
+            <div class="cursor">|</div>
+            <input id="input-text" type="text" placeholder="Search Nike News">  
+          </div> 
+          <ul class="link-search">
+            <span>Popular Searches</span>  
+            <li>Football Kits</li>
+            <li>Jordan</li>
+            <li>Running</li>
+            <li>Air Max</li>
+            <li>React</li>
+            <li>Basketball</li>
+            <li>LeBron</li>
+            <li>Vaporfly</li>
+            <li>Converse</li>
+            <li>Vapormax</li>
+            <li>Pegasus</li>
+          </ul>
+        </section>
+      </div>
+      <!--hamburger-menu-->
+      <div id="menu">
+        <div class="logo-white">
+          <img src="assets/logo-white.png" />
+          <span id="closebtn">X</span>
         </div>
-        <button>
-          <img src="assets/news_page/icons-search.png" />
-        </button>
-        <a href="#"
-          ><img id="icomenu" src="assets/news_page/icons-menu.png"
-        /></a>
+        <div class="container">
+          <div class="cnt-list">
+            <ul id="list">
+              <li> <a href="#"> ABOUT</a> </li>
+              <li> <a href="#">NIKE NEWS</a></li>
+              <li> <a href="#">COMMUNITY IMPACT</a></li>
+              <li><a href="#">PURPOSE</a></li>
+              <li><a href="#">INVESTORS</a></li>
+              <li><a href="#">CAREERS</a></li>
+              <li><a href="#">SHOP NIKE.COM</a></li>
+            </ul>
+          </div>
+          <div class="footer-end">
+            <p>© 2022 Nike, Inc. All Rights Reserved</p>
+            <div class="links-end">
+              <p>
+                <a href="#">Terms of Use </a> |<span
+                  ><a href="#"> Nike Privacy Policy</a></span
+                >
+              </p>
+            </div>
+            <p><a href="#">CA Supply Chains Act</a></p>
+          </div>
+        </div>
       </div>
     </header>
-    <main>
+    
+    <main>    
       <!--section one-->
       <section class="first">
         <div>
-          <a href="#"><img src="assets/news_page/lebron-james.png" alt="" /></a>
+          <a href="#"><img src="assets/lebron-james.png" alt="" /></a>
         </div>
         <div class="card">
           <a href="#">SPORT SCIENCE</a>
@@ -50,7 +107,7 @@
       <section>
         <div class="card">
           <a href="#"
-            ><img src="assets/news_page/sustainability.jpg" alt=""
+            ><img src="assets/sustainability.jpg" alt=""
           /></a>
           <figcaption><a href="#">SUSTAINABILITY</a></figcaption>
           <h2>
@@ -68,78 +125,21 @@
           </p>
         </div>
         <div class="card">
-          <a href="#"><img src="assets/news_page/company1.png" alt="" /></a>
-          <figcaption><a href="#">COMPANY</a></figcaption>
+          <a href="#"><img src="assets/sustainability1.jpg" alt="" /></a>
+          <figcaption><a href="#">SUSTAINABILITY</a></figcaption>
           <h2>
             <a href="#"
-              >By Empowering Black Creatives, Converse Positions the Future
-              Now</a
-            >
-          </h2>
-          <p>
-            <a href="#"
-              >Ilana Finley, VP, Social & Community Impact and Global
-              Communications, on how the brand builds relationships to break
-              barriers together.</a
-            >
-          </p>
-        </div>
-        <div class="card">
-          <a href="#"><img src="assets/news_page/community.png" alt="" /></a>
-          <figcaption><a href="#">COMMUNITY</a></figcaption>
-          <h2>
-            <a href="#"
-              >NIKE, Inc. Announces Its 2022 Black Community Commitment
-              Grantees</a
+              >Nike Serves Athletes and the Planet With the Mercurial Vapor Next Nature</a
             >
           </h2>
           <p>
             <a href="#">
-              As part of its multiyear pledge to support the Black community,
-              NIKE, Inc. announces the 2022 national and city-led Black
-              Community Commitment grantees.</a
-            >
-          </p>
-        </div>
-      </section>
-      <!--section three-->
-      <section>
-        <div class="card">
-          <a href="#"><img src="assets/news_page/company2.png" alt="" /></a>
-          <figcaption><a href="#">COMPANY</a></figcaption>
-          <h2>
-            <a href="#"
-              >Michael Jordan and Jordan Brand Invite Grassroots Organizations
-              to Help Create Racial Equity</a
-            >
-          </h2>
-          <p>
-            <a href="#"
-              >Michael Jordan and Jordan Brand announce the opening of their
-              second cycle of Community Grants to create more equitable futures
-              for Black Americans.</a
+              The iconic Nike boot arrives in a Next Nature version, made with at least 50% recycled content by weight.</a
             >
           </p>
         </div>
         <div class="card">
-          <a href="#"><img src="assets/news_page/sneakers.png" alt="" /></a>
-          <figcaption><a href="#">SNEAKERS</a></figcaption>
-          <h2>
-            <a href="#"
-              >The Chuck Taylor All Star Steps Into Inclusive Design Through
-              FlyEase Technology</a
-            >
-          </h2>
-          <p>
-            <a href="#"
-              >The innovative FlyEase system arrives in a Converse silhouette
-              for the first time, joining Nike and Jordan Brand in matching more
-              inclusive technology with iconic footwear designs.</a
-            >
-          </p>
-        </div>
-        <div class="card">
-          <a href="#"><img src="assets/news_page/company3.png" alt="" /></a>
+          <a href="#"><img src="assets/company3.png" alt="" /></a>
           <figcaption><a href="#">COMPANY</a></figcaption>
           <h2>
             <a href="#">
@@ -155,10 +155,60 @@
           </p>
         </div>
       </section>
+      <!--section three-->
+      <section>
+        <div class="card">
+          <a href="#"><img src="assets/collaborations.jpg" alt="" /></a>
+          <figcaption><a href="#">COLLABORATIONS</a></figcaption>
+          <h2>
+            <a href="#"
+              >Billie Eilish Reimagines the Nike Air Force 1 With Recycled Content</a
+            >
+          </h2>
+          <p>
+            <a href="#"
+              >The Air Force 1 Billie launches April 25 in a striking monochrome mushroom colorway.</a
+            >
+          </p>
+        </div>
+        <div class="card">
+          <a href="#"><img src="assets/company2.png" alt="" /></a>
+          <figcaption><a href="#">COMPANY</a></figcaption>
+          <h2>
+            <a href="#"
+              >Michael Jordan and Jordan Brand Invite Grassroots Organizations
+              to Help Create Racial Equity</a
+            >
+          </h2>
+          <p>
+            <a href="#"
+              >Michael Jordan and Jordan Brand announce the opening of their
+              second cycle of Community Grants to create more equitable futures
+              for Black Americans.</a
+            >
+          </p>
+        </div> <div class="card">
+          <a href="#"><img src="assets/sneakers.png" alt="" /></a>
+          <figcaption><a href="#">SNEAKERS</a></figcaption>
+          <h2>
+            <a href="#"
+              >The Chuck Taylor All Star Steps Into Inclusive Design Through
+              FlyEase Technology</a
+            >
+          </h2>
+          <p>
+            <a href="#"
+              >The innovative FlyEase system arrives in a Converse silhouette
+              for the first time, joining Nike and Jordan Brand in matching more
+              inclusive technology with iconic footwear designs.</a
+            >
+          </p>
+        </div>
+      </section>
       <!-- section four-->
       <section>
         <div class="card">
-          <a href="#"><img src="assets/news_page/apparel.png" alt="" /></a>
+          <a href="#"><img src="assets/apparel.png" alt="" /></a>
           <figcaption><a href="#">APPAREL</a></figcaption>
           <h2>
             <a href="#"
@@ -176,7 +226,7 @@
         </div>
         <div class="card">
           <a href="#"
-            ><img src="assets/news_page/boxes-moving_original.gif"
+            ><img src="assets/boxes-moving_original.gif"
           /></a>
           <figcaption><a href="#">COMPANY</a></figcaption>
           <h2>
@@ -193,7 +243,7 @@
           </p>
         </div>
         <div class="card">
-          <a href="#"><img src="assets/news_page/innovation.png" alt="" /></a>
+          <a href="#"><img src="assets/innovation.png" alt="" /></a>
           <figcaption><a href="">INNOVATION BREAKDOWN</a></figcaption>
           <h2>
             <a href="#"
@@ -228,5 +278,6 @@
         </div>
       </div>
     </footer>
+    <script src="news_page.js"></script>
   </body>
 </html>
