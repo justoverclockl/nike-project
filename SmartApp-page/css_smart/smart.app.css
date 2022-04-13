@@ -361,7 +361,7 @@ button:hover {
 }
 
 .paragraph-imag1 {
-  font-size: 18px;
+  font-size: 22px;
   text-align: left;
 }
 
@@ -402,7 +402,7 @@ button:hover {
 .first-par {
   text-align: left;
   margin-left: 14rem;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .image3 {
@@ -486,6 +486,7 @@ h3.car-title {
 p.car-par {
   text-align: left;
   margin-left: 40px;
+  font-size: 18px;
 }
 
 .carousel-info {
