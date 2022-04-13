@@ -1,0 +1,1065 @@
+$color-back: #f5f5f5;
+$color-a: black;
+$text-h2: 17px;
+$color-footer: #7e7e7e;
+
+@font-face {
+  font-family: "Nike1";
+  src: url("/font-nike-home-app/nike-futura-extra-bold-v200.woff2");
+}
+@font-face {
+  font-family: "Nike2";
+  src: url("/font-nike-home-app/nike-glyphs.woff");
+}
+@font-face {
+  font-family: "Nike3";
+  src: url("/font-nike-home-app/Nike-TG.woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nike2";
+  background-color: white;
+  h2 {
+    font-size: 32px;
+  }
+}
+
+.pop-up-cookie {
+  display: none;
+  position: fixed;
+  background: white;
+  bottom: 0;
+  height: 400px;
+  width: 600px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  width: 28rem;
+  height: 34rem;
+
+  .title-cookie {
+    padding-left: 13px;
+  }
+
+  .text-pop-up-cookie {
+    font-size: 17px;
+    display: flex;
+    text-align: inherit;
+    padding-left: 19px;
+    line-height: 24px;
+  }
+
+  .button-cookie {
+    display: flex;
+    justify-content: center;
+    &:hover {
+      color: transparent;
+    }
+
+    .first-button-cookie {
+      margin-inline: 10px;
+      background: white;
+      border: black solid 1px;
+      width: 13rem;
+      height: 3em;
+      border-radius: 20px;
+      cursor: pointer;
+      &:hover {
+        background: lightgray;
+      }
+    }
+
+    .second-button-cookie {
+      margin-inline: 10px;
+      background: black;
+      color: white;
+      border: none;
+      width: 13rem;
+      border-radius: 20px;
+      cursor: pointer;
+      &:hover {
+        background: lightgray;
+      }
+    }
+  }
+
+  .last-text-cookie {
+    font-size: 12px;
+    padding-left: 35px;
+    line-height: 18px;
+    padding-top: 11px;
+  }
+}
+
+.pop-up-container {
+  position: fixed;
+  display: none;
+  background: white;
+  bottom: 0;
+  height: 400px;
+  width: 600px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  width: 24rem;
+  height: 30rem;
+
+  h2 {
+    font-size: 16px;
+  }
+
+  a {
+    color: #8d8d8d;
+  }
+
+  span {
+    font-size: 13px;
+    line-height: 26px;
+    color: #8d8d8d;
+  }
+
+  p {
+    font-size: 13px;
+    color: #8d8d8d;
+    margin-inline: 12px;
+  }
+
+  .image-popup {
+    padding-top: 12px;
+    width: 49px;
+  }
+
+  .close-popup {
+    align-self: self-end;
+    background: none;
+    align-self: self-end;
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+  }
+
+  .pop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-for-popup {
+    display: flex;
+    align-items: center;
+  }
+
+  input.inp-popup {
+    margin: 6px;
+    height: 2em;
+    width: 18em;
+  }
+
+  button.enter-popup {
+    margin: 20px;
+    width: 73%;
+    background: black;
+    color: white;
+    height: 39px;
+    border: none;
+  }
+}
+p {
+  line-height: 34px;
+  font-size: 20px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    border-radius: 40em;
+    color: $color-footer;
+    cursor: pointer;
+  }
+}
+
+#link-final {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-head {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-back;
+  align-items: center;
+  padding-left: 31px;
+  height: 2em;
+
+  .image-logo {
+    width: 38px;
+  }
+
+  .list-one {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 2em;
+
+    .a-one {
+      cursor: pointer;
+      text-decoration: none;
+      padding: 9px;
+      font-size: 13px;
+      color: $color-a;
+      &:hover {
+        color: $color-footer;
+      }
+    }
+  }
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 41px;
+
+  .conteiner-two {
+    padding-left: 4em;
+  }
+
+  .image-topleft {
+    width: 57px;
+  }
+
+  .list-two {
+    display: inline-flex;
+    list-style-type: none;
+
+    .a-two {
+      text-decoration: none;
+      padding: 9px;
+      font-size: 18px;
+      color: black;
+    }
+  }
+
+  .conteiner-three {
+    display: flex;
+    align-items: center;
+
+    .conteiner-search {
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      height: 28px;
+      background: $color-back;
+
+      input:focus {
+        outline: none;
+      }
+
+      #search-text {
+        border: none;
+        font-size: 11px;
+        list-style-type: none;
+        background: $color-back;
+      }
+    }
+
+    .conteiner-heart-badge {
+      .fav {
+        margin: 11px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.nav-footer {
+  width: 100%;
+  height: 50px;
+  background-color: $color-back;
+  width: 100%;
+}
+
+.image-center {
+  width: 100%;
+}
+
+.conteiner-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16em;
+  padding-top: 3em;
+
+  .text {
+    font-size: $text-h2;
+  }
+
+  .conteiner-button {
+    padding-top: 10px;
+
+    .text-button {
+      border: solid black;
+      border-radius: 48px;
+      background: black;
+      color: white;
+      font-size: 21px;
+      &:hover {
+        cursor: pointer;
+        background-color: $color-footer;
+      }
+    }
+  }
+}
+
+.second-image-center {
+  display: flex;
+  justify-content: center;
+
+  .image-center-two {
+    padding-top: 8em;
+    width: 76vw;
+  }
+}
+
+.text-training {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16em;
+  padding-top: 3em;
+
+  .head-text-training {
+    .text-link {
+      color: $color-a;
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+
+  .footer-text-training {
+    .text-link {
+      color: $color-a;
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+}
+
+.training-fit {
+  display: flex;
+  justify-content: center;
+
+  .image-center-three {
+    width: 93vw;
+    padding-top: 5em;
+  }
+}
+
+.training-club {
+  padding-left: 16em;
+  padding-top: 3em;
+}
+
+#conteiner-section-card-list {
+  display: flex;
+  padding-top: 6em;
+  justify-content: center;
+
+  .conteiner {
+    display: flex;
+
+    .card {
+      padding: 9px;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        line-height: 24px;
+        font-size: 17;
+      }
+
+      .image-card {
+        margin: 0px;
+        max-width: 100%;
+      }
+
+      .title-card {
+        font-size: 23px;
+        color: rgb(24, 22, 22);
+      }
+
+      .text-card {
+        font-size: 17px;
+        color: rgb(24, 22, 22);
+      }
+    }
+  }
+}
+
+.image-fit-center {
+  display: flex;
+  justify-content: center;
+
+  .image-fit {
+    width: 76vw;
+    padding-top: 5em;
+  }
+}
+
+.text-plan {
+  flex-direction: column;
+  padding-top: 4em;
+  padding-left: 16em;
+  width: 69vw;
+}
+
+.image-fit-second {
+  display: flex;
+  justify-content: center;
+
+  .image-center-four {
+    padding-top: 4em;
+    width: 76vw;
+  }
+}
+
+.text-train {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+  padding-left: 16em;
+  width: 69vw;
+}
+
+.conteiner-carousel {
+  padding-top: 3em;
+
+  .button-carousel {
+    text-align: end;
+    padding-right: 3em;
+
+    .button-for-carousel {
+      border: solid transparent;
+      border-radius: 50%;
+      height: 4em;
+      width: 4em;
+      margin: 3px;
+      cursor: pointer;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $color-back;
+    border-radius: 100vw;
+  }
+  .carousel-list {
+    overflow-x: scroll;
+    display: flex;
+    list-style-type: none;
+    margin-inline-start: 48px;
+    overflow: auto;
+
+    p {
+      font: -webkit-control;
+      line-height: 23px;
+      font-size: x-large;
+      font-family: arial;
+    }
+
+    .image-carousel {
+      width: 28em;
+      margin-inline: 8px;
+    }
+  }
+}
+
+#image-center-six {
+  display: flex;
+  justify-content: center;
+  padding-top: 7em;
+
+  .image-fitness {
+    width: 89vw;
+  }
+}
+
+#list-for-app {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+  padding-left: 16em;
+}
+
+#image-center-seven {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+
+  .image-center-five {
+    width: 76vw;
+  }
+}
+
+.text-training-club {
+  display: block;
+  padding-left: 16em;
+  line-height: 23px;
+  padding-top: 3em;
+}
+
+#image-center-eight {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+
+  .image-smartphone-center {
+    width: 93vw;
+  }
+}
+
+#text-finish-line {
+  padding-left: 16em;
+  line-height: 38px;
+  padding-top: 3em;
+}
+
+#image-center-nine {
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.image-nike-work {
+  width: 76vw;
+}
+
+#text-club {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16em;
+  line-height: 21px;
+  padding-top: 4em;
+
+  .button-of-text {
+    width: 4em;
+    height: 2em;
+    border: solid;
+    border-radius: 22px;
+    background: black;
+    font-size: 16px;
+    &:hover {
+      background-color: $color-footer;
+      cursor: pointer;
+    }
+  }
+
+  .text-of-button {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.text-link-second {
+  color: $color-a;
+  &:hover {
+    color: grey;
+  }
+}
+
+#image-center-ten {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+
+  .image-nike-work-second {
+    width: 76vw;
+  }
+}
+
+#text-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16em;
+  padding-top: 4em;
+}
+
+#image-center-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+
+  .image-last {
+    width: 76vw;
+  }
+}
+
+.text-final-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16em;
+  padding-top: 4em;
+
+  .ft-button {
+    width: 7em;
+    height: 3em;
+    border: solid;
+    border-radius: 24px;
+    font-size: 14px;
+    background: black;
+    &:hover {
+      background-color: $color-footer;
+      cursor: pointer;
+    }
+  }
+
+  .txt-footer {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#conteiner-footer {
+  padding-bottom: 3em;
+}
+
+#text-section-footer {
+  font-size: $text-h2;
+  padding-left: 1em;
+  padding-top: 6em;
+}
+
+.cards-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.image-card-footer {
+  width: 31vw;
+  margin: 6px;
+}
+.caption-card {
+  font-size: 22px;
+  margin: auto;
+  padding-left: 10px;
+
+  .title-card {
+    display: flex;
+    align-items: center;
+  }
+}
+
+footer {
+  background-color: white;
+  margin-bottom: 2em;
+  width: 100%;
+  min-height: 200px;
+
+  #footer-conteiner {
+    background-color: #111;
+
+    .conteiner-footer-list {
+      display: flex;
+
+      .conteiner-list-footer-text {
+        display: flex;
+        flex-wrap: wrap;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .footer-list {
+        color: white;
+        list-style-type: none;
+        inline-size: 17em;
+        font-size: 11px;
+        padding-top: 12px;
+        margin-left: 3em;
+        li {
+          padding: 10px;
+        }
+
+        .text-mod-footer {
+          color: $color-footer;
+          &:hover {
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .footer-icon-list {
+        display: inline-flex;
+        text-align: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+
+        .circle-svg {
+          &:hover {
+            color: transparent;
+            transition: 2ms;
+            cursor: pointer;
+          }
+        }
+
+        .fab {
+          margin: 9px;
+          background: $color-footer;
+          border-radius: 41%;
+          inline-size: 27px;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .sub-footer-a {
+      min-inline-size: fit-content;
+      justify-content: space-between;
+      font-size: 11px;
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+    }
+
+    .sub-logo-footer {
+      font-size: 11px;
+      display: inline-flex;
+
+      .pointer-footer {
+        text-decoration: none;
+        color: white;
+        font-size: 11px;
+
+        .pointer-logo {
+          font-size: 17px;
+          margin: 12px;
+        }
+
+        .text-it {
+          text-decoration: none;
+          color: white;
+          font-size: 11px;
+        }
+      }
+
+      .text-nike-inc {
+        color: $color-footer;
+        padding: 19px;
+        font-size: 10px;
+      }
+    }
+
+    .footer-text-list {
+      color: #7e7e7e;
+      flex-flow: wrap;
+      place-items: flex-end;
+      list-style-type: none;
+      font-size: 11px;
+      display: inline-flex;
+      flex-wrap: wrap;
+
+      .ft-li {
+        padding: 15px;
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+      }
+
+      .first:first-child {
+        padding-inline: 15px;
+      }
+
+      //   .ft-li:last-child {
+      //     flex-basis: 100%;
+      //     height: 0;
+      //     padding-right: 6em;
+      //   }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-text-list {
+    padding-left: 33em;
+  }
+
+  .sub-logo-footer {
+    height: 0;
+  }
+
+  .sub-footer-a {
+    padding-top: 4em;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  .nav-head {
+    display: none;
+  }
+
+  .conteiner-two {
+    display: none;
+  }
+
+  .conteiner-three {
+    flex-direction: row-reverse;
+  }
+
+  i.fav.far.fa-heart {
+    display: none;
+  }
+
+  .conteiner-text {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .text-training {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .training-club {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .text-plan {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .text-train {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  #list-for-app {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .text-training-club {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  #text-finish-line {
+    padding-left: 3em;
+    p {
+      font-size: 1px;
+    }
+  }
+
+  #text-finish-line {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  #text-footer {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .text-final-footer {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  #text-club {
+    padding-left: 3em;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .footer-list {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .conteiner-text {
+    padding-left: 0;
+  }
+
+  .text-training {
+    padding-left: 0;
+  }
+
+  #list-for-app {
+    padding-left: 0;
+  }
+
+  .training-club {
+    padding-left: 0;
+  }
+
+  #text-finish-line {
+    padding-left: 0;
+  }
+
+  #text-club {
+    padding-left: 0;
+  }
+
+  #text-footer {
+    padding-left: 0;
+  }
+
+  .text-plan {
+    padding-left: 0;
+  }
+
+  .text-train {
+    padding-left: 0;
+  }
+
+  .list-for-app {
+    padding-left: 0;
+  }
+
+  .text-training-club {
+    padding-left: 0;
+  }
+
+  .text-finish-line {
+    padding-left: 0;
+  }
+
+  .text-club {
+    padding-left: 0;
+  }
+
+  .text-footer {
+    padding-left: 0;
+  }
+
+  .text-final-footer {
+    padding-left: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 0.5em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $color-back;
+    border-radius: 100vw;
+  }
+
+  .cards-footer {
+    justify-content: flex-start;
+    overflow: scroll;
+    margin-inline-start: 48px;
+  }
+
+  .conteiner {
+    overflow-y: scroll;
+    justify-content: flex-start;
+  }
+
+  .conteiner-footer-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 422px) {
+  footer {
+    width: 103%;
+  }
+  .conteiner-button {
+    padding: 0;
+
+    .text-button {
+      font-size: 17px;
+      margin: 11px;
+    }
+  }
+
+  .conteiner-footer-list {
+    flex-direction: column;
+  }
+
+  .footer-text-list {
+    padding-left: 0;
+    padding-top: 31px;
+  }
+
+  .footer-list {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  p {
+    font-size: 8px;
+    line-height: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .image-center-two {
+    width: 95vw;
+  }
+
+  .image-fit {
+    width: 85vw;
+  }
+
+  .image-center-four {
+    width: 85vw;
+  }
+
+  .image-center-five {
+    width: 85vw;
+  }
+
+  .image-nike-work {
+    width: 85vw;
+  }
+
+  .image-nike-work-second {
+    width: 85vw;
+  }
+}
