@@ -1,0 +1,462 @@
+@font-face {
+  font-family: "Nike1";
+  src: url("assets/fonts/nike1.woff2");
+}
+@font-face {
+  font-family: "Nike2";
+  src: url("assets/fonts/nike2.woff");
+}
+
+@font-face {
+  font-family: "Nike3";
+  src: url("assets/fonts/nike-glyphs.woff");
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nike1";
+}
+
+main {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+li {
+  color: #111111;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  text-decoration: underline 3px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption {
+  text-decoration: underline 3px #111111;
+  padding: 7px;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 70px;
+  margin: 1rem;
+}
+
+.text > p,
+h3 {
+  text-align: center;
+  color: gray;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icon-search {
+  width: 27px;
+}
+
+#icon-menu {
+  width: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
+
+/* js-page search */
+
+#page-search {
+  background-color: #f1f1f1;
+  font-family: "Nike1";
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.container-search {
+  display: block;
+  position: relative;
+  top: 7%;
+  left: 17%;
+  width: 100%;
+}
+
+.link-search {
+  display: block;
+  position: relative;
+  list-style-type: none;
+  padding: 7px;
+}
+
+.logo-black {
+  width: 47px;
+  cursor: pointer;
+}
+
+h3 a {
+  color: black;
+  font-size: 18px;
+}
+
+#close-btn {
+  width: 17px;
+  cursor: pointer;
+}
+
+.search-box {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 7px;
+  padding: 13px;
+  width: 67%;
+  height: 47px;
+  background-color: white;
+}
+
+#search-img {
+  width: 47px;
+}
+
+.cursor {
+  color: white;
+  border-left: 1px solid black;
+  height: 47px;
+  animation: 1s blinker linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#input-text {
+  border: none;
+  padding: 13px;
+  width: 67%;
+  height: 47px;
+  padding-left: 0;
+  border-color: white;
+}
+
+#input-text:focus {
+  outline: none;
+}
+
+#input-text::placeholder {
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(181, 180, 180);
+}
+
+.link-search span {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 90px;
+}
+
+.link-search li {
+  font-size: 13px;
+  color: gray;
+  padding: 3px;
+  text-align: justify;
+}
+
+.link-search li:hover {
+  text-decoration: underline;
+}
+
+/* js-page hamburger menu*/
+
+#menu {
+  font-family: "Nike1";
+  background-color: rgb(17, 17, 17);
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.logo-white {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-white img {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 57px;
+  cursor: pointer;
+}
+
+#closebtn {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 57px;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+#list {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+#list:hover li a {
+  color: gray;
+}
+#list li a:hover {
+  color: white;
+}
+
+#list li {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  padding: 13px;
+}
+
+#list li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease all;
+}
+
+.footer-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.footer-end p {
+  color: rgb(66, 66, 66);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 13px;
+  padding-right: 3px;
+}
+
+.footer-end a {
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+}
+
+.footer-end a:hover,
+.footer-end a:focus {
+  color: #f1f1f1;
+  transition: 0.3s;
+}
+
+/* section one */
+
+.first .card p {
+  font-size: 20px;
+}
+
+.first {
+  align-items: flex-start;
+}
+
+.first .card {
+  max-width: 27%;
+  margin-left: 3rem;
+}
+
+.first .card > a {
+  text-decoration: underline 3px #111111;
+}
+
+/* all sections */
+
+section {
+  display: flex;
+  margin: 5rem 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section img {
+  max-width: 100%;
+}
+
+.card {
+  margin-right: 3rem;
+}
+
+.card > a {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* footer */
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+footer ul span {
+  text-decoration: underline 3px;
+  color: #111111;
+  padding: 7px;
+}
+
+footer ul li {
+  font-size: 21px;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.copyright p {
+  margin-right: 70px;
+}
+.copyright p,
+.footer-links a {
+  color: gray;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  li {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  header {
+    display: block;
+  }
+
+  .right {
+    position: absolute;
+    top: 20px;
+    right: 3px;
+  }
+
+  .search,
+  .menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .first .card {
+    max-width: 100%;
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 27px;
+  }
+
+  footer ul {
+    margin-right: 37px;
+  }
+
+  .copyright p {
+    margin-left: 37px;
+  }
+}
