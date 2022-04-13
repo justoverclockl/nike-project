@@ -21,6 +21,9 @@ body {
   padding: 0;
   font-family: "Nike2";
   background-color: white;
+  h2 {
+    font-size: 32px;
+  }
 }
 
 .pop-up-cookie {
@@ -289,7 +292,7 @@ p {
 .conteiner-text {
   display: flex;
   flex-direction: column;
-  padding-left: 10em;
+  padding-left: 16em;
   padding-top: 3em;
 
   .text {
@@ -326,7 +329,7 @@ p {
 .text-training {
   display: flex;
   flex-direction: column;
-  padding-left: 10em;
+  padding-left: 16em;
   padding-top: 3em;
 
   .head-text-training {
@@ -359,7 +362,7 @@ p {
 }
 
 .training-club {
-  padding-left: 10em;
+  padding-left: 16em;
   padding-top: 3em;
 }
 
@@ -412,7 +415,7 @@ p {
 .text-plan {
   flex-direction: column;
   padding-top: 4em;
-  padding-left: 10em;
+  padding-left: 16em;
   width: 69vw;
 }
 
@@ -430,7 +433,7 @@ p {
   display: flex;
   flex-direction: column;
   padding-top: 4em;
-  padding-left: 10em;
+  padding-left: 16em;
   width: 69vw;
 }
 
@@ -497,7 +500,7 @@ p {
   display: flex;
   flex-direction: column;
   padding-top: 4em;
-  padding-left: 10em;
+  padding-left: 16em;
 }
 
 #image-center-seven {
@@ -512,7 +515,7 @@ p {
 
 .text-training-club {
   display: block;
-  padding-left: 10em;
+  padding-left: 16em;
   line-height: 23px;
   padding-top: 3em;
 }
@@ -528,7 +531,7 @@ p {
 }
 
 #text-finish-line {
-  padding-left: 10em;
+  padding-left: 16em;
   line-height: 38px;
   padding-top: 3em;
 }
@@ -546,7 +549,7 @@ p {
 #text-club {
   display: flex;
   flex-direction: column;
-  padding-left: 10em;
+  padding-left: 16em;
   line-height: 21px;
   padding-top: 4em;
 
@@ -589,7 +592,7 @@ p {
 #text-footer {
   display: flex;
   flex-direction: column;
-  padding-left: 10em;
+  padding-left: 16em;
   padding-top: 4em;
 }
 
@@ -606,7 +609,7 @@ p {
 .text-final-footer {
   display: flex;
   flex-direction: column;
-  padding-left: 10em;
+  padding-left: 16em;
   padding-top: 4em;
 
   .ft-button {
