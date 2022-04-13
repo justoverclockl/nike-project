@@ -1,85 +1,8 @@
-@font-face {
-  font-family: "Nike1";
-  src: url("/font-nike-home-app/nike-futura-extra-bold-v200.woff2");
-}
-@font-face {
-  font-family: "Nike2";
-  src: url("/font-nike-home-app/nike-glyphs.woff");
-}
-@font-face {
-  font-family: "Nike3";
-  src: url("/font-nike-home-app/Nike-TG.woff2");
-}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Nike2";
+  font-family: Arial, Helvetica, sans-serif;
   background-color: white;
-}
-body h2 {
-  font-size: 32px;
-}
-
-.pop-up-cookie {
-  display: none;
-  position: fixed;
-  background: white;
-  bottom: 0;
-  height: 400px;
-  width: 600px;
-  left: 0;
-  margin: auto;
-  right: 0;
-  top: 0;
-  width: 28rem;
-  height: 34rem;
-}
-.pop-up-cookie .title-cookie {
-  padding-left: 13px;
-}
-.pop-up-cookie .text-pop-up-cookie {
-  font-size: 17px;
-  display: flex;
-  text-align: inherit;
-  padding-left: 19px;
-  line-height: 24px;
-}
-.pop-up-cookie .button-cookie {
-  display: flex;
-  justify-content: center;
-}
-.pop-up-cookie .button-cookie:hover {
-  color: transparent;
-}
-.pop-up-cookie .button-cookie .first-button-cookie {
-  margin-inline: 10px;
-  background: white;
-  border: black solid 1px;
-  width: 13rem;
-  height: 3em;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.pop-up-cookie .button-cookie .first-button-cookie:hover {
-  background: lightgray;
-}
-.pop-up-cookie .button-cookie .second-button-cookie {
-  margin-inline: 10px;
-  background: black;
-  color: white;
-  border: none;
-  width: 13rem;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.pop-up-cookie .button-cookie .second-button-cookie:hover {
-  background: lightgray;
-}
-.pop-up-cookie .last-text-cookie {
-  font-size: 12px;
-  padding-left: 35px;
-  line-height: 18px;
-  padding-top: 11px;
 }
 
 .pop-up-container {
@@ -93,6 +16,7 @@ body h2 {
   margin: auto;
   right: 0;
   top: 0;
+  border: solid;
   width: 24rem;
   height: 30rem;
 }
@@ -122,7 +46,6 @@ body h2 {
   align-self: self-end;
   border: none;
   font-size: 19px;
-  cursor: pointer;
 }
 .pop-up-container .pop-up {
   display: flex;
@@ -257,7 +180,7 @@ p {
 .conteiner-text {
   display: flex;
   flex-direction: column;
-  padding-left: 16em;
+  padding-left: 10em;
   padding-top: 3em;
 }
 .conteiner-text .text {
@@ -290,7 +213,7 @@ p {
 .text-training {
   display: flex;
   flex-direction: column;
-  padding-left: 16em;
+  padding-left: 10em;
   padding-top: 3em;
 }
 .text-training .head-text-training .text-link {
@@ -316,7 +239,7 @@ p {
 }
 
 .training-club {
-  padding-left: 16em;
+  padding-left: 10em;
   padding-top: 3em;
 }
 
@@ -362,7 +285,7 @@ p {
 .text-plan {
   flex-direction: column;
   padding-top: 4em;
-  padding-left: 16em;
+  padding-left: 10em;
   width: 69vw;
 }
 
@@ -379,7 +302,7 @@ p {
   display: flex;
   flex-direction: column;
   padding-top: 4em;
-  padding-left: 16em;
+  padding-left: 10em;
   width: 69vw;
 }
 
@@ -396,7 +319,6 @@ p {
   height: 4em;
   width: 4em;
   margin: 3px;
-  cursor: pointer;
 }
 .conteiner-carousel ::-webkit-scrollbar {
   width: 0.5em;
@@ -440,7 +362,7 @@ p {
   display: flex;
   flex-direction: column;
   padding-top: 4em;
-  padding-left: 16em;
+  padding-left: 10em;
 }
 
 #image-center-seven {
@@ -454,7 +376,7 @@ p {
 
 .text-training-club {
   display: block;
-  padding-left: 16em;
+  padding-left: 10em;
   line-height: 23px;
   padding-top: 3em;
 }
@@ -469,7 +391,7 @@ p {
 }
 
 #text-finish-line {
-  padding-left: 16em;
+  padding-left: 10em;
   line-height: 38px;
   padding-top: 3em;
 }
@@ -487,7 +409,7 @@ p {
 #text-club {
   display: flex;
   flex-direction: column;
-  padding-left: 16em;
+  padding-left: 10em;
   line-height: 21px;
   padding-top: 4em;
 }
@@ -527,7 +449,7 @@ p {
 #text-footer {
   display: flex;
   flex-direction: column;
-  padding-left: 16em;
+  padding-left: 10em;
   padding-top: 4em;
 }
 
@@ -543,7 +465,7 @@ p {
 .text-final-footer {
   display: flex;
   flex-direction: column;
-  padding-left: 16em;
+  padding-left: 10em;
   padding-top: 4em;
 }
 .text-final-footer .ft-button {
@@ -969,4 +891,4 @@ footer #footer-conteiner .footer-text-list .first:first-child {
   }
 }
 
-/*# sourceMappingURL=_homeApp.css.map */
+/*# sourceMappingURL=_homeAppc-css.map */
