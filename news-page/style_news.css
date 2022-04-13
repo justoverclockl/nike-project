@@ -1,6 +1,21 @@
+@font-face {
+  font-family: "Nike1";
+  src: url("assets/fonts/nike1.woff2");
+}
+@font-face {
+  font-family: "Nike2";
+  src: url("assets/fonts/nike2.woff");
+}
+
+@font-face {
+  font-family: "Nike3";
+  src: url("assets/fonts/nike-glyphs.woff");
+}
+
 body {
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nike1";
 }
 
 main {
@@ -17,7 +32,6 @@ h3,
 p,
 a,
 li {
-  font-family: Arial, Helvetica, sans-serif;
   color: #111111;
 }
 
@@ -30,17 +44,17 @@ h2 {
 }
 
 h3 {
-  text-decoration: underline 5px;
+  text-decoration: underline 3px;
 }
 
 p {
   line-height: 1.7;
   font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 figcaption {
-  font-weight: bold;
-  text-decoration: underline 5px #111111;
+  text-decoration: underline 3px #111111;
   padding: 7px;
 }
 
@@ -52,7 +66,7 @@ header {
   align-items: center;
 }
 
-header img{
+header img {
   width: 70px;
   margin: 1rem;
 }
@@ -73,15 +87,6 @@ h3 {
   width: 27px;
 }
 
-/*#input-search {
-  border: 1px solid #333;
-  background-color: rgb(252, 248, 248);
-  text-align: center;
-  display: none;
-  margin-top: 87px;
-  margin-right: -270px;
-}*/
-
 #icon-menu {
   width: 30px;
   cursor: pointer;
@@ -89,11 +94,11 @@ h3 {
   transform: rotate(180deg);
 }
 
-/* page-search */
+/* js-page search */
 
 #page-search {
   background-color: #f1f1f1;
-  font-family: sans-serif;
+  font-family: "Nike1";
   height: 100%;
   width: 100%;
   display: none;
@@ -107,7 +112,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0;
+  margin: 0;
 }
 
 .container-search {
@@ -121,6 +126,8 @@ h3 {
 .link-search {
   display: block;
   position: relative;
+  list-style-type: none;
+  padding: 7px;
 }
 
 .logo-black {
@@ -153,13 +160,23 @@ h3 a {
   width: 47px;
 }
 
-#input-search {
-  border: 1px solid #333;
-  background-color: rgb(252, 248, 248);
-  text-align: center;
-  display: none;
-  margin-top: 47px;
-  margin-left: -733px;
+.cursor {
+  color: white;
+  border-left: 1px solid black;
+  height: 47px;
+  animation: 1s blinker linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #input-text {
@@ -171,6 +188,10 @@ h3 a {
   border-color: white;
 }
 
+#input-text:focus {
+  outline: none;
+}
+
 #input-text::placeholder {
   font-size: 23px;
   font-weight: bold;
@@ -179,9 +200,9 @@ h3 a {
 
 .link-search span {
   font-size: 17px;
-  color: black;
   font-weight: bold;
   font-style: italic;
+  margin-right: 90px;
 }
 
 .link-search li {
@@ -198,13 +219,13 @@ h3 a {
 /* js-page hamburger menu*/
 
 #menu {
-  font-family: sans-serif;
+  font-family: "Nike1";
   background-color: rgb(17, 17, 17);
   height: 100%;
   width: 100%;
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
 }
@@ -223,23 +244,32 @@ h3 a {
 }
 
 #closebtn {
+  font-family: Arial, Helvetica, sans-serif;
   margin-right: 20px;
   margin-top: 20px;
-  width: 37px;
+  width: 57px;
   color: white;
   cursor: pointer;
 }
 
 .container {
-  position: relative;
-  top: 13%;
-  width: 100%;
-  text-align: center;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
 }
 
 #list {
   list-style-type: none;
   padding: 0;
+  color: white;
+}
+
+#list:hover li a {
+  color: gray;
+}
+#list li a:hover {
   color: white;
 }
 
@@ -251,9 +281,9 @@ h3 a {
   padding: 13px;
 }
 
-li a {
+#list li a {
   text-decoration: none;
-  color: inherit;
+  color: white;
   transition: 0.3s ease all;
 }
 
@@ -262,7 +292,7 @@ li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
+  margin-top: 27px;
 }
 
 .footer-end p {
@@ -300,7 +330,7 @@ li a {
 }
 
 .first .card > a {
-  text-decoration: underline 5px #111111;
+  text-decoration: underline 3px #111111;
 }
 
 /* all sections */
@@ -322,12 +352,12 @@ section img {
 
 .card > a {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 /* footer */
 
-ul {
+footer ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,23 +365,22 @@ ul {
   list-style-type: none;
 }
 
-ul span {
-  font-family: Arial, Helvetica, sans-serif;
+footer ul span {
   text-decoration: underline 3px;
   color: #111111;
-  font-weight: bold;
+  padding: 7px;
 }
 
-ul li {
-  font-size: 24px;
+footer ul li {
+  font-size: 21px;
   font-weight: bold;
-  padding: 13px;
+  padding: 7px;
 }
 
 .copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 
 .copyright p {
