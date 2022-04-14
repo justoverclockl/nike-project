@@ -542,6 +542,10 @@ a:hover {
   margin: 0 4px 0 4px;
 }
 
+a svg:hover {
+  fill: gray;
+}
+
 img {
   width: 100%;
   height: auto;
