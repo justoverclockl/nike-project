@@ -5,24 +5,27 @@ $color-footer: #7e7e7e;
 
 @font-face {
   font-family: "Nike1";
-  src: url("/font-nike-home-app/nike-futura-extra-bold-v200.woff2");
+  src: url("/home-app/font-nike-home-app/nike-futura-extra-bold-v200.woff2");
 }
 @font-face {
   font-family: "Nike2";
-  src: url("/font-nike-home-app/nike-glyphs.woff");
+  src: url("/home-app/font-nike-home-app/nike-glyphs.woff");
 }
 @font-face {
   font-family: "Nike3";
-  src: url("/font-nike-home-app/Nike-TG.woff2");
+  src: url("/home-app/font-nike-home-app/Nike-TG.woff2");
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Nike2";
   background-color: white;
   h2 {
     font-size: 32px;
+    font-weight: 200;
+  }
+  p {
+    font-weight: 200;
   }
 }
 
@@ -39,6 +42,7 @@ body {
   top: 0;
   width: 28rem;
   height: 34rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   .title-cookie {
     padding-left: 13px;
@@ -107,6 +111,7 @@ body {
   top: 0;
   width: 24rem;
   height: 30rem;
+  font-family: "TradeGothicforNike365-BdCn,Helvetica!important";
 
   h2 {
     font-size: 16px;
@@ -206,6 +211,7 @@ p {
     text-decoration: none;
     list-style-type: none;
     padding-right: 2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     .a-one {
       cursor: pointer;
@@ -237,7 +243,7 @@ p {
   .list-two {
     display: inline-flex;
     list-style-type: none;
-
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     .a-two {
       text-decoration: none;
       padding: 9px;
@@ -297,6 +303,7 @@ p {
 
   .text {
     font-size: $text-h2;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   .conteiner-button {
@@ -331,6 +338,7 @@ p {
   flex-direction: column;
   padding-left: 16em;
   padding-top: 3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   .head-text-training {
     .text-link {
@@ -364,12 +372,14 @@ p {
 .training-club {
   padding-left: 16em;
   padding-top: 3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #conteiner-section-card-list {
   display: flex;
   padding-top: 6em;
   justify-content: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   .conteiner {
     display: flex;
@@ -417,6 +427,7 @@ p {
   padding-top: 4em;
   padding-left: 16em;
   width: 69vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .image-fit-second {
@@ -435,10 +446,12 @@ p {
   padding-top: 4em;
   padding-left: 16em;
   width: 69vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .conteiner-carousel {
   padding-top: 3em;
+  font-family: "Nike3";
 
   .button-carousel {
     text-align: end;
@@ -501,6 +514,7 @@ p {
   flex-direction: column;
   padding-top: 4em;
   padding-left: 16em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #image-center-seven {
@@ -518,6 +532,7 @@ p {
   padding-left: 16em;
   line-height: 23px;
   padding-top: 3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #image-center-eight {
@@ -534,6 +549,7 @@ p {
   padding-left: 16em;
   line-height: 38px;
   padding-top: 3em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #image-center-nine {
@@ -552,6 +568,7 @@ p {
   padding-left: 16em;
   line-height: 21px;
   padding-top: 4em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   .button-of-text {
     width: 4em;
@@ -594,6 +611,7 @@ p {
   flex-direction: column;
   padding-left: 16em;
   padding-top: 4em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #image-center-footer {
@@ -611,6 +629,7 @@ p {
   flex-direction: column;
   padding-left: 16em;
   padding-top: 4em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   .ft-button {
     width: 7em;
@@ -639,11 +658,13 @@ p {
   font-size: $text-h2;
   padding-left: 1em;
   padding-top: 6em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .cards-footer {
   display: flex;
   justify-content: center;
+  font-family: "Nike3";
 }
 
 .image-card-footer {
@@ -676,6 +697,7 @@ footer {
       .conteiner-list-footer-text {
         display: flex;
         flex-wrap: wrap;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         &:hover {
           cursor: pointer;
         }
@@ -770,6 +792,7 @@ footer {
       font-size: 11px;
       display: inline-flex;
       flex-wrap: wrap;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
       .ft-li {
         padding: 15px;
@@ -782,12 +805,6 @@ footer {
       .first:first-child {
         padding-inline: 15px;
       }
-
-      //   .ft-li:last-child {
-      //     flex-basis: 100%;
-      //     height: 0;
-      //     padding-right: 6em;
-      //   }
     }
   }
 }
