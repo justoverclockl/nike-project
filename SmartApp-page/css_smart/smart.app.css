@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Nike1";
-  src: url("/assets/smart-fonts/nike-1.woff");
+  src: url("/SmartApp-page/assets/smart-fonts/nike-1.woff");
 }
 @font-face {
   font-family: "Nike2";
-  src: url("/assets/smart-fonts/Nike-2.woff2");
+  src: url("/SmartApp-page/assets/smart-fonts/Nike-2.woff2");
 }
 body {
   height: 100vh;
