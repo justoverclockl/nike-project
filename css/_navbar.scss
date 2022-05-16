@@ -1,0 +1,137 @@
+$navBackground: #f5f5f5;
+
+// Navbar superiore
+.nav-container {
+  background-color: $navBackground;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  .nav-links {
+    font-size: .8rem;
+  }
+  .nav-icons {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+  }
+  .nav-icons > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 38px 0 36px;
+    list-style: none;
+  }
+  .nav-links > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 38px 0 36px;
+    & li {
+      cursor: pointer;
+    }
+    .links {
+      margin-right: 8px;
+      margin-left: 8px;
+    }
+  }
+}
+// Navbar inferiore
+.sub-nabvar-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  .nav-logo {
+    padding: 0 38px 0 36px;
+  }
+  .sub-navbar-links > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 0 140px;
+    & li {
+      margin-inline: .8rem;
+      cursor: pointer;
+    }
+  }
+}
+.sub-navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .search-field {
+    position: relative;
+    .input-icon {
+      position: absolute;
+      left: 13px;
+      top: calc(50% - 0.5em);
+    }
+  }
+  .icon-heart {
+    padding: 0px 10px 0 20px;
+    i.fa-regular.fa-heart {
+      font-size: 1.4rem;
+    }
+  }
+  .icon-bag {
+    padding: 0px 30px 0 20px;
+    i.fas.fa-shopping-bag {
+      font-size: 1.4rem;
+    }
+  }
+  .search-input {
+    background: $navBackground;
+    border: 0;
+    border-radius: 20px;
+    padding: .7rem;
+    width: 150px;
+    &::placeholder {
+      color: #9a9a9a;
+      font-size: 1rem;
+      text-indent: 25px;
+    }
+    &:focus{
+      outline: none;
+    }
+    &:hover {
+      background: #d7d7d7;
+    }
+  }
+}
+.offers-container {
+  background: $navBackground;
+  .swiper {
+    text-align: center;
+    padding: .7rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1029px) {
+  .sub-nabvar-container {
+    .sub-navbar-links > ul {
+      padding: 0 0 0 0px;
+    }
+  }
+}
+@media (max-width: 889px) {
+  .sub-nabvar-container {
+    padding: 0.7rem;
+    justify-content: center;
+    .sub-navbar-links {
+      margin-bottom: 0.5rem;
+    }
+    .nav-logo {
+      display: none;
+    }
+    .sub-navbar-links > ul {
+      display: flex;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .sub-nabvar-container {
+    .sub-navbar-right {
+      display: none;
+    }
+  }
+}

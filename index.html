@@ -4,10 +4,613 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <!--  codice per OG  -->
+    <meta property="og:title" content="Sito Web Ufficiale Nike"/>
+    <meta property="og:site_name" content="Sito Web Ufficiale Nike"/>
+    <meta property="og:description"
+          content="Sport Brand Nike, accessori e abbigliamento sportivo."/>
+    <meta property="og:image" content="assets/face-coding.png"/>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Sito Web Ufficiale Nike</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+            integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+<div class="container-popup" id="popup">
+    <div class="popup">
+        <div class="popup-close" id="close-popup"><i class="fa-solid fa-x"></i></div>
+        <div class="logo-nike">
+            <picture>
+                <img class="nike-logo-popup" src="assets/nike-icon.svg" alt="nike logo" width="60">
+            </picture>
+        </div>
+        <div class="popup-text" id="popup-text">IL TUO ACCOUNT PER ACCEDERE AL MONDO NIKE</div>
+        <div class="form-popup" id="form-popup">
+            <form id="loginform" method="post"  autocomplete="off">
+                <input type="email" name="email" id="email" placeholder="Indirizzo E-Mail" required>
+                <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <div class="privacy-popup">Effettuando l'accesso, accetti la Politica sulla privacy e i Termini di utilizzo di
+                    Nike.
+                </div>
+                <button class="login-popup" id="login" type="submit">ACCEDI</button>
+            </form>
+        </div>
+    </div>
+</div>
+<header>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-icons">
+                <ul>
+                    <li><img class="nav-icons" src="assets/jordan.png" alt="jordan icon"></li>
+                    <li><img class="nav-icons" src="assets/arrow.png" alt="arrow icon"></li>
+                </ul>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li class="links">Aiuto</li>
+                    <li class="separator">|</li>
+                    <li class="links">Unisciti a Noi</li>
+                    <li class="separator">|</li>
+                    <li class="links" id="accedi">Accedi</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div class="sub-nabvar-container">
+            <div class="nav-logo">
+                <picture>
+                    <img class="nike-logo" src="assets/nike-icon.svg" alt="nike logo" width="80">
+                </picture>
+            </div>
+            <div class="sub-navbar-links">
+                <ul>
+                    <li id="novita">Novità</li>
+                    <li id="uomo">Uomo</li>
+                    <li id="donna">Donna</li>
+                    <li id="bambino">Bambino</li>
+                    <li id="outlet">Outlet</li>
+                    <li id="collezioni">Collezioni</li>
+                </ul>
+            </div>
 
+            <div class="sub-navbar-right">
+                <div class="search-field">
+                    <input class="search-input" type="search" name="search" id="search" placeholder="Cerca"/>
+                    <i class="fa-solid fa-magnifying-glass input-icon"></i>
+                </div>
+                <div class="icon-heart">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="icon-bag">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div class="offers-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">I member hanno diritto a spedizione e resi gratuiti entro 60 giorni.
+                        Unisciti a noi | Ulteriori informazioni
+                    </div>
+                    <div class="swiper-slide">Gli studenti ricevono uno sconto del 10%</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- Immagine Main -->
+    <section>
+        <div class="container">
+            <picture>
+                <img class="main-img" src="assets/main-image.jpg" alt="main image nike">
+            </picture>
+        </div>
+    </section>
+    <!-- Immagine Main -->
+    <!-- Testo Main -->
+    <section>
+        <div class="container text">
+            <div class="text1">Nike Air Zoom SuperRep 3</div>
+            <div class="text2">IL MIGLIOR ALLENAMENTO HIIT COMINCIA DA QUI</div>
+            <div class="button">
+                <button class="buy">Acquista</button>
+            </div>
+        </div>
+    </section>
+    <!-- Testo Main -->
+    <!-- Slider 1 -->
+    <section>
+        <div class="container slider">
+            <div class="title-container">
+                <div class="prepare-text">Preparati</div>
+                <div class="slider-controls">
+                    <button id="previous"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="cards-container" id="cards-container">
+                <!-- Card 1 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-1.jpeg" alt="slide 1">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Air Zoom SuperRep 3
+                            </div>
+                            <div class="footer-right">
+                                129.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Scarpa da HIIT - Donna
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 1 -->
+                <!-- Card 2 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-2.jpeg" alt="slide 2">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Air Zoom SuperRep 3
+                            </div>
+                            <div class="footer-right">
+                                129.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Scarpa da HIIT - Uomo
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <!-- Card 3 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-3.jpeg" alt="slide 3">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Dri-FIT
+                            </div>
+                            <div class="footer-right">
+                                54.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Maglia da training senza cuciture - Uomo
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <!-- Card 4 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-4.jpeg" alt="slide 4">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Pro Dri-FIT Flex
+                            </div>
+                            <div class="footer-right">
+                                64.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Shorts da training 15 cm - Uomo
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <!-- Card 5 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-5.jpeg" alt="slide 5">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Pro Dri-FIT Aplha
+                            </div>
+                            <div class="footer-right">
+                                59.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Bra imbottito a sostegno elevato con zip anteriore - Donna
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <!-- Card 6 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-6.jpeg" alt="slide 6">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Pro Dri-FIT One Luxe
+                            </div>
+                            <div class="footer-right">
+                                94.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Leggings stampati a 7/8 a vita media – Donna
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <!-- Card 7 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-7.jpeg" alt="slide 7">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Dri-FIT One Luxe
+                            </div>
+                            <div class="footer-right">
+                                44.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Canotta Slim Fit - Donna
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <!-- Card 8 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-8.jpeg" alt="slide 8">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Therma-FIT
+                            </div>
+                            <div class="footer-right">
+                                94.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Felpa corta Novelty in fleece a girocollo - Donna
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <!-- Card 9 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-9.jpeg" alt="slide 9">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Dri-FIT Run Division
+                            </div>
+                            <div class="footer-right">
+                                144.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Leggings da running a vita media - Donna
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <!-- Card 10 -->
+                <div class="cards">
+                    <div class="card-image">
+                        <picture>
+                            <img class="image-card" src="assets/slider/slide-9.jpeg" alt="slide 9">
+                        </picture>
+                    </div>
+                    <div class="card-footer">
+                        <div class="first-footer">
+                            <div class="footer-left">
+                                Nike Dri-FIT Swoosh
+                            </div>
+                            <div class="footer-right">
+                                47.99
+                            </div>
+                        </div>
+                        <div class="second-footer">
+                            Bra regolabile non imbottito a sostegno elevato - Donna
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 10 -->
+            </div>
+        </div>
+    </section>
+    <!-- Slider 1 -->
+    <!-- Card grid 1 -->
+    <section>
+        <div class="container grid">
+            <div class="title-container">
+                <div class="prepare-text">Preparati</div>
+            </div>
+            <div class="image-grid">
+                <div class="image1">
+                    <div class="item-info">
+                        Articoli in evidenza da donna
+                        <button class="white-buy">Acquista</button>
+                    </div>
+
+                </div>
+                <div class="image2">
+                    <div class="item-info">
+                        Ultime novità da uomo
+                        <button class="white-buy">Acquista</button>
+                    </div>
+                </div>
+                <div class="image3">
+                    <div class="item-info">
+                        Modelli per bambini
+                        <button class="white-buy">Acquista</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fine Card grid 1 -->
+    <!-- Card grid 2 -->
+    <section>
+        <div class="container grid-two">
+            <div class="title-container">
+                <div class="prepare-text">Da Non Perdere</div>
+            </div>
+            <div class="grid-two-container">
+                <div class="card-one">
+                    <picture>
+                        <img class="grid-two" src="assets/shoes.png" alt="nike shoes">
+                    </picture>
+                </div>
+                <div class="card-two">
+                    <picture>
+                        <img class="grid-two" src="assets/video.gif" alt="nike video">
+                    </picture>
+                </div>
+                <div class="card-three">
+                    <picture>
+                        <img class="grid-two" src="assets/girl.png" alt="nike girl">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fine Card grid 2 -->
+    <!-- Testo Mid -->
+    <section>
+        <div class="container text">
+            <div class="text1">Nike Air Max Down</div>
+            <div class="text2 mid">novità</div>
+            <div class="text1 under">Esci dalla tua comfort zone e libera la tua vena creativa con Air Max Down,
+                ispirata a
+                uno stile running retrò ma con un look moderno.
+            </div>
+            <div class="button">
+                <button class="buy">Acquista</button>
+            </div>
+        </div>
+    </section>
+    <!-- Fine Testo Mid -->
+    <!-- Side Images -->
+    <section>
+        <div class="container grid-three">
+            <div class="title-container">
+                <div class="prepare-text">Scopri le nostre App</div>
+            </div>
+            <div class="grid-three-container">
+                <div class="card-one">
+                    <picture>
+                        <img class="grid-three" src="assets/left-img.jpg" alt="nike shoes">
+                    </picture>
+                </div>
+                <div class="card-three">
+                    <picture>
+                        <img class="grid-three" src="assets/right-img.jpg" alt="nike girl">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fine Side Images -->
+    <!-- Bannerone -->
+    <section>
+        <div class="container banner">
+            <div class="title-container">
+                <div class="prepare-text">Unisciti a noi</div>
+            </div>
+            <div class="banner-container">
+                <div class="slogan-container">
+                    <h1 class="slogan">La tua membership nike</h1>
+                    <p class="sub-text">Diventa member e mostra che ci tieni con Nike by You.</p>
+                    <button class="white-buy-banner">Unisciti a noi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fine Bannerone -->
+    <!-- 3 immagini in grid -->
+    <section>
+        <div class="container three-images">
+            <div class="title-container">
+                <div class="prepare-text">Altro da Nike</div>
+            </div>
+            <div class="three-cards-image">
+                <div class="card-one">
+                    <picture>
+                        <img class="grid-three" src="assets/man.png" alt="nike shoes">
+                    </picture>
+                    <button class="white-buy-banner">Uomo</button>
+                </div>
+                <div class="card-two">
+                    <picture>
+                        <img class="grid-three" src="assets/woman.png" alt="nike girl">
+                    </picture>
+                    <button class="white-buy-banner">Donna</button>
+                </div>
+                <div class="card-three">
+                    <picture>
+                        <img class="grid-three" src="assets/kids.png" alt="nike girl">
+                    </picture>
+                    <button class="white-buy-banner">Bambini</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Fine 3 immagini in grid-->
+</main>
+<footer>
+    <!-- Footer 1-->
+    <div class="container footer">
+        <div class="footer-elements">
+            <div class="footer-one">
+                <ul>
+                    <li>Scarpe</li>
+                    <li>Sneakers e scarpe</li>
+                    <li>Scarpe da calcio</li>
+                    <li>Scarpe da Running</li>
+                    <li>Scarpe da Netball</li>
+                </ul>
+            </div>
+            <div class="footer-two">
+                <ul>
+                    <li>Abbigliamento</li>
+                    <li>Tutto l'abbigliamento</li>
+                    <li>Maglie e Top</li>
+                    <li>Pantaloni e Leggins</li>
+                    <li>Tute</li>
+                </ul>
+            </div>
+            <div class="footer-three">
+                <ul>
+                    <li>Bambini</li>
+                    <li>Sneakers - bambini</li>
+                    <li>Zaini - Bambini</li>
+                    <li>Scarpe da Calcio - Bambini</li>
+                    <li>Scarpe da running - Bambini</li>
+                </ul>
+            </div>
+            <div class="footer-four">
+                <ul>
+                    <li>In Evidenza</li>
+                    <li>Novità</li>
+                    <li>Nike Run Club</li>
+                    <li>Nike Training Club</li>
+                    <li>Borse e Zaini</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Fine Footer 1-->
+    <!-- Footer 2-->
+    <div class="footer-second">
+        <div class="footer-second-elements">
+            <div class="footer left">
+                <div class="footer-second-one">
+                    <ul>
+                        <li>GIFT CARD</li>
+                        <li>TROVA UN NEGOZIO</li>
+                        <li>ISCRIVITI ALLA NEWSLETTER</li>
+                        <li>DIVENTA MEMBER</li>
+                        <li>SCONTO STUDENTI</li>
+                        <li>INVIA FEEDBACK</li>
+                        <li>CODICI PROMOZIONALI</li>
+                    </ul>
+                </div>
+                <div class="footer-second-two">
+                    <ul>
+                        <li>HAI BISOGNO DI AIUTO?</li>
+                        <li>Stato dell'ordine</li>
+                        <li>Spedizione e consegna</li>
+                        <li>Resi</li>
+                        <li>Opzioni di pagamento</li>
+                        <li>Contattaci</li>
+                        <li>Assistenza Codici promozionali Nike</li>
+                    </ul>
+                </div>
+                <div class="footer-second-three">
+                    <ul>
+                        <li>INFORMAZIONI SU NIKE</li>
+                        <li>News</li>
+                        <li>Lavora con noi</li>
+                        <li>Investitori</li>
+                        <li>Sostenibilità</li>
+                    </ul>
+                </div>
+                <div class="footer-second-four">
+                    <ul>
+                        <li>LE APP NIKE</li>
+                        <li>Nike Run Club</li>
+                        <li>Nike Training Club</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer right">
+                <div class="footer-icons">
+                    <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="icons"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icons"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fine Footer 2-->
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
